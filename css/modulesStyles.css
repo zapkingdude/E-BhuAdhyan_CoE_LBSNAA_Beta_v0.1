@@ -1,0 +1,242 @@
+:root {
+    --sidebar-width: 480px;
+    --sidebar-width-collapsed: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    height: fit-content;
+    background: linear-gradient(135deg, #1a1c2e 0%, #16181f 100%);
+    transition: all 0.3s ease;
+    position:  absolute !important;
+}
+
+.sidebar.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.sidebar-link {
+    color: #a0a3bd;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    margin: 4px 16px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.sidebar-link.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.logo-text {
+    background: linear-gradient(45deg, #6b8cff, #8b9fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease;
+}
+
+.notification-badge {
+    background: #ff6b6b;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+}
+
+.profile-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    background-color: #f8f9fa;    
+    min-height: 100vh;
+    max-height: 100vh;
+    height: max-content;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.collapsed~.main-content {
+    margin-left: var(--sidebar-width-collapsed);
+}
+.chapterConentSlide{
+    height: 750px;
+}
+i.customIcon{
+    display: inline-block !important;
+    width: 30px;
+    height: 30px;
+}
+.tripod{
+    background-image: url('../img/ModuleImgs/LandSurvey_Management/tripod.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+}
+@media screen and (min-width:501px) and (max-width:999px) {
+    /* Tablet styles */
+    .chapterConentSlide{
+        height: 450px;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.chapterConentSlide{
+    height: 550px;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.chapterConentSlide{
+    height: 550px;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+.chapterConentSlide{
+    height: 750px;
+}
+}
+
+.toggle-btn {
+    position: absolute;
+    right: -15px;
+    top: 20px;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.collapsed .toggle-btn {
+    transform: rotate(180deg);
+    transition-duration: 550ms;
+}
+
+.collapsed .hide-on-collapse {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.collapsed .logo-text {
+    opacity: 0;
+}
+
+.collapsed .profile-info {
+    opacity: 0;
+}
+
+.collapsed .sidebar-link {
+    text-align: left;
+    padding: 1rem !important;
+    margin: 4px 8px;
+}
+
+.collapsed .sidebar-link i {
+    margin: 0 !important;
+}
+
+.profile-info {
+    transition: opacity 0.2s ease;
+}
+
+.subChaptersNavList{
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 0;
+    border: solid 1px #ff0000;
+    background-color: var(--purpleLight);
+    -webkit-box-shadow: -1px 6px 20px -7px rgba(247,242,247,1);;
+    -moz-box-shadow: -1px 6px 20px -7px rgba(247,242,247,1);;
+    box-shadow: -1px 6px 20px -7px rgba(247,242,247,1);;
+}
+.subChaptersNavList ul{    
+    padding: 0px 0px 0px 50px;
+}
+
+.subChaptersNavList ul > li{
+    display: block;
+    width: 95%;
+    padding: 0;
+    height: 70px;
+    padding: 25px 0px 10px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.subChaptersNavList ul > li:hover {
+    color: #ffffff;
+    background: rgba(106, 75, 156, 0.4);
+    transform: translateX(5px);
+}
+.subChaptersNavList ul > li.active {
+    color: #ffffff;
+    background: rgba(106, 75, 156, 0.4);
+}
+.chapterContentArticle p{
+    text-align: justify;    
+}
+.carousel-item{
+    height: 560px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ul.courseContentTopicListGroup{
+    padding: 10px;
+}
+ul.courseContentTopicListGroup > li.list-group-item{
+    cursor: pointer;
+}
+ul.courseContentTopicListGroup > li.list-group-item:hover{
+    text-decoration: underline;
+    color:var(--indigo);
+    padding-left: 25px;
+}
+ul.courseContentTopicListGroup > li.list-group-item.active{
+    text-decoration: underline;
+    color:var(--light);
+    padding-left: 25px;
+}
+
+.chapter-content{
+    display: none;
+}
+.activeChapter{
+    display: block;
+}

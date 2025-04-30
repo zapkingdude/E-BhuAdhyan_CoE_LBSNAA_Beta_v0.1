@@ -1,0 +1,6782 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English NAKSHA SoP</title>
+</head>
+<body>
+    <pre>STANDARD OPERATING PROCEDURE (SOP)
+
+February 2025
+
+Table Of Content
+
+List of Tables
+List of Figures
+List of Abbreviations 
+1. Rectitude of the NAKSHA Programme
+2. Objectives of NAKSHA Programme
+2.1. Primary Objectives
+3. Scope of Standard Operating Procedure (SOP)
+4. Stakeholders, their Roles and Responsibilities
+4.1. Department of Land Resources (DoLR)
+4.2. States/Union Territories (UTs) Nodal Department
+4.3. Survey of India and Third-party agencies
+4.4. Madhya Pradesh State Electronic Development  
+          Corporation (MPSEDC)
+4.5. National Informatic Centre Services Inc (NICSI) 
+4.6. Centre of Excellence (CoE) & Administrative 
+          Training Institute (ATI) 
+5.     Activities involved in NAKSHA Programme
+5.1. MAP-1 – Survey and Mapping including Feature 
+         Extraction
+5.2. Survey of India (SoI) 
+5.3. Third-Party Agency
+5.4. Methods Adopted for Data Acquisition
+5.5. Fixing Area of Interest (AOI)
+5.6. Fixing Flight Plan
+5.7. Ortho Rectified Imagery (ORI)
+5.8. Quality Check
+5.9. Deliverables by Third-Party Agencies to SoI
+5.10. Training and Handover
+5.11. Post-Delivery Support
+
+01
+01
+02
+03
+05
+05
+06
+07
+09
+10
+13
+13
+
+14
+14
+
+15
+15
+
+16
+16
+17
+19
+21
+23
+24
+25
+26
+28
+
+Table Of Content
+
+6. MAP-2: Field Survey and Ground Truthing
+6.1. Field Survey of Land Parcel
+6.2. Global Navigation Satellite System (GNSS)
+Rovers
+6.3. Real-Time Kinematic (RTK) positioning GPS
+6.4. Electronic Total Station (ETS) GNSS
+6.5. Field Data Collector (FDC) with a Web GIS
+software for Field Survey
+6.6. Distance-Distance measurement Laser Range
+Finder
+6.7. Reference Stations
+6.8. Continuously Operating Reference Stations
+(CORS)
+6.9. Survey of India Ground Control Points
+6.10. Team constitution
+6.11. Public meeting
+6.12. Field survey
+6.13. Field Survey: Salient Instructions
+6.14. Field Survey Methodologies
+6.15. GNSS Rover Survey
+6.16. Equipment Preparation
+6.17. Define Survey Parameters
+6.18. Survey Setup
+6.19. Establish Connection to CORS
+6.20. Pair the GNSS receiver with the Field Data
+Collector via Bluetooth
+6.21. Establish Base Point (if required)
+6.22. Land Parcel Survey Execution - Boundary Point
+Measurement 
+6.23. Post-Survey Tasks - Data Export
+6.24. Surveyed Data Processing
+6.25. Metadata Creation, Parcel Layout and Report
+Generation
+6.26. Best Practices
+6.27. Government properties / land
+6.28. Integration of property tax and RoR details with
+Land parcel data
+
+29
+29
+30
+
+31
+31
+32
+
+32
+
+32
+32
+
+33
+34
+34
+35
+35
+37
+37
+39
+39
+39
+39
+39
+
+40
+40
+
+40
+42
+42
+
+42
+42
+43
+43
+
+Table Of Content
+
+7. MAP 3: Disposal of claims and objections and map
+finalization
+7.1. Ground truthing by Nodal Department Official
+7.2. Issuance of notice and notification
+7.3. Updation and maintenance of database
+7.4. Monitoring
+8. Capacity Building and Knowledge Management
+8.1.Training
+8.2. IEC and Communications Plan
+8.3. Documentation Plan at Ground Level for ULBs
+9. Annexure
+9.1. Annexure-1: List of 152 ULBs
+9.2. Annexure-2: Guidelines Formulated by Some
+States for Urban Surveys
+9.3. Annexure-3: A model format of Urban Property
+Card (UrPro)
+
+46
+
+52
+52
+52
+53
+54
+54
+64
+66
+68
+68
+72
+
+75
+
+Important Lists
+
+LIST OF TABLES
+Table 4.1: Details of NAKSHA’s component wise activity and responsibility 
+Table 4.2: Category of the States/UTs with their SPMU establishment and
+manpower cost
+Table 5.1: Feature and difference between each methodology
+Table 5.2: Task and Responsibility for flight plan
+Table 5.3: Sample overlaps for methodology during flight plan
+Table 8.1: Process Training component 
+Table 8.2: Technical Training component
+Table 8.3: Hierarchy System of Trainings at Central, 
+State, and ULB levels
+Table 8.4: Stakeholder and Responsibilities of trainings at 
+Central, State, and ULB levels
+Table 8.5: Tentative IEC at ULBs
+Table 8.6: Documentation Plan at Ground Level for ULBs
+
+LIST OF FIGURES
+Figure 4.1: Stakeholder mapping for implementation of NAKSHA Programme
+Figure: 5.1- Flowchart for Map-1
+Figure 5.2: Nadir Camera
+Figure 5.3: oblique-camera
+Figure 5.4: LiDAR Sensor
+Figure 5.5: Combined Oblique + LiDAR Systems
+Figure 5.6: Continuously Operating Reference Stations (CORs)
+Figure 5.7: DGPS base / RTK Survey for Ground Control Points (GCP’s)
+Figure-5.8: DGPS Survey
+Figure-5.9: Marking GCP
+Figure-5.10: A sample of DGPS GCPs in AOI
+Figure-5.11: Final Area of Interest (AoI)
+Figure-5.12: Sample of Single, double and circular surveys designed flight
+paths in data acquisition.
+Figure-5.13: Sample flight plan to understand side & front overlap to get Nadir
+images
+Figure 5.14: Difference between raw image and orthorectified image (ORI)
+Figure 6.1: GNSS Rover and its components
+Figure-6.2: Spatial distribution of CORS network grid
+Figure-6.3: CORS station of Survey of India
+Figure-6.4: Illustration for land parcel survey
+
+Page: 01
+
+LIST OF ABBREVIATIONS
+
+AMC       - Annual Maintenance Contract
+AoI          - Area of Interest
+API          - Application Programming Interface
+CoE         - Centre of Excellence 
+CORS      - Continuously Operating Reference Stations
+CRS         - Centre for Rural Studies 
+DEM         - Digital Elevation Model 
+DGPS       - Differential Global Positioning System
+DILRMP    - Digital India Land Records Modernization Programme
+DoLR        - Department of Land Resources 
+DSM         - Digital Surface Model 
+DTM         - Digital Terrain Model 
+EA            - Empanelled Agency
+GCPs       - Ground Control Points
+GIS           - Geographic Information System
+GNSS       - Global Navigation Satellite System
+GoI           - Government of India
+GSD        - Ground Sample Distance
+IEC          - Information Education and Communication
+LBSNAA   - Lal Bahadur Shastri National Academy of Administration
+MGSIPA   - Mahatma Gandhi State Institute of Public Administration
+MoHUA    - Ministry of Housing and Urban Affairs 
+MoRD      - Ministry of Rural Development 
+MPSEDC - Madhya Pradesh State Electronics Development Corporation 
+NAKSHA  - National geospatial Knowledge based land Survey of urban Habitations
+NIC          - National Informatics Centre 
+NICSI       - National Informatics Centre Services Incorporated
+NPMU      - National Programme Management Unit
+NRTK       - Network Real Time Kinematic
+NSSO       - National Sample Survey Office
+OGC        - Open Geospatial Consortium
+ORI          - Ortho Rectified Imagery
+QA           - Quality Assurance
+QC           - Quality Control 
+RFP          - Request For Proposal
+RoRs       - Record of Rights
+SDGs       - Sustainable Development Goals
+SLC          - State Level committee
+SoI          - Survey of India 
+SOP        - Standard Operating Procedure
+SPMU      - State Programme Management Unit
+SVAMITVA - Survey of Villages Abadi and Mapping with Improvised Technology in
+Village Areas
+UAV         - Unmanned Aerial Vehicle
+ULB         - Urban Local Body 
+ULPIN      - Unique Land Parcel Identification Number
+UNFCCC - United Nations Framework Convention on Climate Change
+YASHADA - Yashwant Rao Chavan Academy for Development Administration 
+
+Page: 02
+
+1. Introduction of the
+NAKSHA Programme:
+
+All  India  Debt  and  Investment  Survey,  2019  (NSSO)  highlights  that  90%  of  assets  of
+individuals in India are held as land and building. Various studies reveal that 2/3rd of
+the private disputes in subordinate courts in India relate to land and building. Lack
+of updated land records and maps are one of the main reasons for this. According
+to  a  McKinsey  study  (2001),  land  market  distortions  cost  India  about  1.3%  in  GDP
+growth.  Another  McKinsey  report  (2020),  highlights  that  informal  settlements  and
+unregistered  land  could  be  formalized  by  speeding  up  the  digitization  of  land
+records,  cadastral  maps,  and  surveys,  deploying  modern  technologies  including
+Differential  Global  Positioning  System  (DGPS)  and  aerial  survey.  These  exercises
+would also significantly ease the process of land acquisition in urban and peri urban
+landscape.
+
+The  reforms  in  urban  planning  capacity  in  India  report  of  2021  by  NITI  Aayog
+has elaborated the need of spatial planning of urban areas. Further, cities play
+a  decisive  role  in  achieving  India’s  commitments  to  global  agendas,  such  as
+United Nations Sustainable Development Goals (SDGs) 2030: UN-Habitat’s new
+urban agenda; and the Paris Agreement under the United Nations Framework
+Convention  on  Climate  Change  (UNFCCC).  The  SDGs  specifically  Goal  11
+(making  cities  inclusive,  safe,  resilient,  and  sustainable)  promote  urban
+planning  as  one  of  the  recommended  methods  for  achieving  sustainable
+development.  They  include  a  new  focus  on  participatory  and  integrated
+planning for urban areas, peri-urban areas, and rural areas land resources.
+
+One of the major components of urban planning are land records and property
+management  which  requires  very  precise  survey,  resurvey  and  creation  &
+updation of the land records. This includes setting up ground control network
+and  the  process  of  cadastral  revenue  map  (if  any)  overlaid  on  very  high-
+resolution  base  map  or  GIS  ready  topographical  layers  generated  using
+property  tax  database,  layout  plans  etc.  Hybrid  method  involves  use  of
+professional  survey  grade  Unmanned  Aerial  Vehicle  (UAV)/  Drone  for  large
+scale mapping and precise field measurements by DGPS or Global Navigation
+Satellite  System  (GNSS)  Receivers  (also  known  as  GNSS  Rovers).  Since  many
+(ULBs)  have  multistorey  structures,  congested
+Urban  Local  Bodies 
+constructions  narrow roads and streets, this calls for mapping the ULBs in 3D
+environment to accurately capture, visualize and interpret the ownership data
+and other categorization of property in spatial domain. 
+The  digitization  of  urban  land  records  is  an  essential  step  towards  achieving
+transparency,  efficiency,  and  accountability  in  land  administration.  While  the
+Government of India (GoI) has made significant progress in digitizing rural land
+India  Land  Records
+records  through 
+Modernization Programme (DILRMP) of Department of Land Resources (DoLR)
+and  the  Survey  of  Villages  Abadi  and  Mapping  with  Improvised  Technology  in
+Village Areas (SVAMITVA) scheme of Ministry of Panchayat Raj (MoPR), but the
+urban and peri urban areas are completely unaddressed. These areas often
+
+initiatives  such  as  the  Digital 
+
+Page: 03
+
+lack  clear  update  and  accessible  land  records,  including  Record  of  Rights  (RoRs),
+cadastral  maps  and  their  digital  linkages  which  leads  to  uncertainties,  prolonged
+legal disputes and numerous grievances.
+
+Strengthening  the  urban  and  peri-urban 
+land  records  system  by  creating,
+modernizing,  updating,  integrating  records  and  maps  is  the  need  of  the  hour.
+Hon’ble Finance Minister of India in her July  2024-2025 Budget Speech emphasized
+that
+
+  “Land-related  reforms  by  state  governments  (para  98)  –  Land  related  reforms  and
+actions, both in rural and urban areas, will cover (1) land administration, planning and
+management,  and  (2)  urban  planning,  usage  and  building  bylaws.  These  will  be
+incentivized  for  completion  within  the  next  3  years  through  appropriate  fiscal
+support.
+
+Rural  Land  related  actions  (para  99)  –  Rural  land  related  actions  will  include  (1)
+assignment of Unique Land Parcel Identification Number (ULPIN) or Bhu-Aadhaar for
+all  lands,  (2)  digitization  of  cadastral  maps,  (3)  survey  of  map  subdivisions  as  per
+current ownership, (4) establishment of land registry, and (5) linking to the farmers
+registry. These actions will also facilitate credit flow and other agricultural services. 
+Urban Land related actions (para 100) – Land records in urban areas will be digitized
+with GIS mapping. An IT based system for property record administration, updating,
+and  tax  administration  will  be  established.  These  will  also  facilitate  improving  the
+financial position of urban local bodies.” 
+
+(Source:  www.indiabudget.gov.in/doc/budget_speech.pdf  -  Government  of  India,
+Budget 2024-2025, Speech of Nirmala Sitharaman, Minister of Finance, July 23, 2024,
+page no. 18, para 98, 99 and 100)
+
+To  bridge  this  gap,  NAtional  geospatial  Knowledge-based  land  Survey  of  urban
+HAbitations  (NAKSHA)  Programme  is  sanctioned  to  create  and  digitize  urban  and
+peri-urban  land  records,  offering  an  integrated  solution  that  leverages  modern
+surveying  and  mapping  technologies,  by  Department  of  Land  Resources,
+Government of India since September 2024.
+
+Under  this  proposed  pogramme  the  demarcation  of  government  land,  public  land,
+various utilities like roads, railways, etc., inhabited land in urban and peri urban areas
+would  be  done  using  aerial  surveying  technology  with  the  collaborative  efforts  of
+the  Department  of  Land  Resources  (DoLR),  Ministry  of  Rural  Development  (MoRD),
+Government of India; Ministry of Housing and Urban Affairs (MoHUA), Government of
+India;  Survey  of  India  (SoI),  Dehradun;  State  Revenue  &  Urban  Development
+Department/  Local  Self  Government,  Madhya  Pradesh  State  Electronics
+Development  Corporation  (MPSEDC),  Bhopal,  National  Informatics  Centre  Services
+IncOR (NICSI).
+
+“The  NAKSHA  Pilot  Programme  has  been  initiated  by  the  Department  of  Land
+Resources  in  152  ULBs/Local  Self-Government  across  the  country  with  Survey  of
+India  as  Technical  Partner  which  would  cover  the  aerial  survey  and  feature
+extraction part. The State/UT Governments would complete the field survey, ground
+truthing  and  final  publication  of  urban  and  peri-urban  land  records.  As  of  now  29
+States/UTs are participating in the Pilot Programme with a variable number of Urban
+Local Bodies (ULBs) to a maximum of target per State/UT
+
+Page: 04
+
+ 
+2. Objectives of NAKSHA
+Programme
+
+The  NAKSHA  Programme  is  designed  to  support  urban,  peri-urban  and  regional
+planning  by  generating  and  providing  high-quality,  geospatial  data  to  the
+States/UTs. It is essential to prioritize the creation of land records in urban and peri-
+urban  areas  to  enhance  the  ease  of  living  for  citizens,  streamline  the  urban  land
+records  optimization  and  improve  overall  urban  development  outcomes,  including
+better property tax collection, urban planning and redevelopment. It would also lead
+to ease of business by way of easier access to credits, precise geospatial decisions,
+and  ownership  clarity  etc.  A  key  step  in  this  direction  is  the  creation  of  the  urban
+land  record  system  which  provides  comprehensive  and  reliable  information  for  all
+urban land parcels within ULBs and peri-urban areas in an easily accessible format. 
+
+Given the limitations of existing datasets, the most reliable approach to establishing
+such  a  system  is  to  conduct  a  survey  and  create  a  database  using  the  latest
+technology.  This  process  should  include  robust  safe  guards  by  cross-referencing
+existing  data  bases  and  actively  involving  citizens  through  ground  truthing  and  a
+transparent  process  for  addressing  objections.  This  approach  ensures  accuracy,
+reliability and public trust in the new urban land record system. 
+
+The primary objectives of the NAKSHA Programme are:
+
+a)  Creation  of  urban  land  records:  To  create  spatial  data
+enabled  urban  land  records  system  as  a  comprehensive,
+digitized and accurate database in urban and peri-urban areas
+latest  technologies  and  to  correlate  the  existing
+using 
+digitized town survey records wherever available
+
+b)  Creation  of  Web  GIS  platform:  To  develop  a  user-friendly
+end-to-end  Web  GIS  platform  that  allows  Government  and
+citizens to access urban land records allowing interoperability
+of data across sectors. 
+
+c)  Empower  Urban  Citizens  and  improve  ease  of  living:
+Creation  of  urban  land  records  resulting  in  reduction  of
+disputes,  simplification  of  access  to  urban  utilities 
+like
+electricity, water, telephone, etc and credit facilities.
+
+d)  Better  financial  health  of  urban  local  bodies:  Scientific
+accurate  and  transparent  property  taxation  regime  would
+improve financial health of ULBs.
+Better  Urban  Planning:  Provide  geospatially  accurate  data  to
+support scientific urban planning and disaster resilience. 
+
+e)  Better  Urban  Planning:  Provide  geospatially  accurate  data
+to  support  scientific  urban  planning,  redevelopment  and
+disaster resilience & management. 
+
+Page: 05
+
+3. Scope of Standard
+Operating Procedure (SOP)
+
+outlines 
+
+analysis, 
+
+Standard 
+
+Operating
+This 
+Procedure 
+the
+procedures  for  data  collection,
+and
+processing, 
+dissemination within the NAKSHA
+Programme.  This  SOP  suggests
+the  process 
+for  managing
+geospatial  data  and  creating
+land  records.  However,
+urban 
+variations  as  per 
+regulatory
+frame  work,  data  set  availability
+technological  efficiency
+and 
+outcomes  desirable 
+to  be
+captured in various State/UT and
+at  ULBs  level  would  be  the  core
+of the programme. The key steps
+and components include:
+
+a) Aerial Photogrammetric Data Collection and Ortho Rectified Imagery (ORI) Generation:
+Collecting  geospatial  data  i.e.  establishment  of  Ground  Control  network  and  generating
+Ortho-Rectified Imagery (ORI) using designated technologies.
+
+b)    QA  and  QC:  Ensuring  accuracy  and  consistency  throughout  the  data  acquisition  and
+processing stages of Aerial survey and Feature extraction
+
+c)  Data  Processing  and  Analysis:  Processing  and  analyzing  collected  data  schema  to
+facilitate  urban  land  records  updation  and  data  dissemination  and  as  Map  1  sharing
+processed  data  with  relevant  stakeholders  seamlessly  for  field  survey  and  ground
+validation.  
+
+d)  Field  Survey  and  Ground  Truthing:  Conducting  field  surveys  and  ground-truthing  for
+each  land  parcel  under  the  jurisdiction  of  concerned  Urban  Local  Bodies  (ULBs)  as
+required..
+
+e) Land Record Validation and System Update: Validating existing land records if any, and
+generating updated maps, and uploading the data into the end to end WebGIS Application
+for Urban Land Record Management and publication of Map 2.
+
+f) Final Map Publication: After acceptance or dispute /objections resolution, the final Map 3
+publication of ULBs, containing details of ownership, area etc., of all the land parcels would
+be carried out.
+
+Page: 06
+
+4. Stakeholders, their
+Roles and Responsibilities
+
+Table 4.1: Details of NAKSHA’s component wise activity and responsibility
+
+S.
+No
+
+Component
+
+Activity
+
+Responsibility /
+Implementation by
+
+1
+
+Aerial Survey
+
+Fixation of ULBs boundary for aerial survey with the
+help of satellite imagery and States/UTs ground
+support, establishment of Ground Control Points
+(GCPs), procuring of necessary clearances for
+aircraft/ drone flying, data acquisition, post
+processing generation of Mapping Ortho Rectified
+Imagery (ORI), Ortho mosaic, DEM (DSM & DTM), 3D
+textured model/3D reality model and QA/QC
+
+Survey of India (SoI) through
+Third-Party private agencies for
+selected packages and by three
+different proposed technologies
+including QA/QC.
+
+2
+
+3
+
+Feature
+Extraction
+
+Generation of 2D/3D GIS dataset through feature
+extractions including all buildings and public
+utilities, etc., and generation of topographical layer
+including property markers and QA/QC as per
+standardized schema for the three methdologies. 
+
+Survey of India (SoI) through
+procurement of third-party
+private agencies 
+
+Scanning,
+Digitization &
+Integration of
+existing records
+
+Scanning, digitization of existing records & maps
+and integration of Record of Rights (RoRs) and
+other details details including property tax, layout
+plans, registration deeds etc. in attributes
+
+States/UTs with assistance and
+guidance of Survey of India (As
+per DILRMP norms and
+conditions)
+
+4
+
+Field Survey
+
+Field survey of all land parcels and ground truthing
+of the properties with two permanent staff (per
+team) from Revenue Department and Urban
+Development Department which would be
+provided by the States/UTs.
+Cost of three hired staff including a surveyor,
+helper and a driver with vehicle per team will be
+provided under this Programme.  
+
+States/UTs with their own staff or
+with help of private agencies by
+hiring or as a service. 
+Hired staff (surveyor, helper and
+driver) and vehicles could be
+taken as a service from a third
+party or internally by the
+department concerned.
+
+Quality
+Assurance and
+Quality Control
+
+Generated Land Parcel/Property layer from Field
+Survey and Ground-truthing/ Ground Validated
+data of ownership data and publishing after
+inquiry & dispute resolution
+
+States/UTs with with technical
+assistance of Survey of India
+
+Cloud Space and
+Storage
+
+Cloud Infrastructure, Storage space, SSL, DR,
+Audit, etc., and misc. expenditure as required  
+
+NICSI through NIC DoLR 
+
+5
+
+6
+
+Page: 07
+
+7
+
+IEC
+
+Standard Operating Procedure (SOP), Manual
+Publication, IEC and awareness of all stakeholders,
+equally urban committees  
+
+States/UTs with their own staffs or
+with help of third party agencies
+
+8
+
+Training
+
+Training & Capacity Building, Travel, Exposure
+Visits, Conferences etc.
+
+9
+
+Documentation Documentation, Evaluation & Monitoring etc.
+
+10
+
+Survey
+Equipment
+
+A) GNSS Rovers, Controllers, Hand Held Devices
+and Tablets (FDCs), rugged laptops, ETS GNSS etc.
+
+B) Continuously Operating Reference Stations
+(CORS): Permanent OR temporary. 
+
+DoLR will provide training to senior
+officers and Master trainers with
+assistance of SoI, MPSEDC, COEs; and
+State/UTs will provide training to all
+concerned staff and ULBs based on
+prevailing legal provisions and
+methods at local ATIs/ State
+institutions.
+
+States/UTs through their Nodal
+Department
+
+States/UTs in consultation with SoI
+and DoLR. The Rover could be
+procured or taken as a service from
+third party agencies.
+
+SoI in consultation with States/UTs
+and DoLR, and as required for
+successful implementation of this
+programme.
+
+11
+
+Software
+Development
+
+Development of Web-GIS & Mobile Apps, with
+Portal & Dashboard; Integration of Record of Rights
+(RoRs); Cadastral Maps; ORIs; Property Taxes
+database; Development Authority Layout plans;
+Ground Truthing Database, Hosting, Maintenance,
+Updation and Integration of Data on Web, APIs and
+Software Development along with National/State
+level Cloud Storage
+
+DoLR, States/UTs through MPSEDC
+would develop end end WebGIS
+platform and applications. 
+The software services via Cloud
+infrastructure & storage space will be
+provided by NICSI.
+
+12
+
+National Level IEC, Training, Documentation
+
+National Programme Management Unit (NPMU) & Office
+Establishment
+
+DoLR
+
+DoLR
+
+13
+
+14
+
+State Programme Management Unit (SPMU) & Office
+Establishment for Large & Small States
+
+States/UTs as per norms
+
+15
+
+Miscellaneous / Incidental Charges
+
+DoLR
+
+Page: 08
+
+4.1 Department of Land Resources
+(DoLR), MoRD Govt. of India
+
+Figure 4.1: Stakeholder mapping for implementation of NAKSHA Programme
+
+Page: 09
+
+4.1 Department of Land Resources
+(DoLR), MoRD Govt. of India
+
+a. Provide strategic direction for the integration of land resources data with NAKSHA.
+
+b. Release of funds to SoI, States/UTs, MPSEDC, NICSI and COEs/ATIs for undertaking
+activities under various components of NAKSHA.
+
+c. Establishment of National Programme Management Unit (NPMU) for effective
+coordination, monitoring, implementation of the NAKSHA Programme. 
+
+d. Coordination with SoI for completion of Aerial survey, Feature Extraction, QA/QC and
+creation of MAP-1. 
+
+e. Developing Web-GIS and Mobile application software for monitoring and data
+visualization of field survey activities with support of Madhya Pradesh Electronics
+Development Corporation (MPSEDC), Government of Madhya Pradesh. 
+
+f. Coordinating with National Informatics Centre Services Inc. (NICSI) a company under
+National Informatics Centre, Ministry of Electronics & Information Technology, Government
+of India for providing and procuring IT solutions for NAKSHA’s Cloud Infrastructure and
+Storage Space.
+
+g. Capacity building of stakeholders involved by developing training modules in
+consultation with SoI, MPSEDC, COEs/ATIs and Nodal department of States/UTs.
+
+h. Conducting National IEC involves providing information, education to increase
+knowledge and awareness, and communication to disseminate messages through various
+channels such as newspaper, broadcasting through television, radio, organizing awareness
+camp, social media engagement campaigning etc., and documentation
+
+i. Organizing workshops, symposiums and conferences at the International / National /
+Regional level for sensitizing stakeholders from time to time. 
+
+4.2 States/Union Territories (UTs) Nodal
+Department
+
+a) Selection of Nodal Department for implementing NAKSHA Programme (Revenue/ Urban
+Development/ Local Self Government.
+
+b) Nomination of Nodal officer for day-to-day coordination with DoLR, SoI, ULBs and third-party
+agencies. 
+
+c) Formation of State Level committee (SLC) under the chairmanship of the Chief Secretary for
+overall monitoring, evaluation, release of funds, coordination with Urban Local Bodies (ULBs)
+with support from Nodal department for implementation of NAKSHA Programme.
+
+Representatives from the Board of Revenue, Principal Secretary/Secretary of the
+Departments of Revenue, Registration, Urban Development, Local Self Government,
+Finance, Planning and IT, Survey & Settlement Commissioner/ Director of Land Records, any
+other expert/ Institution as decided by the States/ UTs should be its members. 
+
+Page: 10
+
+State Nodal officer would be the convener of the SLC. 
+
+It is recommended to conduct at least four meetings to monitor and review the NAKSHA
+Programme in a year. 
+
+d) Constitute State Programme Management Unit (SPMU) 
+
+SPMU to be headed by a Senior Govt. officials/as nominated by respective State/UT.
+
+Hiring  experts/consultants  including  Project  Manager  and  sufficient  number  of  GIS
+experts,  as  per  requirement  of  the  States/UTs  within  the  maximum  sanctioned  budget
+as  indicated  in  the  table  below  (eight  experts/consultants  for  large  States  and  four
+experts/consultants for smaller States)
+
+One  time  cost  for  office  establishment  including  procurement  of  computers/  laptops,
+printers, office chair, table, accessories, internet connectivity etc. and monthly cost for
+Manpower support is as per table below:
+
+Category
+
+States/UTs
+
+Human Resource
+Recruitment Cost
+(Monthly)
+
+One time office
+Establishment
+Cost
+
+A (Large
+States)
+
+B (Small
+States)
+
+Andhra Pradesh, Assam, Bihar,
+Chhattisgarh, Gujarat, Haryana,
+Jharkhand, Karnataka, Kerala, Madhya
+Pradesh, Maharashtra, Odisha, Punjab,
+Rajasthan, Tamil Nadu, Telangana,
+Uttar Pradesh, West Bengal (18 States)
+
+Arunachal Pradesh, Goa, Himachal
+Pradesh, Manipur, Meghalaya,
+Mizoram, Nagaland, Sikkim, Tripura,
+Uttarakhand, Andaman and Nicobar
+Islands, Chandigarh, Dadra and Nagar
+Haveli and Daman and Diu,
+Lakshadweep, Delhi, Puducherry,
+Jammu and Kashmir, Ladakh (18
+States)
+
+e)  Role of SPMU:
+
+Rs. 9.5 Lakh (Nine
+lakh fifty
+thousand)
+
+Rs. 8.0 Lakh (Eight
+Lakhs)
+
+Rs. 6.0 Lakh (Six
+Lakhs)
+
+Rs. 5.0 Lakh (Five
+Lakhs)
+
+SPMU  would  assist  in  formulating  strategies,  IEC  plans,  training  and  capacity  building,
+and  overall  documentation  of  the  NAKSHA  Programme  under  the  supervision  of
+concerned State/UT nodal officer.
+
+Page: 11
+
+The  SPMU  team  shall  be  the  focal  point  for  the  NPMU  and  other  stakeholders  for
+implementation of the NAKSHA Programme.
+
+SPMU would assist the Nodal Department in troubleshooting technical issues during the
+implementation phase in consultation with SoI, Third Party Agencies, NICSI, MPSEDC or
+any other agencies as and when required.
+
+SPMU will be participating in all the review meetings scheduled by DoLR along with nodal
+officers. SPMU team members will be responsible for drafting the presentations on the
+progress made by the concerned ULB and share challenges, if any, in consultation with
+the nodal department of the State.
+
+SPMU  will  be  responsible  for  day-to-day  coordination  with  the  field  teams  of  the
+concerned  ULBs,  survey  agencies,  DoLR  and  other  stakeholders  involved  in  the
+implementation of NAKSHA Programme.
+
+Declare  or  notify  Area  of  Interest  (AoI)  of  ULBs  and  assist  in  obtaining  of  required
+clearance. 
+
+f) Handover existing digitized data on record of rights, property tax, cadastral maps, layout
+plans  etc.  in  specified  format  for  integration.  State  nodal  department  or  SPMU  shall  carry
+out the integration with assistance of State/UTs.
+
+g) Collection of ORI and extracted features from the third-party agency of SoI. 
+
+h)  a.Conduct  Quality  assurance  and  Quality  check  (QA/QC)  for  verification  and  report  to
+SoI with any discrepancy. 
+
+i) Constitution and coordinating of adequate number of teams for time bound completion
+of  field  survey  including  hiring/procuring  of  outsourced  staff  and  vehicle  and  providing
+necessary training.
+
+j) Procurement of survey instruments includes Rovers, Tablets/Mobiles, power back up and
+required  software  as  per  technical  specification  including  RoR  warranty,  AMC  cost  etc.  as
+per Govt. norms and procedures.
+
+k)  Report  generation  and  final  certification  of  every  land  parcel/  building/  plot  shall  be
+done by the designated officer of the State/UT at ULBs or SPMU level. 
+
+l)  The  State/UT  nodal  department  would  utilize  the  web  GIS  application  developed  by
+Madhya  Pradesh  Electronics  Development  Corporation  (MPSEDC),  Government  of  Madhya
+Pradesh for field survey and ground verification. 
+
+m) The State/UT would document the process followed and challenges faced in field survey
+activity, Web GIS application and ORIs data etc. and submit it to DoLR regularly for urgent
+resolution. 
+
+n) State should constitute a Supervisory Team at all the ULBs. The team may include District
+Commissioner or his representative, Municipal commissioner or his representative, District
+land records officer, and/or other officers as determined by State Level Committee (SLC)
+
+Page: 12
+
+4.3 Survey of India and Third-party
+agencies
+
+a)  The  Survey  of  India  (SoI)  will  hire  the  third-party  agencies  for  the  aerial  survey  and  feature
+extraction, generation of Ortho Rectified Imageries (ORI) using three technologies i.e., 2D Nadir,
+3D Oblique, 3D obliques + LiDAR and creation of 2D/ 3D virtual and reality model. 
+
+b)  The  Area  of  Interest  (AoI)  for  aerial  survey  shall  be  jointly  fixed  by  States/UTs  Nodal
+Department, ULBs and the SPMU.  SoI will assist technically in fixing the boundary of Towns/ULBs.
+
+c)  The  Survey  of  India  (SoI)  through  their  Regional  Offices  and  Geospatial  Directorates  will  also
+ensure  and  certify  the  quality  of  ORIs,  features  extracted  and  GIS  database  delivered  by  third
+party  agencies.  The  certified  data  would  be  handed  over  to  the  State/UT  Nodal  department,
+SPMU for field survey. 
+
+d) The delivered data by SoI may also be verified by the States/UTs Nodal department and SPMU
+level and if there is any mismatch or degradation of quality of data, the same shall be rectified by
+SoI through third-party agencies and resubmit the rectified data to concerned State/UT/SPMU. 
+
+e)  SoI  shall  design  the  training  and  capacity  building  modules,  videos,  tutorials  for  field  survey
+activities and use of aerial survey data for States/UTs. 
+
+g)  SoI  shall  hand  hold  the  third-party  agencies,  State  /UT  Nodal  department,  SPMU,  MPSEDC  in
+any technical challenge faced during aerial and field survey activities.
+
+4.4 Madhya Pradesh State Electronic
+Development Corporation (MPSEDC)
+
+MPSEDC  Ltd.,  is  a  Government  of  MP  Undertaking.  The  MPSEDC  shall  develop  a Web  and  Mobile
+GIS  (Geographic  Information  System)  application  combining  GIS  data  with  modern  web  and
+mobile  technologies.  This  application  will  provide  users  with  tools  to  visualize,  analyze,  and
+interact with spatial information captured during the aerial and field survey on Web and mobile
+based platform with following responsibilities:
+
+a)  Customizing  the  Web-GIS  application  as  per  the  existing  system  /  requirement  of  all  the
+State/UTs.
+
+b) On-boarding the users into the Web-GIS system and User Role Management Integration (Web)
+
+c) Assisting Survey of India (SoI) in uploading the ORI, feature extracted data base over the Web-
+GIS platform. 
+
+d) Upload data utility (Desktop)
+
+e) Download and Data Sync Module (Mobile & Web)
+
+f) Ground Truthing and Data Verification Module (Mobile & Web)
+
+g) Merge/Split Module (Mobile & Web)
+
+h) Record of Rights (RoR) Module (Mobile & Web)
+
+i) Survey Data Publication Module (Web)
+
+j) Final Publication and Record Update module
+
+k) Dashboard for status monitoring
+
+l)  Imparting  training  to  State  agencies  on  use  of  NAKSHA  GIS  portal  and  operational  manual
+onsite and offsite
+
+m) Creation of user Manual and Videos
+
+n) Hand Holding and post implementation support
+
+Page: 13
+
+4.5 National Informatic Centre Services
+Inc (NICSI)
+
+National  Informatics  Centre  Services  Inc.  (NICSI)  was  established  as  a  company  under
+National Informatics Centre, Ministry of Electronics & Information Technology, Government
+of India for providing and procuring IT solutions for multiple e-governance projects.
+
+For NAKSHA, the NICSI is providing the cloud-based architecture, data storage, security and
+set up for maintaining and hosting the Web-GIS platform.
+
+4.6 Centre of Excellence (CoE) &
+Administrative Training Institute (ATI)
+
+a)  a.Providing  necessary  training  and  support  to  respective  State/UTs  for  NAKSHA
+Programme  and  also  for  DILRMP  programme,  five  Centre  of  Excellence  (CoE)  have  been
+established. The list of COEs is  as follows:
+
+1.
+
+2.
+3.
+4.
+5.
+
+ Centre for Rural Studies, Lal Bahadur Shastri National Academy of Administration (CRS-
+LBSNAA), Mussoorie, 
+ Mahatma Gandhi State Institute of Public Administration (MGSIPA), Chandigarh, 
+ Administrative Training Institute, Mysore, 
+ Assam Survey and Settlement Training Institute, Guwahati, and 
+ Yashwant Rao Chavan Academy for Development Administration (YASHADA) Pune 
+
+Page: 14
+
+5. Activities involved in
+NAKSHA Programme
+5.1 MAP-1 – Survey and Mapping including
+Feature Extraction
+
+Figure: 5.1- Flowchart for Map-1
+
+Page: 15
+
+The  one-year  Pilot  Programme  NAKSHA  would  be  implemented  in  152  cities  across  the
+country  with  Survey  of  India  (SoI)  as  a  Technical  Partner  under  Digital  India  Land  Records
+Modernization  Programme  (DILRMP).  It  is  also  propossed  that  based  on  the  learnings  and
+outcomes  of  the  pilot,  a  larger  Programme  covering  all  the  cities  and  towns  would  be
+implemented across the country in a phase wise manner. 
+
+The cities where the pilot Programme NAKSHA would be carried out have been selected by
+the  DoLR  based  on  the  proposals  submitted  by  the  States  and  UTs.  From  26  States  and  3
+UTs  for  more  than  220  ULBs  were  proposed  for  the  pilot.  After  detailed  consultation  with
+concerned  States/UTs, the DoLR shortlisted 152 ULBs for the pilot phase. Out of 152 ULBs,
+128 ULBs have been sanctioned for Aerial Survey under NAKSHA Project and for others the
+ORIs are available with the State/UTs. The ULBs received from the States/UTs are based on
+the categories (a) A typical old city expanding horizontally, (b) A newly developed planned
+city with Peri-Urban areas, and (c) A city growing vertically at a rapid pace. Then selected
+ULBs details are shared to SoI.
+
+5.2 Survey of India (SoI)
+
+The  SoI  is  responsible  for  acquisition  of  high-resolution  imagery,  generation  of  Ortho
+Rectified  Imagery  (ORI)  with  the  5cm  Ground  Sample  Distance  (GSD),  Digital  Elevation
+Model  (DEM)  with  both  DSM  and  DTM,  3D  reality  Model,  2D/3D  GIS  dataset.  The  SoI  is  also
+responsible for the standardization of the process of data acquisition across the country by
+aircraft/drone  survey  with  all  three  methods  and  sensors  adopted  for  NAKSHA,  image
+processing techniques and other salient features etc.
+
+ Based on three technologies  being adopted, Survey of India has categorized the 128 ULBs
+into 17 packages. The Survey of India through RFP and bidding would select the third-party
+agencies  to  conduct  the  aerial  survey  followed  by  feature  extraction  based  on  technical,
+administrative and financial evaluation and the sehema. 
+
+5.3 Third-Party Agency
+
+a)  Conducting  aerial  surveys  using  aerial  platforms  (manned/unmanned)  with  three
+technologies  for  data  acquisition:  Nadir  Sensor,  Oblique  Angle  Camera  Sensor  (1  Nadir  +  4
+Oblique Cameras) and Oblique Angle Camera + LiDAR Sensor as per the package awarded
+by SoI.
+
+b)  Processing  and  delivering  accurate  geospatial  data  such  as  orthorectified  images,
+elevation  models,  3D  reality  Model,  2D/3D  GIS  dataset  and  other  visible  topographical
+features.
+
+c)  Ensuring adherence to defined technical standards as fixed by Survey of India (SOI) and
+project timelines.
+
+Page: 16
+
+5.4 Methodologies adopted for Aerial
+Data Acquisition
+
+5.4.1 Nadir (Vertically Oriented) Imaging:
+
+Nadir imaging refers to capturing images directly downward sensors, perpendicular to the
+ground. The camera's optical axis is aligned vertically with respect to the earth's surface.
+
+Characteristics:
+
+Provides a "top-down" view of
+the ground.
+Ensures minimal perspective
+distortion, making it ideal for
+orthoimage generation.
+Best suited for mapping flat
+terrain and capturing large
+areas efficiently.
+
+Applications:
+
+Orthoimage generation for
+accurate mapping.
+Urban planning and cadastral
+surveys.
+Land use classification and land
+use change monitoring.
+
+Figure 5.2: Nadir Camera
+(Source: www.phaseone.com) 
+
+5.4.2 Oblique (Angled) Imaging:
+
+Oblique  imaging  involves  capturing  images  at  an  angle  (typically  between  30°  to  60°  from
+vertical)  rather  than  straight  down.  These  images  provide  a  perspective  view  of  features,
+including the sides of buildings and other vertical structures.
+
+Characteristics:
+
+Provides a "top-down" view of
+the ground.
+Ensures minimal perspective
+distortion, making it ideal for
+orthoimage generation.
+Best suited for mapping flat
+terrain and capturing large
+areas efficiently.
+
+Applications:
+
+Orthoimage generation for
+accurate mapping.
+Urban planning and cadastral
+surveys.
+Land use classification and land
+use change monitoring.
+
+Figure 5.3: oblique-camera
+
+(Source: www.mavdrones.com)          
+
+Page: 17
+
+5.4.3 Combined Oblique + LiDAR Systems:
+
+This  system  integrates  oblique  cameras  with  LiDAR  (Light  Detection  and  Ranging)  sensors
+to  capture  both  visual  imagery  and  precise  elevation  data.  LiDAR  uses  laser  pulses  to
+measure distances and generate high-resolution 3D point clouds.
+
+Characteristics:
+
+Provides both textural detail (from
+oblique imagery) and accurate
+elevation data (from LiDAR). 
+Highly effective for mapping
+dense vegetation or rugged
+terrains where photographic
+imagery alone may not be
+sufficient.
+Enables the generation of Digital
+Surface Models (DSMs) and 3D
+models with enhanced accuracy.
+
+Applications:
+
+Detailed 3D city modelling and
+infrastructure planning.
+Disaster management,
+including landslide risk
+assessment and flood
+modelling.
+
+Figure 5.5: Combined Oblique + LiDAR
+Systems 
+(Source: Leica CityMapper Airborne
+Hybrid Sensor)
+
+  Feature
+
+  Nadir Imaging
+
+Figure 5.4: LiDAR Sensor
+(Source: integraldrones.com)
+
+  Oblique Imaging
+
+  Oblique + LiDAR Systems
+
+Orientation
+
+Vertical
+
+Angled  
+
+Angled
+  + Laser Scanning
+
+  Coverage  
+
+  Top-down
+  view
+
+  Side
+  and angled views
+
+  Comprehensive
+  (texture + elevation)  
+
+  Data Type  
+
+  2D
+  imagery
+
+  2D
+  imagery
+
+  2D
+  imagery + 3D elevation
+(LiDAR)
+
+  Applications
+
+  Mapping,
+  agriculture
+
+  3D
+  modelling,
+visualization
+
+  Advanced
+  3D mapping, terrain
+analysis
+
+Page: 18
+
+  
+  
+  
+  
+5.5 Fixing Area of Interest (AOI)
+
+1.
+
+Initial shape file of the Area of Interest (AoI) shall be provided by the States/UTs to SoI
+
+and the same shall be shared with the third-party agencies
+
+2.
+
+The Third-party agencies shall approach the States/UTs to fix the AoI 
+
+3.
+
+The  Urban  Local  Bodies  (ULBs)  &  State  Project  Management  Units  (SPMU)  shall  provide
+
+localized 
+
+insights  to  refine  the  AOI,  considering  ground-level  realities  such  as
+
+infrastructure, boundaries, or restricted zones and ensure AoI reflects the accurate on-
+
+ground conditions.
+
+4.
+
+Use  advanced  geospatial  tools  and  techniques  (DGPS,  GNSS  Receivers,  Continuously
+
+Operating Reference Stations (CORS, and GIS software) to define and refine the AOI.
+
+5.
+
+Validate the AOI's feasibility based on survey technology and operational requirements.
+
+This  collaborative  approach  ensures  the  AOI  is  accurate,  practical,  and  fit  for  aerial
+
+surveying purposes.
+
+6.
+
+The  detailed  work  plan  of  aerial  survey  shall  be  submitted  to  SoI  and  States/UTs  for
+
+approval by the third party agencies.
+
+7.
+
+25%  of  the  peri-urban  areas  depending  upon  the  built-up  by  the  ULBs  beyond  the  ULB
+
+shapefile may also be decided before aerial flying.
+
+Figure 5.6: Continuously Operating Reference Stations (CORs)
+[Source: en.harxon.com/about/news_detail/1222]
+
+Page: 19
+
+Figure 5.7: DGPS base / RTK Survey for 
+Ground Control Points (GCP’s)
+[Source: prashantsurveys.com/dgps-base-rtk-
+survey-for-ground-control-points.php]
+
+Figure-5.8: DGPS Survey
+(Source: S.K Land Surveyors, Haryana)
+
+Figure-5.10: A sample of DGPS GCPs in AOI
+DGPS Ground Control Point Survey Service
+
+Figure-5.9: Marking GCP
+(Source: dronitech.com)
+
+Figure-5.11: Final Area of Interest (AoI)
+(Source: DoLR – Arunachal Pradesh)
+
+Page: 20
+
+5.6 Fixing Flight Plan
+
+The flight plan shall be prepared by the SoI’s third party agency as per the following
+
+1.
+
+ Define Survey Parameters: Set the Area of Interest (AOI) boundaries and altitude based
+
+on  project  requirements  and  terrain.  Specify  image  resolution  (e.g.,  5  cm  GSD)  and
+
+overlaps (e.g., 70% - 80% forward, 60% - 70% side).
+
+2.
+
+Assess Airspace Restrictions: Verify legal compliance, restricted zones, and permissions
+
+from the Directorate General of Civil Aviation (DGCA).
+
+3.
+
+Drone/Flight  Path:  Use  geospatial  tools  to  create  efficient  flight  paths  with  minimized
+
+gaps. Optimize coverage for data acquisition.
+
+4.
+
+Validation:  Approve  the  plan  through  SoI,  State/UTs,  and  local  authorities.  Account  for
+
+weather and field conditions.
+
+Table 5.2: Task and Responsibility for flight plan
+
+Task 
+
+Responsibility 
+
+Prepare flight plan 
+
+SoI and third-party Agency 
+
+Initial approval 
+
+Survey of India (SOI) 
+
+Aviation clearance 
+
+Directorate General of Civil Aviation (DGCA) 
+
+On-field approval 
+
+States/UTs & ULBs/District Administration 
+
+Table 5.3: Sample overlaps for methodology during flight plan
+
+Methodology  
+
+Forward Overlap
+
+Side
+Overlap
+
+Key Parameter  
+
+Flying Pattern  
+
+Nadir Camera  
+
+70–90% 
+
+60–70%  
+
+High overlap,
+fixed altitude  
+
+Cross Grid  
+
+Oblique
+Cameras (4 + 1)
+
+85–90%  
+
+70–80%
+
+Multiple angles,
+higher altitude  
+
+Longitudinal
+(Single Grid)
+
+Oblique + LiDAR  
+
+80–85%  
+
+60–70%  
+
+Dense point
+cloud, multi-pass
+for shadows
+
+Longitudinal
+(Single Grid)
+
+Page: 21
+
+Figure-5.12: Sample of Single, double and circular surveys designed flight paths in
+data acquisition. 
+(Source: www.researchgate.net) 
+
+Figure-5.13: Sample flight plan to understand side & front overlap to get Nadir images 
+(Source: www.jouav.com) 
+
+5.6.1 Rationale in flight plan:
+
+a. High overlap ensures the generation of distortion-free ortho-rectified imagery.
+
+b. Balance altitude based on GSD requirements (e.g., 5cm GSD).
+
+c.  However,  based  on  terrain  condition,  tall  building,  trees,  power  lines  or  windmills,  the
+
+above    conditions of overlaps, flights patterns may change
+
+Page: 22
+
+5.7 Ortho Rectified Imagery (ORI)
+
+a.  Ortho Rectified Imagery is a geo-referenced image of the Earth’s surface from top view.
+
+b.  Raw aerial imagery cannot be used in GIS until processed by Photogrammetry technique to
+
+generate accurate georeferenced images, referred to as orthorectified images or orthoimages.
+
+c.  Raw photos are from an inclined angle. ORIs are generated from Raw photos to build Images
+
+from the Top View.
+
+d.   Any object's true shape and location can only be determined from ORI.
+
+Figure 5.14: Difference between raw image and orthorectified image (ORI)
+
+e.  ORI creation involves transforming raw aerial imagery into a geometrically corrected format
+
+that accurately represents the Earth's surface. This process removes distortions caused by
+
+camera tilt, terrain elevation, and sensor irregularities.
+
+f.  ORI enables to have details of shadow area and corrects the distortion for correction of geo-
+
+location and measurements as in the raw images.
+
+g.  Georeferencing: Involves Aligning imageries with geographic coordinates using GPS and
+
+Ground Control Points (GCPs).
+
+h.  Digital Elevation Model (DEM) Integration: To adjust for terrain-induced distortions.
+
+i.  Orthorectification Process involves application of mathematical models to correct image
+
+distortions by using specialized software like ERDAS IMAGINE, ArcGIS, or QGIS or any other
+
+required software.
+
+j.  Quality Assurance: Validate the output against reference datasets for accuracy (e.g., RMSE
+
+checks)
+
+Page: 23
+
+5.8 Quality Check
+
+Survey of India (SoI) to do quality check to ensure that their empaneled agency provide the
+
+ORIs/DEMs/3D Models as per the standards mentioned in the Request For Proposal.
+
+5.8.1 Checking Quality of ORI
+a.  Checking the quality of orthorectified imagery is crucial to ensure its accuracy and
+
+usability for mapping, analysis, and other geospatial applications. Steps to evaluate the
+
+quality systematically:
+
+b.  Verify that the features (e.g., roads, buildings, rivers) align correctly with a trusted
+
+reference map or other high-accuracy datasets.
+
+c.  Look for visible seam lines, distortions, or artifacts that may indicate poor stitching or
+
+processing of ORI.
+
+d.  Check for uniformity in image brightness, contrast, and color balance across the entire
+
+dataset.
+
+e.  Compare control points from the imagery with ground control points (GCPs) from a
+
+reliable source, such as survey data or GPS measurements.
+
+f.  Measure the Root Mean Square Error (RMSE) to quantify positional accuracy. Ideally, the
+
+RMSE should be within the acceptable tolerance i.e. 2 cm (as per RFP)
+
+g.  Overlay the imagery on a known base layer (e.g., cadastral maps, GIS layers) and validate
+
+the alignment of features (buildings, roads) with the base layer.
+
+h.  Check if the Ground Sampling Distance (GSD) matches the project requirements i.e. 5
+
+cm.
+
+i.  Verify details about the satellite or sensor that captured the imagery.
+
+j.  Evaluate the clarity of edges and features (e.g., roads, buildings) using zoomed-in views.
+
+k.  Test the imagery against scale-specific benchmarks to ensure the imagery meets
+
+required map scales for its intended use.
+
+l.  For tiled imagery, ensure seamless integration without misalignment or mismatched
+
+features at tile boundaries
+
+m.  Cross-check features on the imagery against field observations using check points
+
+(preferably pre-pointed) given by using SoI’s CORS in Network Real Time Kinematic (NRTK)
+
+positioning mode for drone data validation.
+
+5.8.2 Checking Quality of extracted features
+
+Compare the spatial location of extracted features i.e. Road, Building, Land parcel, 3D files
+
+with high-accuracy reference dataset.
+
+a.   Ensure extracted features align with ORI
+
+b. Verify that attribute data (e.g., name, type, classification) matches the real-world
+
+characteristics of the feature.
+
+c.  Ensure no missing or incorrect attribute values and validate attributes against
+
+predefined standards or schemas.
+
+Page: 24
+
+d.  Ensure that all the visible features like land parcels, building footprints, roads, water
+
+bodies etc. within the area of interest are extracted.
+
+e.  Use overlays to identify missing features when compared to reference datasets
+
+f.  Confirm all mandatory attributes are populated for each feature.
+
+g. Check for overlapping polygons, duplicate features, or gaps between polygons.
+
+h.  Validate connectivity for line features (e.g., road or river networks).
+
+i.  Ensure polygons are closed, lines are not self-intersecting, and points are not duplicated.
+
+j. Compare 3D points (X, Y, Z coordinates) with ground control points (GCPs) or a trusted
+
+reference dataset.
+
+k. Validate the relative height of features (e.g., buildings on terrain) against a Digital
+
+Elevation Model (DEM).
+
+l. Test the file in the intended software environment (e.g., QGIS, Blender, AutoCAD) to
+
+confirm usability.
+
+m. Render the vector file in 3D visualization software to identify anomalies like misplaced
+
+features, distorted geometries, or gaps.
+
+n.  Verify that the point density (e.g., points per square meter) meets project specifications.
+
+o.  Ensure uniform distribution of points across the area of interest; detect gaps or
+
+clustering.
+
+p.  Ensure all areas of the target region are covered without omissions.
+
+q.  Assess the accuracy of classified points (e.g., ground, vegetation, buildings, water,
+
+noise).
+
+r.  Compare classified layers against reference datasets or manually inspect sections of the
+
+point cloud
+
+s. Ensure features are consistently classified across the dataset, with no misclassification
+
+(e.g., buildings classified as vegetation).
+
+t. Verify flight parameters such as altitude, speed, scan angle, and overlap meet
+
+specifications
+
+u. Confirm that metadata includes processing details (e.g., filtering methods, classification
+
+algorithms).
+
+5.9 Deliverables by Third-Party Agencies 
+to SoI
+
+a.  Refined AOI and buffer area in vector file (GIS OSC support format)
+
+b.  Detailed Flight plan with overlap details used during Data acquisition (All output
+
+deliverables with Projection & Datum-UTM & WGS-84.)
+
+c.  Digital True Ortho-imagery (R, G, B) or ORI of 5cm GSD or better in. GEOTIFF format.
+
+d.  Digital Stereo Pair Images (R, G, B) of 5cm GSD or better in. GEOTIFF format.
+
+e. Horizontal Accuracy of Ground Control Points is to be 5cm RMSE or better and Check
+
+Points (duly processed) provided/used for Data Acquisition & Processing with descriptions
+
+and sketches.
+
+Page: 25
+
+f.  DEM/DSM/DTM - Processed Digital Elevation data of 25cm vertical accuracy RMSE 
+
+(for Indian vertical datum) at regular spacing of 0.50 meter in GEOTIFF and ASCII format.
+
+g.  Raw data captured by various sensors and instruments including camera calibration
+
+certificate, .CAM files etc.
+
+h.  All topographical 2D layers and vector layers including all buildings and public utilities,
+
+etc to generate 2D Property layer based on topographical markers in shape file format as
+
+well as in open format for geospatial information such as geo package etc.
+
+i.  City/Town Level of Detail (LoD)-2 detailing is to be realized for creating 3D city mesh & 3D
+
+vector Model. For each building or structure, the geometrically simplified external structure
+
+should be depicted through horizontal or vertical outer surfaces with vertical distribution of
+
+space (i.e. floors), along with simplified roof structures and permanent rooftop structure,
+
+based on topographical markers. This shall apply to buildings and other structures such as
+
+Roads, Bridges, Flyover, Tunnels, Railways, Mono, Metro Street lights, Traffic signals, Water
+
+bodies, Trees, Landscapes, Open spaces, Airports, Gardens, Slum and all other features
+
+having height with reference to Aerial data complying with LoD-2 specifications. All
+
+topographical 3D vector layers including all buildings and public utilities, etc. to generate 3D
+
+Property layers based on topographical markers in open file formats such as City GML
+
+format etc.
+
+j.  LiDAR data Processed DEM/DSM/DTM, 3D textured model/ 3D realty Model; and
+
+Generation of 3D GIS Dataset through feature extraction including all buildings and public
+
+utilities, etc. to generate 3D Property layer based on topographical markers. 3D urban data
+
+models should be delivered in LAS, LAZ, .OBJ, FBX, or .3DS format. All softcopy deliverables
+
+and raw data will be delivered to SOI.
+
+k.  All salient reports generated including Survey report, Flight Plans, Photo-index, Aerial
+
+Flying Reports, AT (Aerial Triangulation) report, Block file, generation of 3D mesh model,
+
+QA/QC reports (QCRs), etc.
+
+5.10 Deliverables by Survey of India to
+States/UTs 
+
+5.10.1 TECHNOLOGY-1
+
+Aerial (manned/ unmanned) Data Acquisition using Nadir Camera
+
+a.  Digital True Ortho-imagery (R, G, B) or ORI of 5cm GSD or better in GEOTIFF format.
+
+b.  Digital Stereo Pair Images (R, G, B) of 5cm GSD or better in. GEOTIFF format.
+
+c.  Horizontal Accuracy of all output deliverables is to be 10 cm RMSE or better.
+
+d.  Horizontal Accuracy of Ground Control points is to be 5 cm RMSE or better.
+
+e.  Processed Digital Elevation Model (Bare Earth) data of 25cm vertical accuracy
+
+f.  All Ground control points (GCPs) & Check Points (duly processed) provided/used for Data
+
+Acquisition & Processing with descriptions and sketches.
+
+Page: 26
+
+g.  Processed Digital Surface Model (DSM).
+
+h.  All topographical 2D (using a. ORI and b. digital stereo images) vector layers including 
+
+all buildings and public utilities, etc. to generate 2D Property layer (using a. ORI and b. digital
+
+stereo images) based on topographical markers in shape file format as well as in open
+
+format for geospatial information such as geo package etc.
+
+5.10.2 TECHNOLOGY-2
+
+Aerial (manned/ unmanned) Data Acquisition using Oblique Angle (1 Nadir +
+4 Oblique)
+
+a.  All deliverables mentioned in TECHNOLOGY-1 for Nadir (5.10.1. a to h)
+
+b.  City/Town Level of Detail (LoD)-2 - For each building or structure, the geometrically
+
+simplified external structure should be depicted through horizontal or vertical outer
+
+surfaces with vertical distribution of space (i.e. floors), along with simplified roof structures
+
+and permanent rooftop structure, based on topographical markers. This shall apply to
+
+buildings and other structures such as Roads, Bridges, Flyover, Tunnels, Railways, Mono,
+
+Metro Street lights, Traffic signals, Water bodies, Trees, Landscapes, Open spaces, Airports,
+
+Gardens, Slum and all other features having height with reference to Aerial data complying
+
+with LoD-2 specifications.
+
+c.  All topographical 3D vector layers including all buildings and public utilities, etc to
+
+generate 3D Property layers based on topographical markers in open file formats such as
+
+City GML format etc.
+
+5.10.3 Technology-3
+
+Aerial (manned/ unmanned) Data Acquisition using Oblique Angle (1 Nadir +
+4 Oblique) Camera and LiDAR. 
+
+a.  All deliverables mentioned in TECHNOLOGY-1 for Nadir (5.10.1 a to h) and TECHNOLOGY -
+
+2 for Oblique (5.10.2. b to c)
+
+b.  LiDAR Data Processed Digital Elevation data of 25 cm or 20 cm vertical accuracy RMSE
+
+(for Indian vertical datum) at regular spacing of 0.5 meter– called DEM in GEOTIFF and ASCII
+
+format.
+
+c.  LiDAR data Processed Digital Elevation data (Bare Earth Model) of 25 cm or 20 cm vertical
+
+accuracy RMSE (for Indian vertical datum) at regular spacing of 0.5 meter– called DTM in
+
+GEOTIFF and ASCII format.
+
+Page: 27
+
+5.11 Training 
+
+a.  The selected bidders will provide training to the State/ULB teams (on how to use and
+
+interpret the delivered data and models, along with a formal handover of all project
+
+materials)
+
+b.  State/UT must ensure the participation of designated officers in the training to be
+
+provided by selected bidders.
+
+5.11.1 Post-Delivery Support:
+
+a.  The selected bidders/service provider will provide technical hand holding support to the
+
+State/ City ground truthing team.
+
+b.  If any issue is noticed in data quality, it must be communicated to SOI by the concerned
+
+State/ULB
+
+5.11.2 Quality Assurance:
+
+The SoI shall review and certify the quality of all the processed data to ensure accuracy and
+
+consistency.
+
+5.11.3 Data Sharing and dissemination:
+
+The SoI shall upload all the approved data (ORIs and extracted features) to the Web-GIS
+
+portal developed by MPSEDC. The same data shall be disseminated to relevant stakeholders
+
+including Revenue/Urban Development/Local Self Government Departments, ULBs, and
+
+other relevant departments of concerned States/UTs by providing login access at the
+
+WebGIS platform.
+
+5.11.4 Validation:
+
+Validate findings with reference to ground truth data will be final and the same will be
+
+updated and approved.
+
+Page: 28
+
+6. MAP-2:Field Survey
+and Ground Truthing
+6.1 Field Survey of Land Parcel
+
+The field survey of land parcels/property boundary and cadastral information in urban and
+
+peri-urban  areas  is  crucial  for  ensuring  legal  clarity,  effective  governance  and  sustainable
+
+development. It plays a key role in resolving ownership disputes and updating land records.
+
+In  a  country  with  outdated  records,  fragmented  landholding  and  complex  inheritance
+
+systems, field surveys provide the foundation for digital transformation, sustainable growth
+
+and efficient land use. Conducting a field survey of a land parcel involves systematic steps
+
+to gather accurate data about the land's location, size, shape, boundaries and features.The
+
+input  for  Map  2  i.e.  Field  Survey  and  Ground  Truthing  is  an  output  of  Map-1.  In  Map-1,
+
+Boundary  layers  are  to  be  extracted  based  on  topographical  markers.  Where  aerial  data
+
+acquisition is not being done under NAKSHA project, the already available data (ORIs) with
+
+respective states will act as input for Map -2. In Map -2, these layers will be ground validated
+
+and  field  survey  will  be  conducted  for  ascertaining  land  parcel/property  boundaries  along
+
+with attribute data collection related to Cadastral information.
+
+a.    In  most  cases  the  property  parcel/boundary  will  follow  a  topographical  feature  like
+
+boundary  wall,  fences,  common  junctions  of  adjacent  buildings,  hedges,  bunds,  etc.  Such
+
+features will be visible in the hard/ soft copy of Map/ORI generated as the output of MAP-1.
+
+The same can be confirmed on the ground by field survey team and traced as part of land
+
+parcel/property boundary layer.
+
+b.    Some  portion  of  the  land-parcel/  property  boundary  will  not  be  visible  in  the  Map/ORI
+
+taken as input for Field Survey i.e. Map-2. These missing boundary vertices/portions will be
+
+surveyed on the ground using precise instruments like GNSS Receivers (also known as GNSS
+
+Rovers), Electronic Total Station integrated with GNSS, Laser Range Finder, etc. depending
+
+on the site conditions and availability of the instruments with States/UTs.
+
+c.    All  field  survey  activities  can  be  carried  out  by  using  field  devices  like  survey  grade  (i)
+
+GNSS Receivers (also known as GNSS Rovers) in NRTK/Static Mode integrated with/without
+
+field  data  collector  connected  to  Central  Database  through  an  enterprise  GIS  Server  in
+
+online/offline mode, (ii) ETS GNSS etc. depending on the terrain conditions and availability
+
+of the instruments with States/UTs.
+
+d.  All field survey activities can be carried out by using GNSS Rovers, Real-Time Kinematic
+
+(RTK)  positioning  GPS,  Electronic  Total  Station  (ETS)  etc.  depending  on  the  terrain
+
+conditions and availability of the instruments with States/UTs.
+
+Page: 29
+
+6.2 Global Navigation Satellite System
+(GNSS) Rovers
+a.  GNSS Receivers (also known as GNSS Rovers) are devices that use the Global Navigation
+
+Satellite  System  (GNSS)  to  determine  precise  geographic  locations  on  Earth.  These  are
+
+widely  used  in  surveying  &  mapping,  agriculture,  construction,  and  other  applications
+
+requiring high-accuracy positioning. GNSS rovers receive signals from multiple satellites in
+
+constellations  like  GPS  (USA),  GLONASS  (Russia),  Galileo  (Europe),  and  BeiDou  (China).
+
+These  satellites  transmit  signals  with  information  about  their  location  and  the  time  the
+
+signal  was  sent.  By  receiving  signals  from  at  least  four  satellites,  the  rover  calculates  its
+
+position  using  a  process  called  triangulation.  The  distance  to  each  satellite  is  measured
+
+based on the time it takes for receiving the signal to the rover. 
+
+b.    In  standalone  mode,  the  coordinates  obtained  from  GNSS  observations  are  burdened
+
+with  many  errors  like  Satellite  Clock  and  orbit  error,  Ionospheric  delay  and  Tropospheric
+
+delay,  Receiver  Noise,  Multipath  and  Receiver  Clock  error.  Due  to  the  above  errors  the
+
+coordinates obtained are inaccurate and need to be corrected before use. To minimize the
+
+effect  of  these  errors,  the  GNSS  data  of  observation  points  needs  to  be  processed  with
+
+reference to some known reference stations whose coordinates are accurately known to us.
+
+The  reference  stations  are  of  two  types  which  includes  CORS  Network  established  by  SOI
+
+(Active  Network  of  Reference  Stations)  and  SOI’s  GCPs  (Passive  Network  of  Reference
+
+Stations)
+
+c.    The  positioning  obtained  from  the  GNSS  receiver  collects  satellite  signals  and  receives
+
+the  correction  data  from  the  reference  station  in  real-time  through  a  communication  link.
+
+By  applying  these  corrections  to 
+
+its  raw  GNSS  measurements,  the  rover  achieves
+
+centimeter-level positional accuracy.
+
+6.2.1 Key Component of GNSS Rovers
+
+At 
+
+its  core 
+
+is  the  GNSS  Receiver,  which  processes  signals  from  multiple  satellite
+
+constellations (e.g., GPS, GLONASS, Galileo, BeiDou) to determine theReceivers (also known
+
+as  GNSS  Rovers)’s  location.  This  is  paired  with  a  high-performance  antenna  that  ensures
+
+clear  and  reliable  signal  reception,  even  in  challenging  environments  like  urban  areas  or
+
+dense  forests.  A  data  collector  acts  as  the  interface,  storing  and  processing  positional
+
+information and often running software for real-time mapping and analysis. To achieve high
+
+accuracy,  GNSS  Receivers  (also  known  as  GNSS  Rovers)  also  feature  a  communication
+
+module, which connects to CORS correction services via radio or cellular networks, enabling
+
+techniques 
+
+like  Network  Real-Time  Kinematic  (NRTK)  for  centimeter-level  precision.
+
+Additionally,  these  systems  are  ruggedized  for  durability,  with  weather-resistant  casings
+
+and ergonomic designs for fieldwork. Together, these components enable GNSS Receivers
+
+(also  known  as  GNSS  Rovers)  to  deliver  reliable,  precise,  and  efficient  solutions  for  a  wide
+
+range of applications
+
+Page: 30
+
+Figure 6.1: GNSS Rover and its components
+
+6.3 Real-Time Kinematic (RTK)
+positioning GPS
+
+Real-Time  Kinematic  (RTK)  GPS  is  a  high-precision  positioning  system  that  enhances  the
+
+accuracy  of  standard  GPS  signals  by  using  carrier-phase  measurements  and  corrections
+
+from  a  reference  station.  It  consists  of  a  reference  station  and  a  rover  unit.  In  reference
+
+station,  a  stationary  GPS  receiver  at  a  known  location,  continuously  monitors  satellite
+
+signals  and  calculates  correction  data  by  comparing  its  actual  position  to  the  satellite-
+
+provided  position.  The  rover  unit,  which  is  a  mobile  GPS  receiver,  collects  satellite  signals
+
+and  receives  the  correction  data  from  the  reference  station  in  real-time  through  a
+
+communication link. By applying these corrections to its raw GPS measurements, the rover
+
+achieves centimeter-level positional accuracy.
+
+6.4 Electronic Total Station (ETS) GNSS
+
+Electronic  Total  Station  (ETS)  GNSS  combines  the  functionalities  of  a  traditional  Electronic
+
+Total  Station  (ETS)  and  Global  Navigation  Satellite  System  (GNSS)  to  deliver  enhanced
+
+precision  and  versatility  in  surveying  and  geospatial  applications.  An  ETS  measures  angles
+
+(both horizontal and vertical) and distances using laser or infrared technology, while GNSS
+
+provides  accurate  positional  data  by  receiving  signals  from  satellites.  Integrating  these
+
+systems enables surveyors to conduct precise measurements over long distances, even in
+
+challenging terrains where one system alone might be insufficient.
+
+Page: 31
+
+6.5 Field Data Collector (FDC) with a Web
+GIS software for Field Survey
+
+A  Field  Data  Collector  refers  to  a  device  or  system  optimized  for  collecting  and  recording
+
+GIS  data  in  the  field,  meaning  outside  of  a  laboratory  or  office  setting.  Typically,  FDC  is  a
+
+rugged tablet that works with GNSS Receivers (also known as GNSS Rovers) / ETS, allowing
+
+surveyors  to  view  and  visualize  ORIs  and  collect/extract  features  (including  boundary
+
+points) in the field. Also, it can be linked with GNSS Receivers (also known as GNSS Rovers)
+
+for feature extraction and updation of land parcels. It also enables collection and linking of
+
+attribute  data  in  the  field.  For  end-to-end  digital  work  flow,  these  field  devices  are
+
+connected to a central database through an enterprise GIS Server to enable transmission of
+
+field  data  to  the  central  database  server.  In  order  to  achieve  field  survey  accuracies
+
+required  for  the  NAKSHA  Project  through  measurements,  the  FDCs  should  be  integrated
+
+with CORS Network through a survey grade GNSS Receiver.
+
+6.6 Distance-Distance measurement
+Laser Range Finder
+
+A Distance-Distance Measurement Laser Range Finder is a specialized tool used to measure
+
+the distance between two points using laser technology. In Land Surveys, it can be used to
+
+measure  distances  between  various  points,  such  as  corners  of  a  property,  slopes,  and
+
+terrain  features.  The  measurement  of  a  point  which  is  not  visible  on  ORI  by  occupying  at
+
+least  two  well  identifiable  points  that  can  been  related  between  ORI  and  Ground  and
+
+measuring the distance from these points to the missing vertex on the property boundary.
+
+The  exact  position  of  the  above-mentioned  vertex  can  be  marked  in  the  GIS  environment
+
+using tools for distance-distance arc intersection.
+
+6.7 Reference Stations
+
+The coordinates obtained from GPS/GNSS observations are burdened with many errors like
+
+Satellite  Clock  and  orbit  error,  Ionospheric  delay  and  Tropospheric  delay,  Receiver  Noise,
+
+Multipath  and  Receiver  Clock  error.  Due  to  the  above  errors  the  coordinates  obtained  are
+
+inaccurate and need to be corrected before use. To minimize the effect of these errors the
+
+GPS/GNSS data of observation points needs to be processed with reference to some known
+
+reference  stations  whose  coordinates  are  accurately  known  to  us.  The  reference  stations
+
+are  of  two  types  which  includes  CORS  Network  established  by  SOI  (Figure  6.1.2)  GCPs
+
+(Passive Network of Reference Stations).
+
+Page: 32
+
+6.8 Continuously Operating Reference
+Stations (CORS)
+
+Survey of India has established Continuously Operating Reference System across India as a
+
+part  of  India’s  National  Geodetic  Reference  Frame.  In  total,  SOI  has  established  1047
+
+permanent  CORS  reference  stations  and  is  under  active  consideration  of  densifying  the
+
+same.  Also,  as  per  the  requirement  of  CORS  densification  under  NAKSHA,  SOI  is  actively
+
+engaged  with  DoLR,  GoI  for  densification  of  CORS  network  in  (Temporary  and  Permanent
+
+stations)  Towns/ULBs.  CORS 
+
+is  a  real  time  positioning  service  for  accurate  GNSS
+
+observations by general public. CORS services enables user to get the position data with 3-5
+
+mins of observation with an accuracy of 2-3 cm. Earlier, to get a accurate position of a point,
+
+SOI’s  Ground  control  points  were  used  and  it  took  almost  2-3  days  to  get  the  precise
+
+location  of  a  point.  CORS  is  a  system  of  interconnected,  permanent  GNSS  (Global
+
+Navigation Satellite System) base stations that provide high-
+
+precision  positioning  data  to
+
+users 
+
+in 
+
+real-time  or  post-
+
+processed 
+
+modes. 
+
+Each
+
+reference  station  in  the  network
+
+is equipped with a high-precision
+
+GNSS 
+
+receiver  and  antenna,
+
+continuously  collecting  satellite
+
+signals  from  constellations  such
+
+as  GPS,  GLONASS,  Galileo,  or  Bei
+
+Dou.  The  data  is  processed  to
+
+generate 
+
+corrections 
+
+that
+
+compensate for errors caused by
+
+atmospheric 
+
+interference,
+
+satellite  orbit  inaccuracies,  and
+
+clock  deviations.  The  network
+
+computers 
+
+and 
+
+distributes
+
+correction  data  to  rover  units
+
+(GNSS  Rovers)  via  the  internet,
+
+radio,  or  cellular  networks.  Users
+
+connect  to  the  network  through
+
+specialized software or hardware
+
+and  receive  these  corrections  to
+
+enhance 
+
+their 
+
+positional
+
+accuracy.
+
+Figure-6.2: Spatial distribution of CORS network grid
+(Source: cors.surveyofindia.gov.in)
+
+Page: 33
+
+Figure-6.3: CORS station of Survey of India 
+(Source: cors.surveyofindia.gov.in)
+
+6.9 Survey of India Ground Control Points
+
+SOI  GCPs  also  known  as  Passive  Network  of  Reference  Stations,  are  a  network  of
+
+established  geodetic  reference  points  used  in  India  for  high-precision  surveys,  mapping,
+
+and  geospatial  applications.  These  Ground  Control  Points  (GCPs)  are  fixed  physical
+
+locations  with  accurately  determined  coordinates  (latitude,  longitude,  and  elevation),
+
+typically  obtained  through  precise  geodetic  measurements.  These  GCPs  has  cement
+
+concrete structure/Monumentation and can be located on the ground by their description
+
+which is available with SOI. The SOI has established a Ground Control Point (GCP) Library of
+
+about  2500  Ground  Control  Points  in  the  entire  country.  These  GCPs  define  the  Horizontal
+
+datum  of  the  country  and  can  be  used  for  various  surveying,  mapping  and  developmental
+
+activities.
+
+6.10 Team constitution
+
+The  team  constitution  for  a  land  parcel  survey  typically  involves  a  combination  of  skilled
+
+professionals who work together to ensure accurate data collection, analysis, and reporting.
+
+The state can choose any number of team within the budget allocation for each ULB, but the
+
+core team members generally include the following:
+
+1.
+
+ One Permanent staff (equivalent to Patwari/Talati) from the State Revenue Department.
+
+        2.  One  Permanent  staff  (equivalent  to  Patwari/Talati/Inspector)  from  the  State  Urban
+
+Department.
+
+Page: 34
+
+3.  One Department surveyor/hired surveyor for doing ETS survey
+
+4.  One helper to assist the surveyor
+
+5.  One vehicle with driver
+
+6.11 Public meeting
+
+1.
+
+ Public awareness during field survey is an essential step in the land surveying process,
+
+especially when the land parcel has implications for public interest, urban development,
+
+infrastructure, or land rights. Public meetings serve as a platform for stakeholders—such
+
+as landowners, government representatives, urban planners, and the general public—to
+
+discuss and review the proposed survey, boundaries, and any issues related to land use
+
+or ownership. The goal of a public meeting is to ensure transparency, gather feedback,
+
+address concerns, and align the survey process with legal and community requirements.
+
+2.
+
+Public  meetings  should  be  advertised  in  advance  through  newspapers,  community
+
+bulletins, official government websites, and direct communication with affected parties.
+
+3.
+
+ Notifications should include details such as the time, location, purpose, and agenda of
+
+the meeting.
+
+4.
+
+  During  public  meetings  state  level  officer  (s)  must  present  an  overview  of  the  land
+
+survey project and its importance and survey methods.
+
+5.
+
+  Land  holders  should  be  requested  at  the  meeting  to  clear  the  boundaries  of  their
+
+properties  and  place  survey  marks  before  reaching  the  surveyor  for  field  demarcation
+
+work.
+
+6.
+
+  State  level  officer(s)  must  address  any  concerns  raised  by  the  attendees,  offering
+
+clarifications or explanations about the survey and its impact.
+
+7.
+
+  Officer(s)  must  maintain  official  records  of  the  meeting,  including  minutes,  questions
+
+raised, and responses provided and notes any issues, suggestions, or concerns raised by
+
+the public for further consideration.
+
+8.
+
+ Ensure that the survey complies with local government policies and that all stakeholders
+
+are informed of the legal implications.
+
+6.12 Field survey
+
+Before starting the field survey, the field survey team must collect the legal documents,
+
+existing  maps,  cadastral  records,  property  tax  details  from  the  revenue/urban
+
+department of concerned ULBs. If state has online system (Web-GIS) for city survey, the
+
+API  may  be  shared  with  Madhya  Pradesh  State  Electronics  Development  Corporation
+
+(MPSEDC) GIS Platform a.for its seamless integration.
+
+Wherever  available,  the  cadastral  plots,  layout  plans,  etc.,  should  be  georeferenced  for
+
+extraction of legacy attribute data.
+
+Page: 35
+
+The team must carry the ORIs and extracted features received from SOI both in hard and
+
+soft copy, preferably in FDC with Web GIS Field Software enabled with NRTK receiver. In
+
+case  it  is  not  available,  survey  grade  NRTK  enabled  GNSS  Rovers  along  with  rugged
+
+laptops  with  GIS  software  and  internet  connectivity  may  be  used  for  plotting  the
+
+position of surveyed boundary points and digitizing the property boundary in the field
+
+The survey team should use the Web GIS application of MPSEDC for field survey work.
+
+The  Web  GIS  platform  enables  surveyors  to  view  the  a.ORIs  and  extracted  features.  It
+
+can also be linked with GNSS rovers for feature extraction and updation of land parcels.
+
+Survey  team  goes  to  the  field  with  the  sketch  and  marks  the  boundaries  of  existing
+
+holdings.
+
+Identify and document boundary markers or any physical landmarks on the ground.
+
+If  the  boundaries  of  any  of  the  fields  were  not  demarcated  by  the  land  holders,  the
+
+boundaries  of  those  fields  must  be  demarcated  by  the  surveyor  and  helper  in  the
+
+presence of the land owners.
+
+During  demarcation  of  each  holding,  the  surveyor  will  gather  the  name  of  registered
+
+holders  of  the  plot,  its  classification,  revenue  number,  etc.  as  per  the  latest  revenue
+
+records and as per the present enjoyment, for writing up the land register and online.
+
+For  each  land  parcel  survey  team  needs  to  collect  information  mentioned  in  the  Urban
+
+Property Card format given in para 7.5
+
+When there are bunds or hedges between holdings, the center of these will as a rule, be
+
+considered to be the true boundary, unless there is evidence to the contrary.
+
+Survey team need to take the front view photographs of the building/parcel using a fairly  
+
+high-resolution camera and ensure that it is geotagged.
+
+Once  all  the  boundaries  of  the  land  parcel  are  identified  and  confirmed  by  the  land
+
+owner, the team can proceed for the GNSS Rover survey, as required. 
+
+Wherever  distinguishing  features  of  a  property/land  parcel  appears  on  ORI,  shall  be
+
+vectorized with reference to such features. 
+
+Wherever  property/land  parcel  boundaries  are  unable  to  be  demarcated  on  the  ORI,
+
+those shall be measured on ground with DGPS/CORS rovers. 
+
+Wherever  the  satellite  signal  is  poor  and  its  not  possible  to  collect  the  data  with  rover
+
+due  to  the  dense  structures,  narrow  roads,  canopy  areas,  HT  lines  etc.,  the  coordinate
+
+data  shall  be  collected  through  ETS  or  measurements  shall  be  taken  up  by  tape  and
+
+converted into coordinate data.
+
+The vectorization of land/property parcel boundaries shall be drawn with a combination
+
+of above said data in GIS software.
+
+During  the  Ground  Truthing  all 
+
+land  parcels 
+
+including  those  belonging  to  the  
+
+government shall be denoted with a temporary number. Property ID/City survey number
+
+shall  be  allotted  after  completion  of  survey  and  vectorization  of  all  land  parcels  and  its
+
+approval by revenue/urban development officer of the ULB level team. 
+
+Page: 36
+
+6.13 Field Survey: Salient Instructions
+
+1.
+
+  Survey team goes to the field with the ORI map and identifies as well as documents
+
+boundary markers or any physical landmarks on the ground and same should be
+
+correlated with ORI map.
+
+2.
+
+  Ground team to visit each plot or land parcel to verify urban land boundaries. Boundary
+
+points are to be noted by the ground truthing team using GNSS Rover, in presence of
+
+land owners, and neighbors. Field survey team to also ground validate the features
+
+extracted from the ORI such as utilities, buildings etc. 
+
+3.
+
+  Collection of the plot details available with the survey team shall be tallied with
+
+thedetails contained in the attribute documents available with the land holders, which
+
+could include Record of Right, Sale Deed, Lease Deed, Gift Deed, Relinquishment Deed,
+
+Settlement Deed, Occupancy Certificate, Deed of Partition, Lay out Plan, Property Tax
+
+Receipt, Building Sanction Plan, Will, General Power of Attorney (GPA), Agreement to Sell
+
+(ATS), Utility Bills, Mutation Certificate, presented by the land holder in ownership
+
+possession of the plot/land parcel.
+
+6.14 Field Survey Methodologies
+
+Following  are  the  Methodologies  for  Property  Boundary/Land  Parcel  Survey  by  State
+Authorities:
+
+6.14.1 FDC integrated with CORS network
+through NRTK receiver:
+
+The property parcel boundaries can be demarcated on ground using a Network RTK (NRTK)
+enabled Rovers and Controller/Mobile application using the CORS network in the states
+where the CORS network is functional. The desired positional accuracy could be achieved
+using the CORS network in the states where the CORS network is functional. The desired
+positional accuracy could be achieved using the CORS correction streams. Further,
+extraction of property parcel boundary can be done simultaneously on the ground since the
+ORI/ Map 1 can be visualized in the FDC and shape file of property boundary can be created.
+
+Resources required:
+
+    i. CORS network
+    ii. NRTK enabled GNSS Receivers (also known as GNSS Rovers) having tilt sensors
+    iii. FDC integrated with CORS network NRTK rover.
+    iv. Laser Range Finder
+    v. Hardcopy of ORI with digitized features
+    vi. Trained manpower
+
+Page: 37
+
+ 
+6.14.2 GNSS Receiver integrated with CORS
+Network
+
+The property parcel boundaries can be demarcated on ground using a Network RTK (NRTK)
+
+enabled  Receivers  (also  known  as  GNSS  Rovers)  using  the  CORS  network  by  taking
+
+observation  of  demarcated  points  (especially  for  missing  vertices  in  ORI).  The  coordinates
+
+thus  recorded  in  field  can  be  parallelly  plotted  using  rugged  laptop  with  GIS  Software  to
+
+create  the  property  boundary  layer.  This  can  be  the  alternate  method  of  property
+
+demarcation in the States were the CORS network is functional. 
+
+Resources required:
+
+    i.   CORS network
+
+    ii.  NRTK enable GNSS Receivers (also known as GNSS Rovers) having tilt sensors
+
+    iii. Laser Range Finder
+
+    iv. Rugged Laptop with GIS Software
+
+    v.  Hardcopy of Ortho plot
+
+    vi. Trained manpower
+
+6.14.3 Electronic Total Stations in combination
+with GNSS:
+
+The demarcation of property parcel boundaries on ground can be done using 3. Electronic
+
+Total  Stations  in  combination  with  GNSS.  In  order  to  demarcate  the  property  parcel
+
+boundaries,  Control  Points  (at  least  2  no.  GCPs)  are  to  be  established  in  field  survey  area
+
+using GNSS Receivers (also known as GNSS Rovers). Using these two GCPs, total station can
+
+be aligned and further the coordinates of the vertices of property parcels can be picked up.
+
+The coordinates thus recorded in field can be parallelly plotted using rugged laptop with GIS
+
+Software to create the property boundary layer. 
+
+Resources required:
+
+    i. GNSS instrument / CORS
+
+    ii. Total Station
+
+    iii. Rugged Laptop with GIS Software
+
+    iv. Laser Range Finder
+
+    v. Hardcopy of ORI with digitized features
+
+    vi. Trained manpower
+
+Page: 38
+
+6.15 GNSS Rover Survey
+
+The  Observation  of  land  parcels  should  be  done  using  the  GNSS  Receiver/Robotic  Total
+
+Station, based on the GNSS network. In the case of RTS surveys each day, surveys should be
+
+started  and  ended  at  known  value  stations.  When  selecting  a  GNSS  receiver  it  should  be
+
+ensured  that  it  supports  CORS  (Continuously  Operating  Reference  Station)  networks  and
+
+must have a tilt sensor.
+
+6.16 Equipment Preparation
+
+1.
+
+  GNSS  Rover  Setup:  Ensure  the  GNSS  receiver  is  functional,  charged,  and  updated  with
+
+the  latest firmware.
+
+2.
+
+Field  Data  Collector  (FDC):  Install  survey  software  (e.g.,  Trimble  Access)  and  check
+
+Bluetooth and Wi-Fi functionality.
+
+3.
+
+ Power Backup: Carry spare batteries and portable chargers.
+
+4.
+
+ Connectivity: Confirm reliable internet access for the CORS network.
+
+6.17 Define Survey Parameters
+
+1.
+
+ Coordinate System: Use WGS-84 or a geographical projection system
+
+2.
+
+ Survey Style: Configure GNSS receiver settings for RTK surveying: 
+
+3.
+
+ Signal Tracking: Enable GNSS constellations (GPS, GLONASS, Galileo).
+
+4.
+
+ Elevation Mask: Set to 10–15 degrees to avoid low-angle satellites. 
+
+5.
+
+ PDOP Mask: Set the threshold to <3 for high accuracy.
+
+6.
+
+ Verify NTRIP credentials (IP address, port, username, and password).
+
+6.18 Survey Setup
+
+1.
+
+ Mount the GNSS receiver on a tripod or pole and position it vertically using the bubble
+
+level.
+
+2.
+
+ Power on the receiver and check for satellite lock (at least 5 satellites for a 3D fix).
+
+6.19 Establish Connection to CORS
+
+1.
+
+Primary  ways  to  establish  communication  between  the  rover  and  CORS  networks  via
+
+internet Networked Transport of RTCM via Internet Protocol (NTRIP). This method allows
+
+the rover to connect to the CORS network through the internet.
+
+2.
+
+Obtain  NTRIP  Access  Information:  Contact  the  CORS  provider  or  use  a  public  NTRIP
+
+service. You will need an NTRIP caster URL, a username, and password (if required), and
+
+the specific mount point of the CORS station.
+
+3.
+
+Configure  the  Rover:  In  the  rover’s  software  or  receiver  settings,  configure  the  NTRIP
+
+client by entering the caster URL, mountpoint, and login credentials.
+
+Page: 39
+
+4.  Establish Connection: The rover will connect to the CORS network via the internet,
+
+receive RTK corrections, and apply them in real-time for improved accuracy.
+
+5.  Monitor the Connection: Ensure that the rover has an active connection to the CORS
+
+network and that it is receiving correction data
+
+6.20 Pair the GNSS receiver with the Field
+Data Collector via Bluetooth
+
+Open Bluetooth settings and pair with the GNSS receiver (default PIN: 0000). Connect to the
+
+CORS network:
+
+    i.   Enter the IP address and port of the CORS server.
+
+    ii.  Input NTRIP credentials (username and password)
+
+    iii. Verify real-time corrections are active.
+
+6.21 Establish Base Point (if required)
+
+a.   If a known control point is available, position the GNSS receiver over it.
+
+b.   Measure the point using RTK corrections to establish the reference for the survey.
+
+6.22 Land Parcel Survey Execution -
+Boundary Point Measurement
+
+1.
+
+ Navigate to the first boundary point of the parcel.
+
+2.
+
+ Position the GNSS Rover precisely over the point
+
+3.
+
+ Ensure the receiver is stable and vertical.
+
+4.
+
+  Always  hold  the  survey  pole  vertically  using  the  built-in  bubble  level.  Misalignment  can
+
+cause positioning errors due to an incorrect offset from the true ground position.
+
+5.
+
+  Ensure  the  rover's  antenna  is  pointing  directly  upward  to  receive  satellite  signals
+
+without obstruction.
+
+6.
+
+ Check antenna height and input the value in the Field Data Collector.
+
+7.
+
+ Ensure line-of-sight to the sky for uninterrupted GNSS signals.
+
+8.
+
+ Start measurement and wait for the solution to show the value.
+
+9.
+
+ Person holding a rover must go to each corner of the land parcel according to the shape
+
+and  record  the  point  coordinates  (latitude,  longitude,  elevation).  The  surveyor  should
+
+carefully survey to see that the common points or boundary between two land parcels is
+
+measured but once only so that there may be no difference between the measurements
+
+recorded for such common points or boundaries.
+
+10.
+
+Special  considerations  need  to  be  given  for  corner  properties  which  are  located  at  the
+
+intersection  of  two  roads,  having  at  least  one  vertex  (or  more)  common  with  the  road
+
+boundary.  These  properties  are  critical  due  to  their  visibility  and  potential  for  disputes;
+
+hence, they are always surveyed with special attention.
+
+Page: 40
+
+11.  All road-facing sides of corner properties must be measured during the survey.
+
+12.  If property boundaries overlap with building structures (as seen in ORI), the case must
+
+be reviewed, and corrections certified by the survey supervisor.
+
+13.  Locate the corner vertices where property boundaries intersect with roads and use the
+
+rover to precisely record these vertices with centimeter-level accuracy.
+
+14.  Measure boundaries shared with neighboring properties, ensuring no overlap.
+
+Figure-6.4: Illustration for land parcel survey
+
+15.  Compare GNSS measurements with existing maps or property sketches and if variations
+
+exceed 5 cm adjust the boundary polygon of existing maps or property sketches.
+
+16.  Any variation of length between the lengths measured on the ground and as written in
+
+the sketch which is less than 10 cm, need not be incorporated. For example if length in
+
+digital sketch is 9.1 m and on the ground it is measured to be 9.17 m then the said 7 cm
+
+variation need not be incorporated and 9.1 m shall remain unchanged. The variation in
+
+excess of 10 cm shall be duly incorporated by rounding off to a single decimal place of
+
+meters.
+
+17.  Extreme variation in length which is more than 50 cm as compared to ORI determined
+
+length should be re-measured by Survey Supervisor. Similarly, any change in lengths of the
+
+side or otherwise which leads to drawing of the property boundary line over the building in
+
+the ORI image, should be re-checked by Survey Supervisor and correction certified with
+
+time stamp.
+
+18.  Use offset measurement techniques for inaccessible points (e.g., behind obstructions).
+
+19.  Re-measure points if positional accuracy exceeds project thresholds.
+
+20.  The area of each land parcel should be computed by the Surveyor in the prescribed
+
+Software.
+
+21.  Add attribute information of each parcel (Survey No., Owner Name, Property tax details
+
+etc.).
+
+22.  Take the front view photograph of the land parcel/building
+
+23.  Move to the next boundary point and repeat the measurement process.
+
+Page: 41
+
+6.23 Post-Survey Tasks - Data Export
+
+1.
+
+Export the collected data from the Field Data Collector to the system
+
+2.
+
+Format: CSV, DXF, or SHP (depending on project requirements).
+
+3.
+
+Projection: UTM projection with datum WGS-84 or local coordinate system.
+
+4.
+
+Save data securely in multiple locations (e.g., cloud storage, USB drives).
+
+6.24 Surveyed Data Processing
+
+1.
+
+Import data into GIS or CAD software for analysis and mapping.
+
+2.
+
+Process RTK and raw data in Trimble Business Center (TBC) or equivalent software:
+
+3.
+
+Perform baseline processing and network adjustment.
+
+4.
+
+Verify data consistency and accuracy.
+
+6.25 Metadata Creation, Parcel Layout
+and Report Generation
+
+1.
+
+Prepare  detailed  maps  showing  parcel  boundaries,  coordinates  and  area  of  the  land
+
+parcel metadata.
+
+2.
+
+Include metadata:
+
+3.
+
+Coordinate system and datum.
+
+4.
+
+Measurement accuracy (horizontal and vertical).
+
+5.
+
+CORS network details and reference points used.
+
+6.
+
+Area of the land parcel
+
+6.26 Best Practices
+
+1.
+
+Equipment Maintenance: Regularly calibrate GNSS receivers and ensure proper storage.
+
+2.
+
+Signal Monitoring: Avoid surveying during high PDOP conditions or satellite outages.
+
+3.
+
+Field  Verification:  Cross-check  key  points  with  existing  boundary  markers  or  legal
+
+records.
+
+4.
+
+Safety Protocols: Follow safety guidelines in remote or hazardous survey areas.
+
+5.
+
+Backup the data: Survey team must ensure that survey data is stored in proper devices
+
+Page: 42
+
+6.27 Government properties / land 
+
+Government properties / land shall be surveyed first, before survey of private lands.
+
+1.
+
+Vacant government plots.
+
+2.
+
+Land allocated for public infrastructure projects.
+
+3.
+
+Areas under municipal corporations or urban development authorities.
+
+4.
+
+Government offices, administrative buildings, and educational institutions.
+
+5.
+
+Land occupied by Public Sector Undertakings (PSU)
+
+6.
+
+Land allotted for Special Economic Zones (SEZs).
+
+7.
+
+Industrial estates managed by government agencies.
+
+8.
+
+Roads, railways, and highways.
+
+9.
+
+Airports and ports.
+
+10.
+
+Public transportation hubs and utility corridors (electricity, water, gas etc.).
+
+11.
+
+Public parks, green belts, and recreational spaces.
+
+12.
+
+Land designated for afforestation or environmental preservation.
+
+13.
+
+Government-owned land suspected to be encroached upon, especially in urban areas.
+
+14.
+
+Government Land under litigation or dispute requiring clear boundaries.
+
+15.
+
+Reserved/protected forests, wildlife sanctuaries, conservation zones, wtlands etc.
+
+16.
+
+Land earmarked for biodiversity conservation and heritage sites.
+
+17.
+
+Government-owned agricultural land leased or cultivated for public purposes.
+
+18.
+
+Revenue land under the purview of district administration.
+
+19.
+
+Land under defence establishments (to the extent permissible for civilian surveys).
+
+20.
+
+Border and sensitive areas requiring specific permissions for surveying.
+
+21.
+
+Land allocated for religious, cultural, or historical purposes.
+
+22.
+
+Land under public healthcare facilities and community centers
+
+6.28 Integration of property tax and RoR
+details with Land parcel data
+
+  a.  Once all land parcel data are completed, it need to be integrated with property tax data
+
+sets or/and record of rights, if exists.
+
+  b.  For integration purpose, the states should use Web based application of MPSEDC.
+
+  c.  Web-GIS application will use API services for Property tax ownership data or other
+
+relevant information for RoR tagging etc. with respect to various State/UTs
+
+a)  Title confirmation guidelines and area mismatch guidelines 
+
+Title confirmation guidelines and area mismatch guidelines for disposal of claims and
+
+objections:
+
+State Government shall define title enquiry and area mismatch reconciliation guidelines, in
+
+respect of the procedure and the documents to be relied upon for determination of
+
+ownership and disposal of claims and objections on the field.
+
+Page: 43
+
+Guidelines formulated by some states which have already undertaken the urban 
+
+surveys, have been provided at Annexure-2. States can adopt these guidelines with
+
+appropriate modifications or create their own Guidelines as required. Adherence to the
+
+applicable provisions under the relevant Revenue Acts /Municipal Acts shall have to be
+
+ensured when defining the Guidelines.
+
+The documents to be relied upon for determination of ownership could be Record of Right,
+
+Sale Deed, Lease Deed, Gift Deed, Relinquishment Deed, Settlement Deed, Occupancy
+
+Certificate, Deed of Partition, lay out Plan, Property Tax Receipt, Building Sanction Plan, Will,
+
+General Power of Attorney (GPA), Agreement to Sell (ATS), Utility Bills, Mutation Certificate
+
+etc., or any other document as the state may decide, which shall be decided a case to case
+
+basis.
+
+b)  Updation of textual and spatial records 
+
+Updation of textual and spatial records prior to commencement of the process of disposal
+
+of claims and objections
+
+a.  In case of variations in the details in the two sets of the record (one available with the
+
+survey team and the other presented by the land holder in possession at the site), due to
+
+transfer of the land parcel/plot/property, by way of succession, sale, gift, relinquishment,
+
+mortgage, partition and subdivision etc, not followed by updation, the land holder shall be
+
+advised to submit an online application for updation of the ownership details. In case of
+
+disputes over the ownership/boundaries being raised before the survey team, also the
+
+parties shall be advised to submit online applications in support of their respective claims.
+
+b.  Special efforts shall be made by the Revenue/Settlement/Municipal Authority concerned
+
+to update the ownership details, decide the disputes received through the survey teams, in
+
+accordance with the provisions of the applicable law, so as to limit the claims and
+
+objections at the later stage after publication of MAP-2.
+
+c)  Recording of commonly held land in housing societies 
+
+Nodal  departments  of  state/UTs  would    notify  detailed    Guidelines  on  how  to  record
+
+commonly held land in apartments complexes or colony/society land. If the state already
+
+has such Guidelines, the same may be used.
+
+If applicable, the nodal department also prescribes Guidelines on how to note individual
+
+ownership  in  different  types  of  housing  societies,  including  leasehold  allotment,  group
+
+housing societies, cooperative societies, apartment owners’ association, and others.
+
+These should be in consultation with the Revenue and Urban development dept., and in
+
+conjunction  with  the  new  Urban  Property  Card  format,  prescribed  in  this  SoP,  to  the
+
+extent possible.
+
+Page: 44
+
+d)  Quality Check 
+
+1.
+
+Supervisory  Team  at  ULB  level  shall  check  the  quality  of  records  generated  and
+
+resolution of claims to the prescribed percentage (to be decided by state Government).
+
+Not less than 5% of the properties surveyed and 10% of the resolved applications shall be
+
+verified. 
+
+2.
+
+State level teams/officers to undertake random checks on grounds in all the ULBs.
+
+3.
+
+Upon verification, including random checks on ground, the draft urban property records
+
+shall be ready for publication.
+
+4.
+
+The  Urban  Property  Card    (UrPro)of  each  land  parcel  must  be  assigned    after  the
+
+approval of Revenue/Urban officers not below the rank of Tahsildar, or as the case may
+
+be in various States/UTs.
+
+e)  Output Deliverables (MAP 2)
+
+1.
+
+Georeferenced map of the land parcel with attributes.
+
+2.
+
+Property Parcel Maps with Geocode data, ULPIN and attribute data.
+
+3.
+
+Accuracy report of surveyed points.
+
+4.
+
+Linkage of property tax details and/or record of rights etc. with land parcel 
+
+5.
+
+Correlation statement w.r.t old survey record, if any.
+
+6.
+
+Date and time of survey approvals.
+
+7.
+
+Assign Urban Property Card (UrPro) property card, with  name of the land owner.
+
+Page: 45
+
+7. MAP 3: Disposal of claims
+and objections and map
+finalization
+
+a) Documents for Determination of Land
+Ownership in India
+In  India,  land  ownership  is  determined  through  various  government-issued  and  legal
+
+documents. The key documents include
+
+A. Title & Ownership Documents
+
+1.
+
+Sale Deed – The most crucial document proving legal ownership. It must be registered
+
+with the Sub-Registrar of Assurances under the Registration Act, 1908.
+
+2.
+
+Gift Deed – If the property is gifted, this document legally transfers ownership. Must be
+
+registered.
+
+3.
+
+Partition Deed – Establishes division of ancestral property among legal heirs.
+
+4.
+
+Conveyance Deed – Used in cases of land transfer, particularly in government land
+
+acquisitions.
+
+5.
+
+Will & Probate – Proof of inheritance, especially when a legal heir acquires land/property.
+
+6.
+
+Relinquishment Deed – Document where a co-owner surrenders their ownership rights.
+
+B. Government Land Records & Revenue Documents
+
+1.
+
+Record of Rights (RoR) / Jamabandi / Khatian / Khatauni – Maintained by state revenue
+
+departments; shows land ownership and tenancy details. 
+
+2.
+
+Land Mutation Records – Updates ownership in revenue records after sale, inheritance,
+
+or gift.
+
+3.
+
+Khasra & Khatauni – Village-level records containing land details, area, and ownership
+
+status.
+
+4.
+
+Encumbrance Certificate (EC) – Confirms that the land is free from legal or financial
+
+liabilities. Essential for property transactions.
+
+5.
+
+Survey & Settlement Records – Government records that verify land ownership,
+
+boundaries, and classification.
+
+6.
+
+Patta M - Land assignment order - KL
+
+C. Tax & Utility Documents
+
+1.
+
+Property Tax Receipts – Proof of land possession and municipal record linkage. Issued by
+local municipal bodies.
+
+Page: 46
+
+D. Court & Legal Documents
+
+1.
+
+Registered Lease Agreement – Establishes rights of tenants and leaseholders.
+
+2.
+
+Court Orders & Judgments – Ownership disputes settled through litigation.
+
+3.
+
+Adverse Possession Proofs – If someone occupies land for 12+ years (private land) or 30+
+
+years (government land), they may claim ownership under the Limitation Act, 1963.
+
+E. Government-Issued Approvals & Certificates
+
+1.
+
+Patta Certificate / Government Grant Orders – Proof of ownership for assigned land,
+
+issued by state governments.
+
+2.
+
+No Objection Certificates (NOCs) – Clearance from government departments (e.g.,
+
+urban development, municipal authorities).
+
+3.
+
+Allotment Letter (for Government/Housing Schemes) – Proof of allocated land or
+
+property under government schemes.
+
+4.
+
+Agricultural Land Conversion Certificate – If agricultural land is converted to
+
+residential/commercial use, this is mandatory.
+
+F. State-Specific Variations
+
+Since land is a state subject in India, the document names may vary from State to State. For
+
+example:-by state for example
+
+     ❖ Maharashtra: 7/12 Extract (Satbara Utara) for land ownership.
+
+     ❖ Karnataka: RTC (Record of Rights, Tenancy & Crops).
+
+     ❖ Telangana/Andhra Pradesh: Pahani Document.
+
+     ❖ West Bengal: Porcha.
+
+     ❖ Uttar Pradesh/Bihar: Bhulekh/Khasra-Khatauni.
+
+     ❖ Kerala: Pattayam - Land assignment order
+
+Updation of textual and spatial records prior to commencement of the process of disposal
+
+of claims and objections
+
+b) Action at Field Level 
+
+A  Special  Team  may  be  appointed  constituting  Revenue,  Urban  officers  other  than  the
+
+initial survey Team for disposing of Claims & objections, if any or published Map 2.
+
+The land parcel/ plot level/building spatial data shall be carried to field through a mobile
+
+app / hard copy.
+
+The  Survey  team  shall  carry  with  them  the  plot  wise  information  of  ownership,  as  per
+
+revenue/municipal records, in respect of all the  land parcels to be re-surveyed.
+
+The land parcel /property details available with the survey team shall be tallied with the
+
+details contained in the ownership documents, as mentioned in para 7.1 presented by the
+
+land holder in possession of the plot/land parcel.
+
+The  survey  team  and  the  other  presented  by  the  land  holder  in  possession  at  the  site),
+
+due to transfer of the land parcel/plot/property, by way of succession, sale, gift, 
+
+Page: 47
+
+ 
+relinquishment, mortgage, partition and subdivision etc, not followed by updation,  the
+
+land  holder  shall  be  advised  to  submit  an  application  for  updation  of  the  ownership
+
+details.  In  case  of  disputes  over  the  ownership/boundaries  being  raised  before  the
+
+survey team, also the parties shall be advised to submit applications in support of their
+
+respective claims.
+
+In  case  of  variations  in  the  details  in  the  two  sets  of  the  record  (one  available  with  the
+
+survey team and the other presented by the land holder in possession at the site), due to
+
+transfer  of  the 
+
+land  parcel/plot/property,  by  way  of  succession,  sale,  gift,
+
+relinquishment,  mortgage,  partition  and  subdivision  etc,  not  followed  by  updation,  the
+
+land  holder  shall  be  advised  to  submit  an  application  for  updation  of  the  ownership
+
+details.  In  case  of  disputes  over  the  ownership/boundaries  being  raised  before  the
+
+survey team, also the parties shall be advised to submit applications in support of their
+
+respective claims. Or The Special Team shall conduct enquiry and issue speaking order
+
+regarding the claim/objection. If there arise any dispute between the parties, the special
+
+team shall decide the disputes in accordance with the provisions of the applicable law,
+
+so as to limit the claims and objections at the later stage after publication of map
+
+Special  efforts  shall  be  made  by  the  Revenue/  Settlement/  Municipal  Authority
+
+concerned  to  update  the  ownership  details,  decide  the  disputes  received  through  the
+
+survey teams, in accordance with the provisions of the applicable law, so as to limit the
+
+claims and objections at the later stage after publication of MAP-2.
+
+c) Survey / Mutation Camps 
+
+The  States  Revenue  Departments  and  ULBs  could  consider  holding  special  camps  to
+
+facilitate alignment of the possession status with the status in the ownership records in
+
+all the clear / undisputed cases, by way of mutation/ updation of records for ownership
+
+change, partitions/ divisions and amalgamations of properties, property tax liability.
+
+Adequate  publicity  of  the  camp  information  as  also  the  procedure,  the  documents
+
+required to be presented and the witnesses to be produced by the land holders at the
+
+camp shall have to be ensured.
+
+During the intervening period before the survey teams commence their work in the field,
+
+the State / UT Governments could consider inviting online/ physical applications/ claims
+
+for  updation  of  records  and  dispose  them  of  in  a  time  bound  manner  so  that  the
+
+information to be taken by the survey teams to the field is as accurate as possible.
+
+For smooth passage of the survey process, the provisions which have worked well in the
+
+states  of  Andhra  Pradesh,  Kerala,  Karnataka  and  Madhya  Pradesh  may  mutatis
+
+mutandis, be adopted by other states through the appropriate process of amendment
+
+in the revenue / survey rules.
+
+The claims and objections should be disposed of by the competent Survey Authority in
+
+accordance  with  the  provisions  of  the  rules  in  a  time  bound  manner  and  the  status  as
+
+per the decision should be updated in the attribute table in a separate column.
+
+Page: 48
+
+Help desks and help lines for the guidance of the stakeholders in the process of
+
+updation shall be set up to operate under the supervision of the State PMU
+
+d) Format of Property Card 
+
+A model format of the property card to include required attributes of land and building,
+
+including apartments in multi-ownership complexes, with the aim to suggest a provision
+
+for  a  comprehensive  tool  for  transparency,  accuracy  and  legal  compliance,  is  given  at
+
+Annexure-3.  The  State/UT  may  modify  the  format,  if  required,  and  notify  it  as  part  of
+
+their respective Revenue/Survey Rules and Manuals.
+
+▪ Integration of existing databases with UrPro
+
+To  ensure  accuracy  of  the  Land  and  Property  Ownership  data  and  its  synchronization
+
+with  property  tax  data,  an  automated  mutation  trigger  mechanism  is  necessary.  This
+
+mechanism  will  automatically  update  NAKSHA  records  including  property  tax  data
+
+whenever  there  is  a  change  in  the  land  ownership,  land-use  categorization,  or  other
+
+property-related attributes.
+
+The  integration  of  the  data  maintained  by  all  the  relevant  departments  like  Revenue,
+
+Registration,  Forest,  Town  Planning  and  Agriculture  can  be  done  through  Web-based
+
+mechanisms. It will facilitate automatic updation of the changes made in one system to
+
+instantly reflect in the other, reducing/ obviating the need of manual intervention with
+
+ensured  consistency  between  ownership  and  tax  data.  This  facility  will  trigger  auto-
+
+mutations  in  real-time  providing  accurate,  up-to-date  information  on  urban  land
+
+transactions, ownership changes, and tax implications.
+
+In the cases where the data are still in physical form and real-time synchronization is not
+
+possible,  the  interim  solutions,  such  as  batch  updates  or  scheduled  uploads  of  offline
+
+records  on  WebGIS  to  ensure  that  the  system  remains  up-to-date,  should  be
+
+considered.  While  automation  of  the  mutation  process  is  key  to  streamlining  land
+
+administration,  these  temporary  measures  will  help  maintain  data  accuracy  during  the
+
+transition from offline to fully online systems.
+
+e) Key Components of the UrPro
+
+The Model Format is annexed (Annexure-3) contains details to facilitate Administrative
+
+Identification, Land Parcel/ Plot information including land ownership details, building/
+
+structure details and building/ structure ownership details and property photograph.
+
+Page: 49
+
+A sample guide to filling the details in various fields is given below
+
+Plot Details
+
+▪ State/UT Name: 
+New Delhi
+▪ District Name: 
+Delhi
+▪ Town/City Name.: 
+Delhi
+▪ City Survey No.: 
+478
+▪ Ward Name & Number: 
+Kailashpuri-32 
+▪ Year of Commencement of Ownership: 
+2023
+▪ Property Type (Private/Government): 
+Private 
+(In case of property type as Government
+then mention the property type cases
+such as Central Govt., State Govt., Local
+Body, or Govt. Undertaking whichever is
+applicable)
+
+▪ ULPIN: 79PYQ GYZ30 XXXX
+▪ Plot ID: ABCD12345
+▪ Plot Area: 445.94 sq. m
+▪ Plot Address with PIN code: Plot
+No. 87, Mira Road, Kailashpuri, New
+Delhi, Delhi 110011
+▪ Plot Owner/s Name with
+Father/Guardian Name: 
+ Mohal lal Verma S/O Jetha Ji
+Verma
+▪ Aadhar Number and Mobile
+Number of Owner: 7850 6983 XXXX;
+(+91) 98587 888XX
+▪ Ownership/lease Hold/ Other
+rights: Owner (To be selected
+accordingly)
+
+Building details in respect of individual buildings in UrPro
+
+The details for individual building to be filled in the below format.
+
+ i. Municipal ID: KA10EC1234
+ ii. Property type (Private/Government):
+Private 
+ iii. Purpose of Usage (Residential,
+Commercial, Industrial, etc.): Residential (To
+be selected accordingly)
+ iv. Name of the Building: Krishna Kunj
+ v. Total Number of floors: 02
+
+  i. Owner’s floor number: 01
+ ii. Name of the Owner: Rajeev Shukla
+ iii. Super-Built-up Area: 445.94 sq. m
+ iv. Parking Area: 12.5 sq. m
+ v. Garage Area: 11.76 sq. m
+vi Property Address: Krishna Kunj, M. G
+Road, New Enclave Colony, New Delhi,
+Delhi 11001
+
+Building details in respect of multi-ownership buildings in UrPro
+
+▪ Municipal ID: To be mentioned
+▪ Property type (Private/Government):
+Private 
+ (To be selected accordingly)
+▪ Purpose of Usage (Residential,
+Commercial, Industrial, etc.): Residential
+(To be selected accordingly)
+▪ Apartment Name/No.: Ashoka
+Apartments/D-01(where ‘D’ indicate block
+and ‘01’ indicates its sequencing)
+
+▪ Floor No.: 03
+▪ Flat No.: 021
+▪ Name of the Owner: Mrs. Sunitha
+Gandhi
+▪ Super-Built-up Area: 900.24 sq. m
+▪ Parking Area: 12.5 sq. m
+▪ Garage Area: 11.76 sq. m
+▪ Property Address: Flat No. 21, 3rd
+Floor, Ashoka Aprtments, Malviya Road,
+Amirpur Colony, New Delhi, Delhi 110011
+
+Page: 50
+
+Owner details in respect of single/joint owners in individual
+buildings in UrPro
+
+The information regarding the owner details with percentage of ownership his/her
+communication address to be filled in the below format.
+
+ i. Name of Owner(s): Mr. Suresh Mittal
+ ii. Guardian/Spouse Name: Mr. Ajit Mittal /
+Mrs. Anita Mittal
+ iii. Ownership Share: 100%
+ iv. Identity Document details: Aadhar/ PAN/
+Govt. ID Card Number
+
+  v. Owners Communication Address: H
+No. 21, Akbar Road, Lajpat Nagar, New
+Delhi, Delhi 110011
+ vi. Owner’s Photograph: latest
+Photograph of the owner
+ vii. Mutation Number and Date of
+Mutation: 356/2023 dated 15 October
+2023
+
+Owner details in respect of single flat in multi ownership group
+housing in UrPro
+
+The information regarding the owner details with percentage of ownership his/her
+communication address to be filled in the below format
+
+ i. Title document number: Conveyance
+Deed No, dated
+ ii. Name of Owner(s): Mr. Suresh Mittal & Mr
+Harinam Mittal
+ iii. Guardian/Spouse Name: (1)Mr. Ajit Mittal
+/ Mrs. Anita Mittal (2) Mr. Vijay Mittal/Mrs.
+Priyanka Mittal
+ iv. Ownership Share: 50%, 50%
+ v. Identity Document details: Aadhar/ PAN/
+Govt. ID Card Number of respective
+individual
+
+ i vi. Owners Communication Address: H
+No. 21, Akbar Road, Lajpat Nagar, New
+Delhi, Delhi 110011
+ vii. Owner’s Photograph: latest
+Photograph of the owner/s
+ viii. Mutation Number and Date of
+Mutation: 356/2023 dated 15 October
+2023
+
+Encumbrance/ Mortgage/ Other rights and Remarks in UrPro
+
+Records  of  any  Encumbrance,  Mortgage,  Lease,  Easement,  or  Other  Rights  associated
+
+with  the  property  includes  identifying  and  verifying  information  from  reliable  sources,
+
+defining  and  consistently  using  specific  data  fields,  establishing  clear  data  entry  and
+
+verification  procedures,  outlining  procedures  for  updating  records,  and  specifying
+
+methods  for  secure  storage  and  retrieval  of  property  records.  These  procedures  ensure
+
+accurate  and  complete  records,  facilitate  smooth  property  transactions,  minimize  legal
+
+risks, and ensure compliance with legal requirements.
+
+Supporting Information in UrPro
+
+Additional elements such as Location Map, Overview Map, Photograph of the Building and
+
+in  case  if  it  is  a  land  then  the  photograph  to  be  taken  with  neighboring  structures  and
+
+Digital  Signature  to  authenticate.  In  similar  way  the  required  information  can  be
+
+incorporated in UrPro by States/UT’s in given Annexure-3.
+
+Page: 51
+
+7.1 Ground truthing by Nodal Department
+Official 
+
+1.
+
+Nodal  department  to  notify  guidelines  on  how  to  record  commonly  held  land  in
+
+apartments complexes or colony/society land. If the state already has such guidelines,
+
+the same may be used.
+
+2.
+
+If applicable, the nodal department also prescribes guidelines on how to note individual
+
+ownership  in  different  types  of  housing  societies,  including  leasehold  allotment,  group
+
+housing societies, cooperative societies, apartment owners’ association, and others.
+
+3.
+
+These should be in consultation with urban development dept., and in conjunction with
+
+the new Urban Land Record format
+
+7.2 Issuance of notice and notification 
+
+7.2.1 Claim finalization and dispute resolution 
+
+Claim finalization and dispute resolution of ownership, area, shape and boundary
+
+a. Claims and objections should be invited, through issues of notice and notification 
+
+b.  The  claims  and  objections  should  be  disposed  of  by  the  competent  Survey  Authority  in
+
+accordance with the provisions of the rules in a time bound manner and the status as per
+
+the decision should be updated in the attribute table in a separate column
+
+c. For smooth passage of the survey process, the provisions which have worked well in the
+
+states of Andhra Pradesh, Kerala, Karnataka and Madhya Pradesh may mutatis mutandis, be
+
+adopted  by  other  states  through  the  appropriate  process  of  amendment  in  the  revenue  /
+
+survey rules
+
+7.2.2 Final MAP 3 publication with Property
+card and register
+
+Random  checks  on  ground  by  the  State  Level  Committee  assigned  Officer(s).  For
+
+unresolved disputes, provide a pathway for escalation to civil courts, with a standardized
+
+timeframe (e.g., within 60 days after final publication or as per States/UTs norms) 
+
+7.3 Updation and maintenance of database
+
+It  is  important  to  keep  the  database  generated  through  NAKSHA  up  to  date.  On
+
+completion  of  the  NAKSHA  project,  the  state  shall  be  responsible  for  maintenance  of  a
+
+web  portal  with  finalized  survey  information  at  plot  level.  The  state  shall  formulate
+
+processes for updation of the ownership data (on death or transfer of property) through
+
+offline  or  online  means.  Linking  the  NAKSHA  data  to  registration  software  of  states  for
+
+automatic updates can be considered
+
+Page: 52
+
+7.4 Monitoring 
+
+1.
+
+States  are  encouraged  to  document  the  process,  learnings  and  best  practices,  so  that
+
+the documents may be utilized for a state-wide exercise undertaken on a later date and
+
+may  benefit  from  these  experiences.  The  documentation  may  be  undertaken  by  the
+
+state government itself, or by third parties.
+
+2.
+
+Such  documentation  shall  include  technological  challenges  (if  any),  public  response,
+
+challenges  faced  at  field  level,  institutional  coordination  mechanisms,  effectiveness  of
+
+title  enquiry  guidelines,  and  others  as  relevant.  It  may  also  make  suggestions  for
+
+improvements, and highlight innovative mechanisms and good practices.
+
+3.
+
+For  real  time  monitoring  of  the  desired  activities  and  recording  the  progress,  SPMU  is
+
+responsible for compiling the data from the concerned Urban Local bodies and feeding
+
+the  data  on  the  formats  and  portal  prescribed  by  Department  of  Land  Resources,
+
+Government of India. 
+
+4.
+
+SPMU along with Nodal officers of the respective State/UT will be participating in all the
+
+review meetings scheduled by DoLR. 
+
+Page: 53
+
+8. Capacity Building and
+Knowledge Management 
+8.1 Training
+
+The NAKSHA Capacity Building Programme is applicable to the following stakeholders:
+
+   1.Secretary/Commissioner/Director of 29 States/UTs (Revenue and Urban Development/ Local
+
+Self Government/Town & Country Planning Department) and the Nodal Officers of NAKSHA
+
+  2.Municipal Commissioner/Chief Municipal Officers/Executive Officers of 152 Selected ULBs 
+
+   3.ULB Level Officials, State Programme Management Unit (SPMUs) Officials as Master   Trainers
+
+from 29 States/UTs
+
+   4.Centre of Excellence (CoE) head as Master Trainers
+
+ Tentative Number of Resources to be Trained for NAKSHA at National Level
+
+Level  Category  
+
+Number per State/UT or
+ULB
+
+Total Number of
+Trainees  
+
+Senior Officials of Revenue and Urban
+Development/ Local Self
+Government/Town & Country Planning
+Department Departments 
+
+1
+
+2 Officers x 29 States/UTs 58  
+
+NAKSHA Nodal Officers 
+
+1 Officer x 29 States/UTs 29  
+
+Subtotal  
+
+Middle-Level Officials of 152 ULBs
+
+1 Officer x 152 ULBs
+
+  2
+
+Centre of Excellence (CoE) Leadership
+
+2 Officers x 5 CoEs
+
+87
+
+152  
+
+10
+
+No. of
+Training
+Days  
+
+1 Day  
+
+SPMU Officials
+
+2 Officers x 29 States/UTs 58
+
+2 Days  
+
+Subtotal  
+
+220
+
+Field Level Officials i.e. Master Trainers 
+
+3
+
+State Programme Management Unit
+(SPMU) Officials
+
+4 Officers per State/UT x
+29   
+
+116
+
+2 Officers x 29 States/UTs 58
+
+7 Days
+
+Subtotal
+
+174
+
+4
+
+All SPMUs Zonal Trainings
+
+2 Officers x 29 States/UTs  58
+
+2 Days
+
+Total All Levels Combined
+
+539
+
+Page: 54
+
+   
+  
+  
+   
+  
+   
+  
+   
+  
+   
+  
+A. National Level Implementation
+
+To address the component of Training, Capacity Building, and Documentation, for
+
+implementation of NAKSHA, a tentative Course Curriculum of Capacity Building is devised
+
+for Senior Officers, Middle Level Officers and Field Level Officers who are responsible for
+
+ground implementation of the programme. The model Course Curricula for capacity
+
+building is as under: 
+
+One day course for Senior Officials (Level 1) i.e. Secretary/Commissioners/Directors of
+
+Revenue and Urban Development/ Local Self Government/Town & Country Planning
+
+Department and Nodal Officers of NAKSHA of 29 States/UTs
+
+Two days course for Middle-level Officials (Level 2) i.e. Municipal Commissioners/Chief
+
+Municipal Officers of selected 152 ULBs, 2 Officers from all the 5 COEs and 2 Officials of
+
+SPMUs of 29 States/UTs
+
+Seven Days course for Field Level Officers and SPMUs Officials (Level 3) i.e. Master
+
+Trainers who will further train the other SPMU officials & ULB Level Teams
+
+Two Days Zonal Workshop of SPMU Officials (Level 4) at Regional Centres of Excellence
+
+(i) Training Overview
+
+Level
+
+Target Audience
+
+Duration
+
+Focus Area
+
+Level 1
+
+Senior Officers
+
+1 Day
+
+Level 2
+
+Middle-Level
+Officials and CoEs
+
+2 Days
+
+Level 3
+
+SPMU Officials &
+Field Level Officials
+
+7 Days
+
+Level 4
+
+Zonal Workshop of
+SPMU Officials
+
+2 Day
+
+Strategic understanding of
+NAKSHA, geospatial technology
+applications, and urban planning.
+
+Operational workflows, GIS
+integration, aerial surveys, and
+Web GIS platforms.
+
+Orientation of NAKSHA
+programme, Operational
+workflows, GIS integration, aerial
+surveys, and Web GIS platforms.
+Field-level geospatial tools, data
+validation, hands-on training, and
+preparation of urban land
+records.
+
+Regional review of NAKSHA
+programme in presence
+ of concerned Nodal Officers 
+
+Page: 55
+
+(ii) Level - Wise Course Content Details for Capacity Building Component of 
+
+NAKSHA for “Creation of Urban Land Records” and Training details
+
+Level 1: One day course for Decision Makers i.e. Secretary/Commissioners/Directors of
+
+Revenue, Urban Development Departments and Nodal Officers of NAKSHA of 29 States/UTs
+
+Tentative Number of Participants: 87
+
+Organiser: Department of Land Resources, MoRD
+
+Objective: Provide an understanding of NAKSHA’s implementation, geospatial technology,
+
+and decision-making framework.
+
+Time
+
+Topic
+
+Resource
+
+9:30 – 10:00 AM
+
+Inaugural 
+
+10:00–11:00 AM
+
+11:00 – 11:30 AM
+
+Overview of NAKSHA
+and Role of
+Geospatial
+Technology
+
+Overview of GIS:
+Concepts, Open
+Source GIS Tools,
+Cloud Space  
+
+Representative of DoLR
+
+Representative of NIGST  
+
+11:30–12:00 PM  
+
+Tea Break
+
+12:00–12:45 PM  
+
+12:45 – 1:30 PM  
+
+Aerial Survey, QA/QC
+Practices, and Drone
+Policies  
+
+Representative of Survey of India
+
+Experience sharing of
+Aerial Survey by
+Andhra Pradesh,
+Odisha and Assam
+
+Representatives Aerial Survey
+third party agencies, Government
+of Andhra Pradesh, Odisha,
+Assam   
+
+1:30–2:30 PM  
+
+Lunch Break  
+
+2:30 – 3:15 PM  
+
+3:15 - 4:00 PM  
+
+4:00–5:00 PM  
+
+5:00–5:30 PM  
+
+Use of Rovers for
+Survey Work and
+basics of DGPS
+surveying  
+
+Representative of Government of
+MP, Kerala, Maharashtra, Andhra
+Pradesh and Rover Provider
+companies  
+
+Survey
+Demonstration Using
+Web GIS Platforms
+and grievance
+redressal 
+
+Q&A Session and
+Open Discussion  
+
+Representative of MPSEDC/NICSI  
+
+Closing Remarks and
+Valedictory  
+
+DoLR
+
+Page: 56
+
+Level 2: Two days course for Middle-level Officers (Level 2) i.e. Municipal
+
+Commissioners /Chief Municipal Officers of selected 152 ULBs, 2 Officers from all the 5
+
+COEs and 2 Officials of SPMUs of 29 States/UTs
+
+S. No Centre
+
+Zone
+
+States/UTs
+
+1
+
+2
+
+3
+
+4
+
+Mahatma Gandhi State Institute of
+Public Administration (MGSIPA),
+Chandigarh
+
+North
+
+Punjab, Haryana, Himachal Pradesh,
+Jammu & Kashmir, Uttarakhand, Uttar
+Pradesh, Chandigarh
+
+National Institute of
+Geoinformatics Science and
+Technology (NIGST), Survey of
+India, Hyderabad
+
+South
+
+Telangana, Tamil Nadu, Kerala,
+Karnataka, Andhra Pradesh,
+Telangana, Puducherry
+
+Survey of India, Dehradun
+
+East
+
+Assam, Tripura, Bihar, Jharkhand,
+Odisha, Meghalaya, Mizoram,
+  Nagaland, West Bengal, Sikkim
+
+Yashwantrao Chavan Academy of
+Development Administration
+(YASHADA), Pune, Maharashtra
+
+West
+
+Chhattisgarh, Madhya Pradesh,
+Maharashtra, Goa, Rajasthan
+
+Page: 57
+
+Organiser: Department of Land Resources, MoRD in collaboration with Survey of India 
+
+and Centres of Excellence
+
+Objective: Equip Municipal Commissioners/Chief Municipal Officers of selected 152 ULBs, 2
+
+persons from the State/UT PMUs and 2 persons from all the 5 COEs with overview of
+
+NAKSHA programme, operational knowledge, GIS integration skills, and aerial and field
+
+survey techniques. The SPMU members in tandem with CoEs would further train the Master
+
+Trainers in respective States/UTs 
+
+Day 1: Operational Training
+
+  Time
+
+  Topic
+
+  Resource
+
+  9:30 – 10:00 AM
+
+  Inaugural
+
+  10:00–11:00 AM
+
+Overview of NAKSHA an d
+Role of Geospatial
+Technology
+
+  Representative of DoLR  
+
+  11:00 – 11:30 AM
+
+Overview of GIS: Concepts,
+Open-Source GIS Tools  
+
+  Representative of NIGST
+
+  11:30–12:00 PM
+
+  Tea Break
+
+  12:00–12:45 PM
+
+  12:45 – 2:00 PM
+
+Aerial Survey, QA/QC
+Practices, and Drone
+Policies
+
+ Representative of Survey of India  
+
+Experience sharing of Aerial
+Survey by Andhra Pradesh,
+Odisha and Assam
+
+Representatives Aerial Survey third
+part  agencies, Government of
+Andhra Pradesh, Odisha, Assam 
+
+  2:00 – 3:00 PM
+
+  Lunch Break
+
+  3:00 – 4:00 PM
+
+Field Survey and Ground
+Truthing Experience
+Demonstration on Use of
+Rovers for Survey Work and
+basics of DGPS/ Rover
+based surveying
+
+  4:00 – 4:30 PM
+
+  Tea Break
+
+  4:30 – 5:00 PM
+
+  5:00 – 5:30 PM
+
+Survey Demonstration
+Using Web GIS Platforms
+and grievance redressal 
+
+Q&A Session and Open
+Discussion  
+
+Representative of Government of MP,
+Kerala, Maharashtra, Andhra Pradesh
+and Rover Provider companies
+
+  Representative of MPSEDC
+
+Page: 58
+
+Day 2: GIS and Web GIS Focus
+
+  Time
+
+  Topic
+
+  Resource
+
+  10:00 –11:00 AM
+
+Data Integration on Web GIS
+Portal
+
+Representatives of MPSEDC  
+
+  11:00 – 11:30 AM
+
+GIS Data Creation, Feature
+extraction using ORIs,
+ Attribution
+
+Representatives of
+MPSEDC/NIGST
+
+  11:30–12:00 PM
+
+  Tea Break  
+
+  12:00–12:45 PM  
+
+Overview and Demonstration of
+NAKSHA Web GIS Platform
+
+  Representative of MPSEDC
+
+  12:45 – 1:00 PM
+
+Basics of Cloud Space, uses and
+requirements for NAKSHA
+
+Representatives of
+Meghraj/NICSI  
+
+  1:30–2:30 PM
+
+  Lunch Break
+
+  2:30–4:00 PM
+
+Map Preparation, Public
+Objection Handling, and
+  Finalization
+
+Representative of MPSEDC & Go
+vernment ofAndhra Pradesh,
+MP, Maharashtra  
+
+  4:00–5:00 PM
+
+Open Discussion, Feedback, and
+Evaluation
+
+  5:00–5:30 PM
+
+Valedictory Remarks and
+Certification
+
+  DoLR
+
+Page: 59
+
+  
+Level 3:  Seven Days course for Field Level Officers and SPMUs Officials (Level 3) i.e.
+
+Master Trainers who will further train the other SPMU officials & ULB Level Teams
+
+Organiser: Department of Land Resources, MoRD
+
+Objective: Develop detailed understanding of NAKSHA programme, technical expertise for
+hands-on implementation of geospatial surveys, WebGIS tools, and data validation for
+Master Trainers who would further provide the training to the field functionaries.
+
+  Day
+
+  Topics
+
+  Session Details
+
+  Day 1
+
+  Day 2
+
+  Day 3
+
+  Day 4
+
+  Day 5
+
+  Day 6
+
+  Day 7
+
+Introduction to
+NAKSHA, GPS/CORS
+Basics, Aerial
+  Survey Methods
+
+Overview, field demonstrations, and initial hands-
+on training.
+GNSS Observation Methods & Introductions to
+Geoid (Theory)
+Exposure/training to GPS/CORS Instruments &
+Field practise (Field)
+
+CORS Network,
+Configuration, Data
+Downloading  
+
+CORS Website Registration & Data downloading
+and processing (Field)
+Demo and practice on Configuration of controller
+for using CORS & Hands on practice using CORS
+(NRTK/static) (Field)
+Hands-on practice with equipment and software.
+
+Creation of Ground
+Control Points and
+Map
+Georeferencing and
+Ground Verification
+
+Creation of Ground Control points using CORS
+(static) & Data downloading and processing (Field)
+Field practice and data validation using CORS
+Practical exercises with QGIS/ArcGIS, focusing on
+Map 2 and Map 3 components.
+
+Web GIS Portal
+Overview and Cloud
+Services & Uses
+Integration of
+Documents and
+Property Tax
+Databases
+
+Live Demonstration
+and QA/QC Conflict
+Resolution and
+Public Engagement
+
+Map Finalization
+and Approval
+Processes  
+
+Assessment,
+Feedback, and
+Certification  
+
+Demonstration of modules, data uploads, and
+feature creation, Cloud Storage etc.
+Practical training on Web GIS modules for
+integration and analysis
+
+Field exercises and quality assurance techniques
+for urban land records. Role-playing exercises and
+methods to handle objections and disputes.
+
+Steps for preparing and publishing finalized
+maps  
+
+Evaluation, feedback collection, and certificate
+  distribution.
+
+Page: 60
+
+  
+  
+  
+Level 4: One Day Orientation Programme of SPMU Staff and Overview of NAKSHA
+
+along with Technologies
+
+Tentative Number of Participants: 58
+Organiser: Regional Centre of Excellence, DoLR
+
+  S. No.
+
+  Centre of
+  Excellence
+
+  State / UT's
+
+  1
+
+  2
+
+  3
+
+  4
+
+  5
+
+  Lal Bahadur Shastri
+  National Academy of
+Administration (LBSNAA),
+Mussoorie, Uttarakhand
+
+  Bihar, Jharkhand,
+  Odisha, West Bengal, Uttar
+Pradesh, Uttarakhand
+
+  Yashwantrao Chavan
+  Academy of Development
+Administration (YASHADA),
+Pune, Maharashtra
+
+  Chhattisgarh, Goa,
+  Madhya Pradesh,
+Maharashtra
+
+  Northeast Region
+  Centre of Excellence,
+Guwahati, Assam
+
+  Sikkim, Arunachal
+  Pradesh, Assam, Meghalaya,
+Mizoram, Tripura
+
+  Mahatma Gandhi
+  State Institute of Public
+Administration (MGSIPA),
+Chandigarh 
+
+  Chandigarh,
+  Haryana, Himachal Pradesh,
+Jammu & Kashmir, Punjab,
+Rajasthan
+
+  Administrative
+  Training Institute (ATI),
+Mysuru, Karnataka
+
+  Andhra Pradesh,
+  Karnataka, Kerala,
+Puducherry, Tamil Nadu,
+Telangana
+
+Page: 61
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+Objective: Orientation of SPMU Staff engaged for implementation of NAKSHA 
+programme and their interaction with regional States/UTs for cross learnings along 
+with the regional review of NAKSHA Programme
+
+  Time
+
+  Topic
+
+  Resource
+
+  9:30 – 10:00 AM
+
+  Inaugural 
+
+  10:00–11:00 AM
+
+  Overview of NAKSHA and Role of
+Geospatial Technology
+
+  DoLR Representative
+(Virtual) and Head
+Regional CoE
+
+  11:00 – 11:30 AM
+
+Overview of GIS: Concepts, Open-
+Source GIS Tools, Cloud Space
+
+Master Trainer, Regional
+CoE
+
+  11:30–12:00 PM
+
+  Tea Break
+
+  12:00–12:45 PM
+
+ Aerial Survey, QA/QC Practices,
+and Drone Policies
+
+Master Trainer, Regional
+CoE
+
+  12:45 – 1:30 PM
+
+ Overview of Aerial Survey by
+Andhra Pradesh, Odisha and
+SVAMITVA
+
+Master Trainer, Regional
+CoE
+
+  1:30–2:30 PM
+
+  Lunch Break
+
+  2:30 – 3:15 PM
+
+  3:15 - 4:00 PM
+
+Demonstration on Use of Rovers
+for Survey Work and basics of
+DGPS surveying
+
+Master Trainer, Regional
+CoE
+
+ Survey Demonstration Using Web
+GIS Platforms and grievance
+redressal 
+
+ Master Trainer, Regional
+CoE
+
+  4:00–5:00 PM
+
+  Q&A Session and Open Discussion
+
+  5:00–5:30 PM
+
+  Closing Remarks and Valedictory
+
+  Head Regional CoE
+
+Page: 62
+
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+B. State/UT Level Implementation
+To address the component of Training, Capacity Building, and Documentation, for
+
+implementation of NAKSHA programme at State/UT Level, a tentative Course Curriculum of
+
+Capacity Building is devised for ULB Level Officials who are responsible for ground
+
+implementation of the programme. The model Course Curricula for capacity building is as
+
+under: 
+
+(i) Training Overview
+
+  Level
+
+Target
+Audience
+
+  Duration
+
+Focus Area
+
+  Venue
+
+  Level 5
+
+ULB Level
+Staff  
+
+  7 Day  
+
+Ground Truthing,
+Field Survey, Web
+GIS software
+handling, Dispute
+Resolution etc.
+
+Administrative
+Training
+Institutes of 29
+States/UTs  
+
+(ii) Level - Wise Course Content Details for Capacity Building Component of NAKSHA for
+“Creation of Urban Land Records” and Training details at State/UT Level
+
+  Level
+
+  Category
+
+Number per
+State/UT or ULB  
+
+Total Number
+of Trainees  
+
+No. of
+Training Days  
+
+  5
+
+ULB Level
+Officials 
+
+1754 Teams x 2
+Officials 
+
+  3,508  
+
+  7 Days  
+
+Level 5: One Day Ground Truthing, Dispute Resolution and Web GIS Operation Training for
+ULB Level Officials 
+
+Tentative Number of Participants: 3508
+Organiser: Administrative Training Institutes of 29 States/UTs participating in NAKSHA
+Programme
+Objective: Develop detailed understanding of NAKSHA programme, technical expertise
+for hands-on implementation of geospatial surveys, Web GIS tools, and data validation
+for ULB Level Officials who are responsible for ground level implementation
+
+  Time
+
+  Topic
+
+  Resource
+
+  9:30 – 10:00 AM
+
+  Inaugural 
+
+  10:00–11:00 AM  
+
+Overview of NAKSHA and Role
+of Geospatial Technology
+
+Organiser, ATI and Master
+Trainers
+
+Page: 63
+
+8.2 IEC and Communications Plan
+
+This outlines the Information, Education, and Communication (IEC) activities for the
+
+NAKSHA program per ULB in the local languages of the States/UTs.
+
+Numbers listed under actionable items are a general indication of expectations, and aren’t
+
+absolute
+
+Activity
+
+Description
+
+Key Usage
+  Locations
+
+Actionable
+  Items
+
+Development of IEC Materials
+
+Posters and Banners
+
+Standees and
+displays in Offices
+
+Wall Paintings and
+Murals
+
+Rickshaws and
+Branded Autos for
+Audio Campaigns
+
+Visual
+communication
+tools to convey
+NAKSHA’s benefits,
+steps to update
+land records, and
+the relevance of
+the program.
+
+Small, portable
+displays at land
+record offices,
+municipal
+corporations, and
+government
+buildings.
+
+Large-scale
+artwork placed at
+key urban locations
+to reinforce
+NAKSHA’s message
+of transparency,
+ownership, and
+security.
+
+Use rickshaws
+and branded autos
+equipped with
+sound systems to
+broadcast audio
+messages across
+neighbourhoods.
+
+Key urban
+junctions (3 per
+ULB), high-traffic
+areas like main
+roads, markets,
+and public
+squares.
+
+Land offices,
+municipal
+corporations,
+ward offices,
+local government
+buildings.
+
+1 mural at a
+key urban
+location within
+each ULB (e.g.,
+community
+centers, central
+market areas).
+
+High footfall
+areas like
+markets, bus
+stations, parks,
+local streets, and
+migrant colonies.
+
+Urban banners at 3
+high-traffic junction
+locations per ULB.
+
+- Standees at all land
+and municipal offices
+in each ULB.
+
+- 1 mural per ULB at a
+key urban location.
+
+Equip 30 rickshaws/
+autos per ULB with
+sound systems.
+
+Page: 64
+
+Community Engagement Strategies
+
+Interactive
+Workshops and Public
+Meetings
+
+Workshops to explain
+the NAKSHA program
+and answer citizen
+queries.
+
+Feedback Forums
+
+Public Festivals
+  and Roadshows
+
+Platforms for citizens
+to share their
+feedback on NAKSHA
+and ask questions.
+
+Fun, engaging
+outreach events with
+informational booths,
+live demos, and
+interactive displays.
+
+Training and Capacity Building
+
+Community
+centers, schools, local
+halls.
+
+Residential colonies,
+gated communities.
+
+ULB offices, local
+government
+buildings.
+
+Public events and
+festivals.
+
+Local fairs, cultural
+festivals, street
+markets.
+
+High-traffic roadsides
+and shopping streets.
+
+Hold 2 workshops per
+month.
+
+1 feedback forum per
+  person/meeting.
+
+Organize 2
+roadshows/ festivals
+per year.
+
+Behavior Change
+Communication
+(BCC) Training
+
+Community
+Champions
+
+Use of Media
+
+Local Media
+ Outreach
+
+Social Media
+  Campaigns
+
+Community Radio
+
+Training for ULB staff
+and community
+leaders on BCC
+techniques to
+encourage
+participation in
+NAKSHA.
+
+Identify and train
+local community
+influencers to spread
+awareness and
+encourage
+participation.
+
+Local government
+offices, regional
+centers, and
+community halls.
+
+Conduct 1 BCC
+training session per
+month.
+
+Community events,
+door-to-door
+campaigns.
+
+1 community
+champion per ward in
+the ULB.
+
+Partner with local
+radio stations, TV, and
+newspapers to
+broadcast NAKSHA-
+related content.
+
+Radio stations,
+local TV channels.
+
+Local newspapers
+and community
+magazines.
+
+Utilize social media
+platforms to share
+updates, engage with
+citizens, and address
+concerns.
+
+Use local community
+radio to broadcast
+updates, interviews,
+and information in
+regional languages.
+
+Facebook,
+ Instagram,
+WhatsApp.
+
+Interactive posts,
+videos, live Q&A
+sessions.
+
+Community radio
+ stations.
+
+Regional dialects and
+cultural adaptations
+for broader reach.
+
+Page: 65
+
+Partner with 3-5
+media outlets.
+
+10-12 posts per
+week.
+
+Host 1 live Q&A per
+month through state
+handles.
+
+Broadcast 1 update
+per week on
+community radio.
+
+8.3 Documentation Plan at Ground Level for
+ULBs
+
+ This documentation plan outlines the procedures and requirements for Urban Local Bodies
+
+(ULBs) to effectively implement NAKSHA IEC activities at the ground level. The state
+
+government is responsible for overseeing the implementation, ensuring that
+
+documentation is thorough, consistent, and aligned with the overall program objectives.
+
+This plan will ensure that each ULB captures the necessary data and provides regular
+
+updates for monitoring and evaluation.
+
+Activity
+
+Description
+
+Documentation
+Requirements
+
+Responsibility
+
+IEC Materials
+Development
+and Distribution
+
+Development
+and distribution
+of posters,
+banners,
+standees, and
+other
+communication
+materials to
+inform
+citizens.
+
+Community
+Engagement
+and Public
+Awareness
+
+Conducting
+workshops,
+meetings, and
+festivals to
+educate
+citizens about
+NAKSHA.
+
+Material Inventory Records:
+Maintain detailed list of IEC
+materials (posters, banners,
+standees, leaflets, rickshaws)
+
+Distribution Tracking: Record
+distribution dates, areas
+covered, and number of
+materials distributed.
+
+Photo Documentation:
+Capture photographs of
+materials placed at different
+locations for visual evidence.
+
+Workshop and Meeting
+Records: Document event
+title, date, location, number
+of participants, topics
+covered, key takeaways.
+
+Feedback Collection Forms:
+Collect structured feedback
+from participants after
+workshops and meetings.
+
+Rickshaw/Auto Campaign
+Logs: Track deployment,
+routes, number of audio
+messages delivered, areas
+covered.
+
+ULB IEC Coordinator
+Distribution Staff, Field
+Staff
+
+ULB Event Coordinator,
+Workshop
+Facilitators, Feedback
+Collectors, Transport
+Coordinator
+
+Page: 66
+
+Media and Social
+Media Outreach
+
+Feedback,
+Surveys, and
+Continuous
+Improvement
+
+Performance
+Evaluation and
+Impact Assessment
+
+Broadcasting
+NAKSHA content
+through local
+media (radio, TV)
+and engaging
+citizens on social
+media platforms.
+
+Collecting
+feedback
+through surveys,
+focus groups,
+and community
+forums to
+improve IEC
+strategies.
+
+Monitoring and
+evaluating the
+effectiveness of
+IEC activities and
+their impact on
+public
+engagement and
+awareness.
+
+Media Outreach
+Logs: Record media type
+(radio, TV, print), date of
+ coverage, and audience reach.
+
+Social Media Analytics: Track
+engagement metrics (likes,
+shares, comments, overall
+engagement).
+
+Radio and TV Broadcast Logs:
+Document content
+  aired, including date, time,
+and program name.
+
+Survey Data Collection Forms:
+Collect structured feedback
+from citizens via surveys or
+focus groups.
+
+Community Forum Records:
+Document forum date,
+location, participants, and key
+discussions.
+
+Quarterly Monitoring Reports:
+ULBs to submit quarterly
+progress reports summarizing
+activities, metrics, challenges,
+and adjustments.
+
+End-of-Program Impact
+Report: Comprehensive
+evaluation of IEC activities'
+long-term impact on public
+awareness, engagement, and
+participation.
+
+ULB Media
+Relations
+Officer, Social
+Media
+Manager,
+Media
+Coordinator
+
+ULB Survey
+Team, Field
+Staff, Event
+Coordinator
+
+ULB Program
+Monitoring
+Officer,
+Impact
+Evaluation
+Officer
+
+Page: 67
+
+9. Annexure
+9.1 Annexure-1: List of 152 ULBs
+
+State/ UTs 
+
+District 
+
+Name ULB/Town/ City 
+
+Andhra Pradesh
+
+Ananthapur 
+
+Anantapuramu 
+
+# 
+
+1
+
+2
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+10 
+11 
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Assam 
+
+Bihar
+
+Bihar 
+
+Bihar 
+
+Bihar 
+
+Bihar 
+
+27 
+
+Bihar 
+
+Andhra Pradesh
+
+Andhra Pradesh
+
+Andhra Pradesh
+
+Andhra Pradesh
+
+Andhra Pradesh
+
+Andhra Pradesh
+
+Chittor 
+
+Eluru 
+
+Guntur 
+
+Guntur 
+
+Kakinada 
+
+Kurnool 
+
+Andhra Pradesh
+
+Prakasam 
+
+Andhra Pradesh
+
+SPSR Nellore
+
+Andhra Pradesh
+
+Arunachal Pradesh 
+Assam 
+
+Tirupati 
+
+Namsai 
+Barpeta
+
+Bongaigaon
+
+Bongaigaon
+
+Darrang 
+
+Golaghat 
+
+Hojai 
+
+Nagaon 
+
+Nalbari 
+
+Sivsagar 
+
+Sonitpur 
+
+Banka 
+
+Buxar 
+
+Munger 
+
+Nalanda 
+
+Rohtas 
+
+Sonpur 
+
+Kuppam 
+
+Eluru 
+
+Guntur 
+
+Mangalagiri- Tadepalli 
+
+Kakinada 
+
+Kurnool 
+
+Ongole 
+
+Nellore 
+
+Tirupati 
+Namsai 
+Barpeta Road 
+
+Abhayapuri 
+
+Bongaigaon 
+
+Mangaldoi MB 
+
+Golaghat MB 
+
+Hojai MB 
+
+Nagaon MB 
+
+Nalbari MB 
+
+Sivsagar MB 
+
+Dhekiajuli MB 
+
+Banka Nagar Parishad 
+
+Buxar Nagar Parishad 
+
+Tarapur Nagar Panchayat 
+
+Rajgir Nagar Parishad 
+
+Dehri Nagar Parishad 
+
+Sonpur Nagar Parishad 
+
+28
+
+Chandigarh
+
+Chandigarh
+
+Sarangpur, Burail, Kajheri, Palsora, Attawa
+
+29 
+
+30 
+
+31 
+
+32 
+
+33 
+
+34 
+
+35 
+
+36 
+
+37 
+
+Chhattisgarh 
+
+Chhattisgarh 
+
+Chhattisgarh 
+
+Goa 
+
+Goa 
+
+Goa 
+
+Haryana 
+
+Haryana 
+
+Haryana 
+
+Dhamtari 
+
+Nagar Palik Nigam Dhamtari 
+
+Jagdalpur (Bastar) 
+
+Nagar Palik Nigam Jagdalpur (Bastar) 
+
+Sarguja 
+
+North Goa 
+
+South Goa 
+
+South Goa 
+
+Gurugram 
+
+Narnaul 
+
+Panchkula 
+
+Nagar Nigam Ambikapur 
+
+Corporation of the City of Panaji 
+
+CuncolimM.Cl 
+
+MargaoM.Cl 
+
+Manesar 
+
+Narnaul 
+
+Panchkula 
+
+Page: 68
+
+ 
+54 
+
+Karnataka
+
+Jharkhand
+
+Jharkhand
+
+Jharkhand
+
+Jharkhand
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka
+
+Karnataka 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+Kerala 
+
+#
+
+38
+
+39
+
+40
+
+41
+
+42
+
+43
+
+44
+
+45
+
+46
+
+47
+
+48
+
+49
+
+50
+
+51
+
+52
+
+53
+
+55
+
+56
+
+57
+
+58
+
+59
+
+60
+
+61
+
+62
+
+63
+
+64 
+
+65 
+
+66 
+
+67 
+
+68 
+
+69 
+
+70 
+
+71 
+
+72 
+
+73 
+
+74 
+
+75 
+
+76 
+
+77 
+
+78 
+
+79 
+
+State/ UTs 
+
+District 
+
+Name ULB/Town/ City 
+
+Himachal Pradesh
+
+Hamirpur 
+
+Nadaun Nagar Panchayat 
+
+Himachal Pradesh
+
+Kangra 
+
+Palampur MC 
+
+Himachal Pradesh
+
+Himachal Pradesh
+
+Mandi 
+
+Solan 
+
+Jammu & Kashmir
+
+Baramulla 
+
+Jammu & Kashmir
+
+Jammu 
+
+Jammu & Kashmir
+
+Pulwama 
+
+Jammu & Kashmir
+
+Reasi 
+
+Mandi MC 
+
+Solan MC 
+
+Pattan 
+
+Bishnah 
+
+Awantipora 
+
+Katra 
+
+Lohardaga 
+
+Palamu 
+
+Ranchi
+
+Simdega 
+
+Bagalkote 
+
+Ballari 
+
+Ballari 
+
+Belagavi 
+
+Belagavi 
+
+Bidar 
+
+Lohardaga Nagar 
+
+Vishrampur Nagar Parishad 
+
+Ranchi MC 
+
+Simdega Nagar Parishad 
+
+Bagalkote MC 
+
+Bhagyanagara Town Panchayat (TP)
+
+Siraguppa MC 
+
+Boragav TP 
+
+Gokaka MC 
+
+Basavakalyan MC 
+
+Chikkamagaluru 
+
+Chikkamagaluru MC 
+
+Kolar 
+
+Mysuru 
+
+Shivamogga
+
+Alappuzha 
+
+Kannur 
+
+Kasaragod 
+
+Kollam 
+
+Kottayam 
+
+Kozhikode 
+
+Malappuram 
+
+Malappuram 
+
+Kolar Municipal Corporation (MC) 
+
+Bogadi TP 
+
+Anavatti TP 
+
+Harippad 
+
+Thalassery 
+
+Kasaragod 
+
+Punalur 
+
+Vaikom 
+
+Vadakara 
+
+Perinthalmanna 
+
+Ponnani 
+
+Thiruvananthapuram 
+
+Attingal 
+
+Thiruvananthapuram 
+
+Neyyattinkara 
+
+Madhya Pradesh 
+
+Alirajpur 
+
+Madhya Pradesh 
+
+Madhya Pradesh 
+
+Madhya Pradesh 
+
+Indore 
+
+Indore 
+
+Jhabua 
+
+Alirajpur Nagar Palika 
+
+Depalpur Nagar Palika 
+
+Dhar Kothi 
+
+Meghnagar 
+
+Madhya Pradesh 
+
+Khandwa 
+
+Channera (Naya Harsood) Nagar Parishad 
+
+Madhya Pradesh 
+
+Narmadapuram 
+
+Makhan Nagar (Babai) 
+
+Madhya Pradesh 
+
+Madhya Pradesh 
+
+Madhya Pradesh 
+
+Madhya Pradesh 
+
+Raisen 
+
+Sehore 
+
+Ujjain 
+
+Vidisha 
+
+Sanchi 
+
+Shahganj Nagar Parishad 
+
+Unhel 
+
+Vidhisha Nagar Palika 
+
+Page: 69
+
+ 
+# 
+
+80 
+
+81 
+
+82 
+
+83 
+
+84 
+
+85 
+
+86 
+
+87
+
+88 
+
+89 
+
+90 
+
+91 
+
+92 
+
+93 
+
+94 
+
+95 
+
+96 
+
+97 
+
+98 
+
+99 
+
+100
+
+101
+
+102
+
+103
+
+104
+
+105
+
+106 
+
+107 
+
+108 
+
+109 
+
+110 
+
+111 
+
+112 
+
+113 
+
+114 
+
+115 
+
+116 
+
+117 
+
+118 
+
+119 
+
+120 
+
+121 
+
+State/ UTs 
+
+District 
+
+Name ULB/Town/ City 
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Maharashtra
+
+Meghalaya
+
+Mizoram 
+
+Nagaland 
+Odisha 
+
+Odisha 
+
+Odisha 
+
+Odisha 
+
+Ahmednagar 
+
+Shirdi (Tq. Rahata) 
+
+Akola 
+
+Buldhana
+
+Chandrapur
+
+Murtizapur 
+
+Buldhana 
+
+Ghuggus (Tq. Chandrapur) 
+
+Chh.Sambhajinagar
+
+Kannad 
+
+Jalgaon 
+
+Pune 
+
+Raigad 
+
+Solapur 
+
+Thane East 
+
+Khasi Hills 
+
+Aizwal North 
+
+Dimapur
+
+Jharsuguda 
+
+Khorda 
+
+Khordha 
+
+Varanganv (Tq. Bhusaval) 
+
+Baramati 
+
+Khopoli council 
+
+Pandhapur 
+
+Kulgaon Badalapur (Tq. Ambarnath)
+
+Shillong 
+
+Aizwal MC 11-19 
+
+Dimapur 
+Jharsuguda Municipality 
+
+Khorda Municipality 
+
+Jatni Municipality 
+
+Mayurbhanj 
+
+Baripada Municipality 
+
+Puducherry 
+
+Murungapakkam 
+
+Murungapakkam 
+
+Punjab 
+
+Punjab 
+
+Punjab 
+
+Punjab 
+
+Punjab 
+
+Punjab 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Rajasthan 
+
+Sikkim 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Tamil Nadu 
+
+Barnala 
+
+Ludhiana 
+
+Patiala 
+
+SAS Nagar 
+
+SAS Nagar 
+
+SAS Nagar 
+
+Ajmer 
+
+Ajmer 
+
+Beawar 
+
+Jaipur Rural 
+
+Jaisalmer 
+
+Khairthal Tijara 
+
+Kotputali- Behror 
+
+Rajsamand 
+
+Barnala 
+
+Khanna 
+
+Rajpura 
+
+Banur 
+
+Derabassi 
+
+SAS Nagar 
+
+Kishangarh 
+
+Pushkar 
+
+Beawar 
+
+Bagru 
+
+Jaisalmer 
+
+Bhiwadi 
+
+Behror 
+
+Nathdwara 
+
+Sawai Madhopur 
+
+Sawai Madhopur 
+
+Sikar 
+
+Nawalgarh 
+
+Sikkim (East) 
+
+Gangtok Municipal Corporation 
+
+Ariyalur 
+
+Chengalpattu 
+
+Coimbatore 
+
+Dindigul 
+
+Ariyalur 
+
+Maraimalai Nagar 
+
+Coimbatore (7 Wards) 
+
+Dindigul 
+
+Kanchipuram 
+
+Kanchipuram 
+
+Sivagangai 
+
+Thanjavur 
+
+Karaikudi 
+
+Thanjavur 
+
+Page: 70
+
+ 
+# 
+
+State/ UTs 
+
+District 
+
+Name ULB/Town/ City 
+
+122 
+
+Tamil Nadu
+
+123 
+
+Tamil Nadu
+
+124 
+
+Tamil Nadu 
+
+125
+
+Telangana
+
+126 
+
+127 
+
+128 
+
+129 
+
+130 
+
+131 
+
+132 
+
+133 
+
+134 
+
+135 
+
+136 
+
+137 
+
+138 
+
+139 
+
+140 
+
+141 
+
+142 
+
+143 
+
+144
+
+145 
+
+146 
+
+147 
+
+148 
+
+149 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Telangana 
+
+Tripura 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttar Pradesh 
+
+Uttarakhand 
+
+Uttarakhand 
+
+Uttarakhand 
+
+Uttarakhand
+
+Tiruvannamalai
+
+Tiruvannamalai 
+
+Tuticorin
+
+Kovilpatti 
+
+Virudhunagar 
+
+Virudhunagar 
+
+Bhadradri 
+Kothagudem
+
+Jagityal 
+
+Mahabubabad 
+
+Mahabubnagar 
+
+Nalgonda 
+
+Rajanna Siricilla 
+
+Siddipet 
+
+Vikarabad 
+
+Warangal Rural 
+
+Yadadri Bhuvanagiri 
+
+West 
+
+Ambedkar Nagar 
+
+Barabanki 
+
+Bulandshar 
+
+Chitrakoot 
+
+Gorakhpur 
+
+Hardoi 
+
+Jhansi 
+
+Mirzapur 
+
+Pilibhit 
+
+Shajanpur 
+
+Almora 
+
+Haridwar 
+
+Tehri Garhwal 
+
+Manuguru 
+
+Jagityal 
+
+Mahabubabad 
+
+Jacherla 
+
+Miryalguda 
+
+Vemulawada 
+
+Husnabad 
+
+Kodangal 
+
+Wardhannapet 
+
+Yadagirigutta 
+
+Agartala Municipal Corporation (MC) 
+
+Tanda 
+
+Nawabganj 
+
+Anupshahr 
+
+Chitrakoot Dham 
+
+Gorakhpur 
+
+Hardoi 
+
+Jhansi 
+
+Chunar 
+
+Puranpur 
+
+Tilhar 
+
+Nagar Palika Almora 
+
+Nagar Palika Bhagwanpur 
+
+Nagar Palika Narendra Nagar 
+
+Udham Singh Nagar 
+
+Nagar Palika Kitcha 
+
+150  
+
+151  
+
+152  
+
+West Bengal
+
+West Bengal
+
+West Bengal
+
+Hooghly 
+
+North 24 Parganas 
+
+North 24 Parganas 
+
+Chandannagar Municipal Corporation 
+
+Ashokenagar Kalyangarh Municipality 
+
+New Town Kolkata Development 
+
+Authority (NKDA) 
+
+Page: 71
+
+ 
+ 
+ 
+ 
+ 
+9.2 Annexure-2: Guidelines Formulated by
+Some States for Urban Surveys
+
+9.2.1 SOP on Survey of Government Land
+(Andhra Pradesh)
+
+a.  Notice/  intimation  to  be  issued  to  the  Departments  and  neighbouring  Private  Property
+
+Owners.
+
+Notice  shall  be 
+
+issued  regarding 
+
+intimation  about 
+
+identification  and  demarcation  of  the
+
+Government Land/Institutional Land/Properties to the Departments concerned and neighbouring
+
+Private Property Owners. And shall obtain acknowledgement from the authorized person from the
+
+concern department and neighbouring private property owners.
+
+Public  notice  shall  be  issued  for  survey  of  the  Government/Institutional  /  ULB/  Municipal
+
+land/properties  in  the  notice  boards  of  the  respective  Government  offices  and  notice  boards  of
+
+the  ULB  and  other  prominent  places  like  Ward  Secretariats,  Post  Offices,  and  Banks,  MRO/RDO
+
+offices, etc., 
+
+b. ULB/District level team(s) shall address all the departments concerned to nominate one
+
+nodal officer duly authorizing him to attend for re-survey with relevant documents and also
+
+finalizing the demarcation of the Government / Municipal / Endowments Lands/Properties
+
+of the outcome of the Survey.
+
+c.  In  order  to  fix  the  boundaries  both  ULB  as  well  as  Government/Institutional  /Municipal
+
+properties  have  to  keep  ready  for  the  functioning  of  CORS  network  and  GNSS  Rover
+
+synchronizing  to  AP  CORS  by  the  Ward  Planning  &  Regulation  Secretary  (WP&RS)  and
+
+Operators.
+
+d. All Government/Institutional/Municipal properties/lands shall be identified and boundary
+
+demarcation  shall  be  done  in  presence  of  respective  department’s  authorized  personnel
+
+and neighbouring private property owners by planting the stones (wherever required).
+
+e. In cases of encroachment on government land, or unauthorised construction by private
+
+parties,  the  state  rules  regarding  the  same  shall  apply,  for  recording  of  ownership  and
+
+boundaries.
+
+9.2.2 Title Enquiry Guidelines for Government
+Land (Karnataka)
+
+Title  Enquiry  Guidelines  for  Government  Land  in  case  of  land  grants/  allotment  or  layout
+
+development (Karnataka)
+
+Page: 72
+
+A. In case the property on "government land" was issued in the name of a private person(s)
+
+in  the  Revenue  records,  and  the  private  person  (or  their  successors)  are  in  possession  of
+
+the  said  land,  then  such  revenue  records  shall  be  accepted  and  accordingly  the  owner
+
+therein or his legal successors through registered deed or inheritance/succession, shall be
+
+accepted  as  the  owner.  The  revenue  records  shall  override  the  municipal  records  in  case
+
+there is a conflict between the two.
+
+B. In general, in absence of Revenue Records, for the properties on "government land" the
+
+document  of  grant  of  the  said  government  land  or  revenue  survey  number  to  the  private
+
+person  is  mandatory.  Thereupon  the  flow  of  ownership  of  the  granted  land,  or  a  piece
+
+thereof, from the grantee to the present claimant of property should be there to accept the
+
+present  claimant  and  record  him  as  owner  leading  to  issuance  of  Urban  Land  Record.
+
+Provided that in case there is a proper document of grant of government land to a private
+
+person but subsequent documents a.creating a clear chain of flow of ownership is missing,
+
+then the municipal ownership records can be relied on to issue the Urban Land Record.
+
+C.  For  the  properties  on  the  layouts  of  government  agencies  on  the  government  land,  the
+
+allotment letter of the agency develops the layout, registered deed from such an agency to
+
+a  person  is  the  primary  document  of  ownership.  In  case  such  a  document  is  given  by  a
+
+citizen or otherwise available, the same shall be the basis of recording the property owner.
+
+Provided  that  in  case  of  subsequent  transfer  of  property  or  inheritance  or  succession  of
+
+such  property  by  the  original  owner,  the  latest  owner  shall  be  recorded.  The  municipal
+
+ownership records in such layouts shall be given due value in accepting the present owner
+
+of the property.
+
+D.  In  absence  of  a  government  land  grant  or  recording  of  property  as  private  property  in
+
+any revenue record, and the property is not part of the layout of a government agency, then
+
+the Urban Land Record shall not be issued to private persons on government land. Provided
+
+the Urban Land Records to Government Agencies and departments can be issued.
+
+E.  In  case  the  government  land  grant  document  for  the  concerned  land  in  favour  of  a
+
+private person is available or the grant is proved as per Government procedure, then apart
+
+from  chain  of  documents  proving  flow  of  ownership  of  present  claimant  from  the  original
+
+grantee  of  land;  the  ownership/title  as  per  municipal  records  shall  also  be  accepted.  The
+
+Urban Land Record may be accordingly issued.
+
+F. In accepting and recording the ownership of any property on a granted Government land
+
+where  the  land  grant  document  is  available  or  layout  on  government  is  done  by  a
+
+government  agency,  any  documents  or  records  that  are  received  /obtained  from  the
+
+citizen  or  any  other  authority  should  be  duly  considered  as  per  their  legal  value.  In  this
+
+regard, the following broad principles shall be adopted –
+
+a.
+
+The  revenue  records  are  primary  and  shall  override  municipal  records  in  case  of
+
+contradiction.
+
+b.
+
+The allotment letter or registered deeds from government agencies that developed
+
+layout  on  the  government  land  are  also  primary  documents  and  shall  override
+
+municipal records in case of contradiction.
+
+Page: 73
+
+9.2.3 Good Practice on Simplified and
+Standardized Forms
+
+The  Andhra  Pradesh  SOP  for  urban  resurvey  specifies  forms  for  all  stages  of  the  survey
+
+process.  This  enables  efficient  scaling  up  of  the  survey  across  the  state,  brings  in
+
+standardization  in  operations,  and  transparency  and  convenience  for  both  officers  and
+
+citizens.
+
+Some of the key forms used in the state for the purpose of resolving disputes regarding the
+
+boundary inaccuracies have been presented. Specific forms are utilized at different stages
+
+of  the  survey,  during  ground  truthing  and  appeals.  These  forms  serve  as  official
+
+documentation for addressing the objections, verifying and correcting the discrepancies. 
+
+Similar  forms  may  be  adapted  by  states  for  their  own  purposes.  The  forms  regarding
+
+various  stages  of  the  urban  survey  process  in  Andhra  Pradesh  can  be  retrieved  from  the
+
+SOP document of the state.
+
+Page: 74
+
+9.3 Annexure-3: A model format of Urban
+Property Card
+
+Page: 75
+
+This proforma is indicate of minimum fields to be filled up which may me amended by the
+State/UTs depending upon regulatory framework/field requirements.
+
+Page: 76
+
+Notes for the Survey Department:
+
+1. Plot No: In case of planned colonies, Plot Nos are assigned by the Development
+Bodies/Authorities concerned. Plot Ids are not in practice and should be assigned by the
+said bodies/authorities. Property IDs are assigned by the Property Tax Authorities. 
+
+2. City Survey No: This is urban equivalent of the Rural land Survey No/Khasra No.
+
+3. Details of the plot of a land are to be filled in the part 1 of the Property Card.
+
+4. In case of lease hold property, date on which lease ends should be filled in the relevant
+field in part 1.
+
+5. Either Part 1 & 2(a) or Part 1 & 2(b) will be applicable in case of individual buildings and or
+multi-ownership buildings respectively.
+
+6. In case of a standalone / independent plot, the details of the plot are to be included in
+the Part 1 whereas the details of the building are to be filled in the Part 2(a).
+
+7. In case of a multi-ownership buildings, the details of the plot are to be filled in the Part 1
+and the details of the building to be filled in the Part 2(b).
+
+8. Details of the owner and his/her communication address in respect of single/joint
+ownership in individual buildings are to filled in 3(a).
+
+9. Details of the owner and his/her communication address in respect of flat in multi-
+ownership group housing society are to filled in 3(a).
+
+10. The photograph of the property (Part 9) is proposed to be captured at the time of field
+survey. A sketch of the Tower with its details. with a highlight on the flat No described in the
+property card should be given in this part.
+
+11. Ownership data should to be compiled and maintained in excel sheets, for reference and
+for generation of the property card. 
+
+12. An example for compiling (in case of group Housing multi-story Apartments/flats
+Societies is given below:
+i. Name of the Society: Shramjeevi Co operative Group Housing Society Ltd., Dwarka sector-
+5, New Delhi-110075.
+ii.           No of Towers: 5
+iii.          Tower wise No of flats:
+ (1) Tower A: 15, (2) Tower B: 20, (3) Tower C: 20, (4): Tower D: 15, (5) Tower E: 15
+Flat Layout plan of Tower A:
+
+  51
+
+  41
+
+  31
+
+  21
+
+  11
+
+  52
+
+  42
+
+  32
+
+  22
+
+  12
+
+Page: 77
+
+  53
+
+  43
+
+  33
+
+  23
+
+  13
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Names of owners (As available in property tax data): Tower A:
+
+  Flat No
+
+  Name of the owner
+
+11
+
+12
+
+13
+
+21
+
+22
+
+23
+
+31
+
+32
+
+33
+
+41
+
+42
+
+43
+
+44
+
+51
+
+52
+
+53
+
+AAA
+
+BBB
+
+CCC
+
+DDD
+
+EEE
+
+FFF
+
+GGG
+
+HHH
+
+III
+
+JJJ
+
+KKK
+
+LLL
+
+MMM
+
+NNN
+
+OOO
+
+PPP
+
+13. Real time updated data by Integration and synchronization of data across all the
+stakeholder departments: 
+
+(i) It is helpful to seed mobile and Aadhar number in the data base and integrate the data
+maintained by all the relevant departments like Revenue, Registration, Forest, Town
+Planning and Agriculture through web-based mechanisms so as to facilitate real time
+updation for ensuring consistency between ownership and tax data.
+
+(ii) The States/UTs where the records are in physical form or real-time synchronization is
+not possible, batch updates or scheduled uploads of offline records on property data Web-
+GIS platform should be carried out to maintain the data up to date.
+
+Page: 78
+
+ 
+ 
+Department of Land Resources 
+NBO Building, G-Wings Nirman Bhawan, Maulana Azad Rd, 
+New Delhi, Delhi - 110011
+
+www.dolr.gov.in
+
+dolr.mord
+
+DoLR_MoRD
+
+dolr-mord
+
+dolr_mord
+
+DoLR_MoRD
+
+</pre>
+</body>
+</html>
