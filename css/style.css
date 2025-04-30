@@ -266,6 +266,9 @@ body{
 .disclaimer{
     font-size: 0.6rem;
 }
+.teamImg{
+    height: 350px !important;
+}
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
