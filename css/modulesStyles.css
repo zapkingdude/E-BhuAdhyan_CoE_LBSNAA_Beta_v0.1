@@ -79,13 +79,30 @@ i.customIcon{
     display: inline-block !important;
     width: 30px;
     height: 30px;
-}
-.tripod{
-    background-image: url('../img/ModuleImgs/LandSurvey_Management/tripod.png');
-    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
+}
+.iconLightBG{
+    background-color: white;
+}
+.tripod{
+    background-image: url('../img/ModuleImgs/LandSurvey_Management/tripod.png');
+}
+.bookMagnify{
+    background-image: url('../img/ModuleImgs/Basics_GIS/book.png');    
+}.bookMagnifyLight{
+    background-image: url('../img/ModuleImgs/Basics_GIS/bookLight.png');
+}.buildingBlocks{
+    background-image: url('../img/ModuleImgs/Basics_GIS/buildingBlocks.png');
+}.buildingBlocksLight{
+    background-image: url('../img/ModuleImgs/Basics_GIS/buildingBlocksLight.png');
+}.sysProcessLight{
+    background-image: url('../img/ModuleImgs/Basics_GIS/systemProcessLight.png');
+}.superHeroLight{
+    background-image: url('../img/ModuleImgs/Basics_GIS/superheroLight.png');
+}.diyLight{
+    background-image: url('../img/ModuleImgs/Basics_GIS/DIYLight.png');
 }
 @media screen and (min-width:501px) and (max-width:999px) {
     /* Tablet styles */

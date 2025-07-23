@@ -74,6 +74,13 @@ body{
     text-align: justify;
 }
 
+.text-logoGreen{
+    color: var(--logoGreen);
+}
+.text-cersieRed{
+    color: var(--ceriseRed);
+}
+
 .w-80{
     width: 80%;
 }
@@ -91,6 +98,64 @@ body{
 .clearPadding{
     padding: 0 !important;
 }
+
+.custIcon{
+    display: inline-block;
+    position: relative;
+}
+.custIcon2Sz{
+    width: 30px;
+    height: 30px;
+}
+.well-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/water-well.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lamppost-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/lamp-post.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.evCharging-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/ev_charging.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.river-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/river.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.railTrack-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/railTrack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lake-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/lake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.boundary-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/boundary.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.landParcel-outline{
+    background-image: url('../img/ModuleImgs/Basics_GIS/LandParcel_gray.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /** Special Fonts **/
 .poppins-thin {
     font-family: "Poppins", sans-serif;
