@@ -149,68 +149,32 @@
             <nav class="sidebar d-flex flex-column flex-shrink-0 position-fixed">
                 <button class="toggle-btn" onclick="toggleSidebar()">
                     <i class="fas fa-chevron-left"></i>
-                </button>
-        
+                </button>        
                 <div class="p-4">
-                    <h4 class="logo-text fw-bold mb-0">Basics of GIS: Understanding the Magic of Maps</h4>
+                    <h4 class="logo-text fw-bold mb-0">Georeferencing a Cadastral Map using QGIS </h4>
                     <p class="text-muted small hide-on-collapse">Chapters List</p>
-                </div>
-        
+                </div>        
                 <div class="nav flex-column pb-2">
                     <a href="#" id="GoToChapter_1" class="sidebar-link chaptersListLink active text-decoration-none p-3">
                         <i class="fas fa-book me-3 fs-4"></i>1:
-                        <span class="hide-on-collapse">What is GIS?</span>
+                        <span class="hide-on-collapse">Introduction</span>
                     </a>
                     <a href="#" id="GoToChapter_2" class="sidebar-link chaptersListLink text-decoration-none p-3">
-                        <i class="customIcon sysProcessLight me-3"></i>2:
-                        <span class="hide-on-collapse"> How Does GIS Work?</span>
-                        <!-- <i class="fas fa-chevron-down float-end hide-on-collapse chapterSubmenuHandle"></i>
-                        <i class="fas fa-chevron-up float-end chapterSubmenuHandle" hidden></i> -->
-                    </a>                    
-                        <!-- <nav class="subChaptersNavList">
-                            <ul>
-                                <li>
-                                    2.1: Survey of India’s CORS Service
-                                </li>
-                                <li>
-                                    2.2: Survey using Modern Technology for Land Records
-                                </li>
-                            </ul>
-                        </nav> -->
+                        <i class="customIcon geoRefGCP me-3"></i>2:
+                        <span class="hide-on-collapse">Geo-referencing using Ground Control Points (GCPs)</span>                        
+                    </a>
                     <a href="#" id="GoToChapter_3" class="sidebar-link chaptersListLink text-decoration-none p-3">
-                        <i class="customIcon buildingBlocksLight shadow me-3"></i>3:
-                        <span class="hide-on-collapse">What is GIS Made Of?</span>
-                    </a>        
-                    <a href="#" id="GoToChapter_4" class="sidebar-link chaptersListLink text-decoration-none p-3">
-                        <i class="customIcon bookMagnifyLight shadow me-3"></i>4:
-                        <span class="hide-on-collapse">Cool Things You Can Do With GIS</span>
-                    </a>
-                    <a href="#" id="GoToChapter_5" class="sidebar-link chaptersListLink text-decoration-none p-3">
-                        <i class="customIcon diyLight shadow me-3"></i>5:
-                        <span class="hide-on-collapse">How to Start with GIS (Even if You’re a Total Beginner)</span>
-                    </a>
-                    <a href="#" id="GoToChapter_6" class="sidebar-link chaptersListLink text-decoration-none p-3">
-                        <i class="customIcon superHeroLight shadow me-3"></i>6:
-                        <span class="hide-on-collapse">Conclusion: GIS = Real World Superpower</span>
-                    </a>
+                        <i class="customIcon geoRefImg2Img shadow me-3"></i>3:
+                        <span class="hide-on-collapse"> Geo-referencing Using Image-to-Image</span>
+                    </a>                    
                 </div>
-        
-               <!--  <div class="profile-section mt-auto p-4">
-                    <div class="d-flex align-items-center">
-                        <img src="https://randomuser.me/api/portraits/women/70.jpg" style="height:60px" class="rounded-circle" alt="Profile">
-                        <div class="ms-3 profile-info">
-                            <h6 class="text-white mb-0">Alex Morgan</h6>
-                            <small class="text-muted">Admin</small>
-                        </div>
-                    </div>
-                </div> -->
             </nav>        
             <main id="chapter_1" class="main-content chapter-content w-100 chapter1 activeChapter">            
                 <div class="row w-100 ">
                     <div class="col col-lg-10 col-md-8 col-sm-8">
                         <div class="dropBottomShadowGrey p-1">
-                            <h2>Welcome to Chapter 1 : Introduction to GIS</h2>
-                            <p class="text-muted">Understanding the concept of GIS.</p>
+                            <h2>Welcome to Chapter 1 : Introduction to Geo-Referencing</h2>
+                            <p class="text-muted">Understanding the concept of Geo-Referencing.</p>
                         </div>
                         <div class="container-fluid p-2">
                             <article class="chapterContentArticle ">                                
@@ -218,31 +182,16 @@
                                     <div class="carousel-inner h-100">
                                         <div class="carousel-item h-100  active">
                                             <aside  class="d-block w-100" alt="Slide 1">
-                                                <h3>1.1. Introduction</h3> 
+                                                <h3>1. Introduction</h3> 
                                                 <div class="row">
                                                     <div class="col col-lg-12 p-4">
                                                         <p class="textJustify">                                               
-                                                            <i class="fa fa-arrow-right text-primary me-2"></i>Think about the maps you usually see — they show roads, rivers, hills, cities. Handy, yes, but they only scratch the surface. Now imagine a map that not only shows where things are, but also helps you understand what’s happening there — like how polluted a river is, which roads get congested during peak hours, or which slopes are prone to landslides. That’s where GIS steps in.
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i><b>Geo-referencing</b> is the process of assigning real-world geographic coordinates to spatial data, such as maps, images, or drawings. By linking a dataset to a specific location on the Earth’s surface, geo-referencing ensures that it can be accurately displayed, analyzed, and compared with other geographic information. This process is essential in GIS for integrating different datasets and creating meaningful spatial analyses.
                                                         </p>                
                                                         <p class="textJustify">
-                                                            <i class="fa fa-arrow-right text-primary me-2"></i><b>GIS, or Geographic Information System</b>, is a smart technology that brings together maps, data, and analysis. It’s like giving a regular map some serious brainpower — one that helps us understand patterns, make comparisons, and even predict what might happen next. It’s used in everything from planning better cities and managing disasters to protecting forests and wildlife — even figuring out the fastest way to get somewhere, and here’s the good news: <b class="text-info">you don’t have to be a tech expert or scientist to get it</b>. At its core, GIS is about looking at places more deeply and making smarter decisions about them.</p>
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i><b>Geo-referencing</b> can be explained as a pin on a map to show exactly where something is. Just like dropping a location pin on Google Maps so you can find a shop or a friend’s house, This makes it possible to line up old maps, satellite images, or drawings with today’s maps, so they all match correctly and can be used together.</p>
                                                         <p class="textJustify">
-                                                            Whether you’re a student curious about the world, a government officer managing land, a farmer making better crop decisions, or just someone who enjoys maps — GIS can help you see things you never noticed before.
-                                                        </p>
-                                                        <p class="textJustify">
-                                                            <i class="fa fa-arrow-right text-primary me-2"></i>This beginner-friendly module — <b class="text-logoGreen">“Basics of GIS: Understanding the Magic of Maps”</b> — will help you:
-                                                            <ul>
-                                                                <li>Grasp the fundamentals of GIS</li>
-                                                                <li>Understand how it works</li>  
-                                                                <li>Discover its components</li>  
-                                                                <li>And see how it’s being used in the real world to solve real problems </li>
-                                                            </ul>
-                                                        </p>
-                                                        <p class="textJustify">
-                                                            <h4><i class="fas fa-rocket text-cersieRed" ></i>&nbsp;&nbsp;Ready to Start?</h4>
-                                                            <p class="pt-1">If you’re curious, open to learning, and ready to see the world a bit differently — you’re in the right place.<br/>
-                                                            Once you understand GIS, <b class="text-logoGreen">you’ll never look at a map the same way again.</b>
-                                                            </p>
+                                                            Geo-referencing connects an image or map to <b>real-world coordinates.</b> This ensures that the data is <b>measurement-ready and can be matched accurately with its real-world location</b>.
                                                         </p>                                                        
                                                     </div>
                                                 </div>
@@ -251,41 +200,128 @@
                                         <div class="carousel-item h-100 ">
                                             <aside  class="d-block w-100" alt="Slide 2">
                                                 <div class="row pt-2">
-                                                    <h4>1.2 What is GIS?</h4>
+                                                    <h4>1.2 Purpose of Geo-Referencing</h4>
                                                     <div class="col col-lg-12 col-md-12 text-center">
-                                                        <img title="What is GIS?" src="../img/ModuleImgs/Basics_GIS/WhatIsGIS.png" class="w-50 p-3 object-fit-cover border rounded" alt="what is GIS?" />
+                                                        <img title="Purpose of Geo-Referencing" src="../img/ModuleImgs/Geo_ref/Geo_Ref_Purpose.png" class="w-75 p-3 object-fit-cover border rounded" alt="Purpose of Geo-Referencing" />
                                                     </div>                                                    
                                                 </div>
                                                 <div class="row pt-2">
                                                     <div class="col col-lg-12">
                                                         <div class="w-90 mx-auto">
-                                                            <p class="textJustify">
-                                                                <ul>
-                                                                    <li class="textJustify pt-2">In its simplest form, GIS answers two major questions: <b>"Where is something?"</b> and <b>"What is happening there?"</b> It doesn’t just show you the river; it can tell you how deep it is, how polluted it might be, what fish live there, and which villages rely on that river for their drinking water. GIS integrates location <b>(where)</b> with descriptive information <b>(what)</b>.
-                                                                    </li>
-                                                                </ul>
-                                                                <p>
-                                                                    Also we can say, the GIS answers 3 important questions i.e.,
-                                                                    <ul>
-                                                                        <li><b class="text-info">What is that?</b> (What type of entity are we showing in the map - point or line or polygon)</li>
-                                                                        <li><b class="text-info">Where is that?</b> (Geo-location of that entity, which helps to triangulate or to precisely identify an entity's location on this Earth's surface)</li>
-                                                                        <li><b class="text-info">Why is that?</b> (An analysis result comes after we infer from many such entities grouped together and analyze the patterns evolved from them.)</li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p>
-                                                                    <h5>Think about a normal paper map:</h5>
-                                                                    <ul>
-                                                                        <li class="textJustify pt-2">it’s static and gives you only one piece of information — location. Now think about <b>Google Maps</b>. It shows you roads, traffic, nearby restaurants, distances, and even weather. That’s <b>GIS</b> in action! It connects <b>data with places</b>.</li>
-                                                                        <li class="textJustify pt-2">A great way to understand GIS is through an analogy: <b>Google Maps on steroids</b>. While Google Maps is a practical daily tool, GIS goes much deeper, allowing scientists, governments, and businesses to analyze <b>patterns, predict events, and make better decisions</b>.</li>
-                                                                        <li class="textJustify pt-2">In fact, GIS is a bridge between the <b>physical world</b> and the <b>data world</b>. It connects satellite images, drone pictures, on-ground surveys, and digital databases to produce maps that think. Whether it’s for saving forests, planning cities, or fighting floods, GIS is becoming an invisible but powerful ally.</li>
-                                                                    </ul>
-                                                                </p>
-                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Assigns real-world location :</b> Georeferencing gives maps, images, or drawings a real-world context by <b>linking them to geographic coordinates</b>. <b>Without this step, scanned maps or satellite images are simply pictures with no spatial reference</b>. By assigning actual latitude and longitude values, these visuals can be accurately placed on the Earth’s surface, ensuring that every feature, whether it’s a road, building, or river, corresponds to its correct location in reality.                                                            
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Makes data measurement-ready :</b> Once an image or map is georeferenced, <b>it becomes a measurable dataset rather than just a visual aid.</b> This means that users can calculate distances between points, measure areas of land parcels, and determine accurate positions with confidence. For example, in land survey or urban planning, knowing the precise measurements of plots or the distance between infrastructure elements is crucial for design, analysis, and execution.                                                                
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Enables integration :</b> Georeferencing allows <b>different types of spatial datasets to be aligned and compared within the same coordinate system.</b> This is particularly important when working with historical maps, satellite imagery, survey records, and modern GIS data. <b>By standardizing their spatial references, these datasets can be overlaid seamlessly, enabling comprehensive analysis that reveals changes over time or relationships between diverse sources of geographic information.</b>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Supports decision-making :</b> Reliable georeferenced data <b>empowers decision-makers in fields like urban planning, environmental management, disaster response, and infrastructure development.</b> By providing spatially accurate information, it helps planners visualize scenarios, assess risks, and develop strategies that are grounded in real-world conditions. For example, city planners can use georeferenced maps to decide where to expand infrastructure, while environmental agencies can monitor deforestation or flood-prone areas with higher precision.                                                                
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
                                                         </div>     
                                                     </div>
                                                 </div>
                                             </aside>
-                                        </div>                                        
+                                        </div>
+                                        <div class="carousel-item h-100 ">
+                                            <aside  class="d-block w-100" alt="Slide 3">
+                                                <div class="row pt-2">
+                                                    <h4>1.3 Tools used for Geo-Referencing</h4>
+                                                    As we all know that every task needed to be done on the Computer, the tasks are done through the Software applications. In that manner the Geo-Referencing of the data is done using several tools present in the GIS/CAD softwares as mentioned below:
+                                                    <ul>
+                                                        <li><b>Open-source & free tools</b>&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i><b class="text-info">QGIS, GDAL.</b></li>
+                                                        <li><b>Commercial & advanced tools</b>&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i><b class="text-info">ArcGIS, ERDAS IMAGINE, Global Mapper, AutoCAD Map 3D.</b></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-7 col-md-6 col-sm-12">
+                                                        <div class="w-90 mx-auto">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">QGIS Georeferencer Plugin :</b>
+                                                                        <ul>
+                                                                            <li>An open-source tool built into QGIS.</li>
+                                                                            <li>Supports both the methods of Geo-Referencing.</li>
+                                                                            <li>Supports assigning Ground Control Points (GCPs), applying transformations, and exporting georeferenced raster images.</li>
+                                                                            <li>Ideal for academic, professional, and government use due to its free availability.</li>
+                                                                        </ul>                                                      
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">ArcGIS Georeferencing Tool :</b>
+                                                                        <ul>
+                                                                            <li>A widely used proprietary tool by Esri.</li>
+                                                                            <li>Supports both the methods of Geo-Referencing.</li>
+                                                                            <li>Provides advanced georeferencing options, including multiple transformation methods (Affine, Polynomial, Spline, Adjust).</li>
+                                                                            <li>Offers seamless integration with other ArcGIS features like digitizing and spatial analysis.</li>
+                                                                        </ul>                                    
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">ERDAS IMAGINE :</b>
+                                                                        <ul>
+                                                                            <li>A powerful remote sensing and image analysis software.</li>
+                                                                            <li>Supports both the methods of Geo-Referencing.</li>
+                                                                            <li>Specialized in georeferencing aerial and satellite imagery.</li>
+                                                                            <li>Provides advanced image correction tools for high-accuracy applications.</li>
+                                                                        </ul>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Global Mapper :</b>
+                                                                        <ul>
+                                                                            <li>A GIS software with user-friendly georeferencing features.</li>
+                                                                            <li>Supports both the methods of Geo-Referencing.</li>
+                                                                            <li>Supports a wide range of raster and vector formats.</li>
+                                                                            <li>Often used for quick alignment tasks and integration with GPS data.</li>
+                                                                        </ul>                                                            
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">GDAL (Geospatial Data Abstraction Library) :</b>
+                                                                        <ul>
+                                                                            <li>An open-source command-line library for raster and vector data processing.</li>
+                                                                            <li>Supports both the methods of Geo-Referencing.</li>
+                                                                            <li>Provides powerful utilities like gdal_translate and gdalwarp for georeferencing and reprojection.</li>
+                                                                            <li>Preferred by developers and advanced users for automation and scripting.</li>
+                                                                        </ul>                                                            
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">AutoCAD Map 3D / Civil 3D :</b>
+                                                                        <ul>
+                                                                            <li>Engineering-focused tools that allow georeferencing of CAD drawings.</li>
+                                                                            <li>Useful for aligning engineering designs and construction layouts with GIS datasets.</li>
+                                                                        </ul>                                                            
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-lg-5 col-md-6 col-sm-12 text-center">
+                                                        <img title="Tools used for Geo-Referencing" src="../img/ModuleImgs/Geo_ref/geoRef_Tools.png" class="w-100 p-3 object-fit-cover border rounded" alt="Tools used for Geo-Referencing" />
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>                                                                         
                                     </div>
                                 </div>
                                 <!-- Separate Next and Previous Links -->
@@ -302,8 +338,9 @@
                         <div>
                             <h4>Topics :</h4>
                             <ul class="list-group courseContentTopicListGroup list-group-flush ">
-                                <li id="0" class="list-group-link list-group-item list-group-item-ch1 active">1.1. Introduction</li>
-                                <li id="1" class="list-group-link list-group-item list-group-item-ch1">1.2. What is GIS?</li>
+                                <li id="0" class="list-group-link list-group-item list-group-item-ch1 active">1.1 Introduction</li>                                
+                                <li id="1" class="list-group-link list-group-item list-group-item-ch1">1.2 Purpose of Geo-referencing</li>                                
+                                <li id="2" class="list-group-link list-group-item list-group-item-ch1">1.3 Tools Used for Geo-referencing</li>                                
                             </ul>
                         </div>
                     </div>
@@ -313,8 +350,8 @@
                 <div class="row w-100">
                     <div class="col col-lg-10 col-md-8 col-sm-8">
                         <div class="dropBottomShadowGrey p-1">
-                            <h2>Welcome to Chapter 2 : How Does GIS Work?</h2>
-                            <p class="text-muted textJustify">Basic understanding of GIS' functionalities</p>
+                            <h2>Welcome to Chapter 2 : Geo-referencing using Ground Control Points (GCPs)</h2>
+                            <p class="text-muted textJustify">Step by Step process explained for the Geo-Referencing using GCPs - Utilizing the tool available in QGIS Software</p>
                         </div>
                         <div class="container-fluid p-2">
                             <article class="chapterContentArticle">                                
@@ -325,302 +362,279 @@
                                                 <h3>2.1. Introduction</h3>
                                                 <div class="row pt-2">
                                                     <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
-                                                        <div class="row align-items-center">
-                                                            <div class="col col-md-6 col-lg-6 textJustify">                                                     
-                                                                GIS is like a magical sandwich, where each slice of information is stacked on top of each other to form a complete picture. These slices are called <b class="text-info">layers</b>. Each layer holds a different type of information, and when combined, they help us see relationships and solve problems.
-                                                            </div>
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <img title="GIS Sandwich of data" src="../img/ModuleImgs/Basics_GIS/GIS_Sandwichlayers_Info.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="GIS Sandwich of data" />
-                                                            </div>
-                                                        </div>                                                                                              
-                                                        <div class="row align-items-center pt-3">
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <img title="GIS Layers" src="../img/ModuleImgs/Basics_GIS/GIS_layers_Info.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="GIS Layers" />
-                                                            </div>
-                                                            <div class="col col-md-6 col-lg-6 textJustify">
-                                                                <p class="textJustify">For example, one layer might show roads, another might show hospitals, and
-                                                                    another might
-                                                                    show population density. Separately, each layer is useful. But when stacked together, you can answer
-                                                                    complex
-                                                                    questions like:
-                                                                    <ul>
-                                                                        <li><b>"Which highly populated areas are more than 10 km away from a hospital?"</b> or</li>
-                                                                        <li><b>"Which road connects most villages without proper medical access?"</b></li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p class="textJustify">
-                                                                    Imagine a transparent sheet with just rivers drawn on it. Another sheet above it shows forests. Another sheet shows cities. Individually, you can study rivers, forests, or cities. But when you place them together, you can study the relationship between them — for example, whether cities are polluting nearby rivers or how deforestation near rivers affects flood risks.
-                                                                </p>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12">                                                     
+                                                                <p class="textJustify">QGIS (Quantum GIS) provides powerful tools for georeferencing raster images (e.g., scanned maps, aerial photos) to align them with real-world coordinates. The Georeferencer tool in QGIS allows for multiple techniques, each suitable for different types of spatial distortions.</p>
                                                             </div>
                                                         </div>
-                                                        <p class="textJustify pt-3">
-                                                            GIS uses databases to store information and maps to visualize it. Behind every point, line, and shape on a
-                                                            GIS map (we will see what is point, line and shapes in next sections), there is rich information: names, heights, ownership, history, pollution levels, and much more.
-                                                        </p>
-                                                        <p class="textJustify pt-3">Using software, you can filter, combine, and analyze these data layers to spot trends, predict changes, or
-                                                            optimize decisions.
-                                                        </p>
-                                                        <p class="textJustify">
-                                                            Thus, GIS is not just about <b>"seeing"</b> but about <b>"thinking spatially."</b> It's a tool that turns
-                                                            <b>complex data into easy-to-understand visual insights.</b>
-                                                        </p>
+                                                        <div lass="row">
+                                                            <p class="ps-2 textJustify">Things to keep ready before starting the step-by-step process:
+                                                                <ul>
+                                                                    <li><b>QGIS Software installed and opened on the computer system.</b></li>
+                                                                    <li><b>Open the installed QGIS Application.</b></li>
+                                                                    <li><b>Target Image or Raster data:</b> On which the Geo-Referencing has to be done.</li>
+                                                                    <li><b>Set of GCPs in any of the GIS Vector Data formats.</b></li>
+                                                                </ul>
+                                                            </p>
+                                                            <p class="textJustify">
+                                                                Georeferencing using <b>Ground Control Points (GCPs)</b> in QGIS is a common method to align an unreferenced raster (e.g., scanned maps, aerial photos) with a known coordinate system. This technique ensures that the raster image accurately assigning the precise coordinates for spatial alignment.
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </aside>
                                         </div>
                                         <div class="carousel-item h-100">
                                             <aside  class="d-block w-100" alt="Slide 1_2">
-                                                <h4>2.2. GIS Data Types and its components</h4>
+                                                <h4>2.2. Steps for Georeferencing with GCPs in QGIS</h4>
                                                 <p>
-                                                    Every information system, which uses the computer for working, they required to classify the types of data it uses in the computer system. The following are the basic fundamental data types used in the GIS to represent certain types of information.
+                                                    Following are the steps involved in the process of GeoReferencing using the GCPs method utilizing the <b class="text-primary">"Georeferencer" Tool</b> in the QGIS software.
                                                 </p>
-                                                <div class="row pt-2">                                                    
+                                                <div class="row pt-2">
                                                     <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify">                                                     
+                                                                <h5>1. Open QGIS and Load Reference Data</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Add a basemap, vector layer, or georeferenced raster as a reference.</li>
+                                                                            <li>For online basemaps, use XYZ Tiles (e.g., Google Satellite, OpenStreetMap).</li>
+                                                                            <li>Navigate to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Plugins&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Basemap Management&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Load Basemaps</b> on the Menu Bar as shown in the below images</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
                                                         <div class="row align-items-center">
-                                                            <div class="col col-md-6 col-lg-6 textJustify">                                                     
-                                                                <h5>1. Vector Data</h5>
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Load Basemaps" src="../img/ModuleImgs/Geo_ref/basemapAddition.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Load Basemaps" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center pt-2">
                                                                 <div class="row">
-                                                                    <div col="col col-md-6 col-lg-6">
-                                                                        <p class="">Vector data represents features as <b>points, lines, and polygons.</b></p>
-                                                                        <p>The vector data usually used to represent the real life features in a form of geometrical formats as mentioned in the right image.</p>
-                                                                        <p>
-                                                                            <ul>
-                                                                                <li><b class="text-logoGreen">Point :</b> Representing specific individual unit in the world or a specific location.
-                                                                                    <br/>Example:<br/>
-                                                                                    <p class="pb-4">
-                                                                                        <i class="fas fa-tree fa-2x"></i> Tree, <br/>
-                                                                                        <i class="custIcon well-outline custIcon2Sz"></i> well, <br/>
-                                                                                        <i class="custIcon lamppost-outline custIcon2Sz"></i>streetlight,<br/>
-                                                                                        <i class="custIcon evCharging-outline custIcon2Sz"></i>EV Charging Station
-                                                                                    </p>
-                                                                                </li>
-                                                                                <li><b class="text-logoGreen">Line :</b> Representing linear features
-                                                                                    <br/>Example:<br/>
-                                                                                    <p class="pb-4">
-                                                                                        <i class="fas fa-road fa-2x"></i> Road, <br/>
-                                                                                        <i class="custIcon river-outline custIcon2Sz"></i> River, <br/>
-                                                                                        <i class="custIcon railTrack-outline custIcon2Sz"></i>Railways.
-                                                                                    </p>
-                                                                                </li>
-                                                                                <li><b class="text-logoGreen">Polygon :</b> Represent areas with boundaries or any space's boundaries are generally represented as polygon
-                                                                                    <br/>Example:<br/>
-                                                                                    <p class="pb-4">
-                                                                                        <i class="custIcon lake-outline custIcon2Sz"></i> Lake, <br/>
-                                                                                        <i class="custIcon boundary-outline custIcon2Sz"></i> Park Boundary, <br/>
-                                                                                        <i class="custIcon landParcel-outline custIcon2Sz"></i> Land Parcel.
-                                                                                    </p>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </p>
-                                                                        <p>
-                                                                            Since these vector datatype files are used on the computer systems, just like how Microsoft word, excel, etc., data files are all represented with a particular file extension types, the vector data files are also represented in different file types and its extensions.
-                                                                        </p>
-                                                                        <p>
-                                                                            In order to maitain the stability and easy inter-operability, the Open Geo-Spatial Consortium (OGC) have come up with certain standards for representing the vector data in a particualar file types. It is adviced only to create or utlize the vector data in these OGC standard defined vector data types ony.
-                                                                        </p>
-                                                                        <p>
-                                                                            OGC Standard vector data file types and its file extension:
-                                                                            <ul>
-                                                                                <li class="text-info">GeoPackage - <b class="text-logoGreen">*.gkpg</b></li>
-                                                                                <li class="text-info">GeoXACML - <b class="text-logoGreen">*.xml</b></li>
-                                                                                <li class="text-info">Geography Markup Language (GML) - <b class="text-logoGreen">*.gml</b></li>
-                                                                                <li class="text-info">Keyhole Markup Language (KML) - <b class="text-logoGreen">*.kml</b></li>
-                                                                            </ul>
-                                                                        </p>
-                                                                        <p>
-                                                                            Other frequently used vector data file types and its file extension:
-                                                                            <ul>
-                                                                                <li class="text-info">Shapefile - <b class="text-logoGreen">*.shp</b></li>
-                                                                                <li class="text-info">GeoJSON - <b class="text-logoGreen">*.geojson</b></li>
-                                                                                <li class="text-info">Geo Database (GDB) - <b class="text-logoGreen">*.gdb</b></li>
-                                                                            </ul>
-                                                                        </p>
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12"><ul><li><p>Set <b class="text-primary">Projection Co-ordinate Reference System (CRS) as per the requirement</b></p></li></ul></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                        <img title="Set Project CRS" src="../img/ModuleImgs/Geo_ref/setCRS.png" class="w-90 p-1 object-fit-cover border rounded" alt="Set Project CRS" />
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <img title="GIS Sandwich of data" src="../img/ModuleImgs/Basics_GIS/vectors.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="GIS Sandwich of data" />
-                                                            </div>
-                                                        </div>                                                                                              
-                                                        <div class="row align-items-center pt-3">
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <img title="GIS Layers" src="../img/ModuleImgs/Basics_GIS/RasterData.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="GIS Layers" />
-                                                            </div>
-                                                            <div class="col col-md-6 col-lg-6 textJustify">                                                     
-                                                                <h5>2. Raster Data</h5>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>2. Open the Georeferencer Tool</h5>
                                                                 <div class="row">
-                                                                    <div col="col col-md-6 col-lg-6">
-                                                                        <p class="">Raster data is made of grids of pixels (cells), each holding a particular unique value.</p>
-                                                                        <p>
-                                                                            <ul>
-                                                                                <li>Raster data is made up of a grid of small squares called pixels or cells.</li>
-                                                                                <li>Each pixel holds a specific value that represents some type of information about the Earth's surface.</li>
-                                                                                <li>Think of it like a photo taken by a camera—it's just a bunch of tiny squares arranged together to form an image.</li>
-                                                                                <li>However in GIS, the image isn’t taken by a regular camera. It’s usually captured by sensors attached to satellites, drones, or airplanes.</li>
-                                                                                <li>These sensors fly over an area and collect data from above, creating a raster image.</li>
-                                                                                <li>Unlike normal photos that just store color, GIS raster images store measurable data in each pixel.</li>
-                                                                                <li>This data is stored as <b class="text-info">Digital Numbers (DN)</b> which is nothing but the Surface reflectance values. For Example, Each DN represents something like:
-                                                                                    <ul>
-                                                                                        <li class="text-logoGreen">Temperature</li>
-                                                                                        <li class="text-logoGreen">Elevation</li>
-                                                                                        <li class="text-logoGreen">How much of an area is covered with health green cover? (healthy vegetation), etc.</li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>DN values are the core of GIS analysis. Without them, a raster would just look nice but wouldn’t be useful for scientific or environmental work.</li>
-                                                                                <li>So, the main difference between a normal image and GIS raster data is:
-                                                                                    <ul>
-                                                                                        <li class="text-info">A photo shows just the collection of colors.</li>
-                                                                                        <li class="text-logoGreen">A GIS raster shows real-world data to interpret several aspects of the targeted area.</li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </p>                                                                        
-                                                                        <p>The fundamental and stellar difference between a normal camera capture raster image and a particular aerial mounted sensor's captured GIS' raster image is the <b class="text-info">DN Values.</b></p>
-                                                                        <p>
-                                                                            Since these raster datatype image files are used on the computer systems, &rpar;just like how PNG, JPEG, GIF, etc.,&lpar; raster data files are all represented with a particular file types and their respective extensions.
-                                                                        </p>
-                                                                        <p>
-                                                                            In order to maitain the stability and easy inter-operability, the Open Geo-Spatial Consortium (OGC) have come up with certain standards for representing the raster data in a particualar file types. It is adviced only to create or utlize the raster data in these OGC standard defined raster data types ony.
-                                                                        </p>
-                                                                        <p>
-                                                                            OGC Standard vector data file types and its file extension:
-                                                                            <ul>
-                                                                                <li class="text-info">OGC Cloud Optimized GeoTIFF - <b class="text-logoGreen">*.tif or *.tiff</b></li>
-                                                                                <li class="text-info">CoverageJSON - <b class="text-logoGreen">*.covjson</b></li>
-                                                                                <li class="text-info">GML in JPEG 2000 for Geographic Imagery - <b class="text-logoGreen">*.jp2 or *.jpx</b></li>
-                                                                            </ul>
-                                                                        </p>
-                                                                        <p>
-                                                                            Other frequently used vector data file types and its file extension:
-                                                                            <ul>
-                                                                                <li class="text-info">JPEG - <b class="text-logoGreen">*.jpeg or *.jpg</b></li>
-                                                                            </ul>
-                                                                        </p>
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Navigate to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Georeferencer...&nbsp;</b> on the Menu Bar as shown in the below image.</li>
+                                                                            <li>Click on the <b>Georeferencer...</b> link to open the tool to be used for georeferencing of the image </li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Navigate to Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/geoReferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Navigate to Georeferencer Tool" />
                                                             </div>
-                                                        </div>                                                        
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>3. Load Source Raster (Unreferenced Image)</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>On the opened Georeferencer tool, click <b class="text-primary">Open Raster...</b> and select the scanned map or aerial image, etc., which is to be georeferenced, as shown in the below image</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Raster option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/openRaster_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Raster option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>4. Add Ground Control Points (GCPs)</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Add GCP Point</b> from the Tool Box Menu on the Georeferencer window as shown in the below image to open the <b>"Enter Map Coordinates"</b> window</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open GCP Point option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/gcpPoint_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open GCP Point option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">
+                                                                <ul>
+                                                                    <li>In the <b>"Enter Map Coordinates"</b> window:
+                                                                        <ul>
+                                                                            <li>If using a <b>georeferenced layer (e.g., basemap)</b>, click <b>From Map Canvas</b> and pick the
+                                                                                same location.</li>
+                                                                            <li>If having <b>GCP coordinates (longitude/latitude)</b>, manually enter them on the fields <b
+                                                                                    class="text-primary"></b>"X/Easting" & "Y/Northing"</b>.</li>
+                                                                            <li>Select the CRS based on the requirement</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Enter Coordinates" src="../img/ModuleImgs/Geo_ref/enterCooRdinates_in_GeoreferencerWindow.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Enter Coordinates" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">
+                                                                <ul>
+                                                                    <li>Repeat this for at least <b>4 control points distributed evenly across the image</b>. As shown in the below image.
+                                                                    </li>
+                                                                    <li><b class="text-primary">This is the important step to be done. If the GCPs are not distributed on all over the image, and less than 4 GCPs are used, it will result in an very low accuracy of the output image.</b></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Enter 4GCPs minimum" src="../img/ModuleImgs/Geo_ref/4GCPs_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Enter 4GCPs minimum" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>5. Choose the Transformation Method</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Transformation Settings...</b> by navigating to <b>Settings&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Transformation Settings...&nbsp;</b> on the Menu Bar of the <b>Georeferencer</b> window as shown in the below image to open the <b>"Transformation Settings" window</b></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/Transformation_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">
+                                                                <ul>
+                                                                    <li>In the opened <b>Transformation Settings</b> window, select a transformation type:
+                                                                        <ul>
+                                                                            <li><b>Affine Transformation</b> (Minimum 3 GCPs; for basic scaling, rotation, translation).</li>
+                                                                            <li><b>Polynomial (1st or 2nd Order)</b> (For slight distortions; requires 6+ GCPs).</li>
+                                                                            <li><b>Thin Plate Spline (Rubber Sheeting)</b> (For flexible warping; good for historical maps).</li>
+                                                                            <li><b>Projective Transformation </b> (For perspective distortions; requires 4+ GCPs).</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>6. Set Output Parameters</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Choose:
+                                                                                <ul>
+                                                                                    <li><b>Output format:</b> GeoTIFF (recommended).</li>
+                                                                                    <li><b>Resampling method:</b>
+                                                                                        <ul>
+                                                                                            <li>Nearest Neighbor (for categorical data like scanned maps).</li>
+                                                                                            <li>Bilinear or Cubic (for continuous data like aerial images).</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li><b>Coordinate Reference System (CRS):</b> Choose a CRS based on the project requirements</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation final option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/TransformationFinal_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation final option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>7. Start Georeferencing</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b>"Start Georeferencing"</b> on the Tool Bar Menu of the <b>"Georeferencer"</b> window.</li>
+                                                                            <li>QGIS will generate a georeferenced raster.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Start Georeferencing in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/startGeoreferncing_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Start Georeferencing in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>8. Verify Accuracy</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Overlay the <b>georeferenced raster with the reference layer</b>.</li>
+                                                                            <li>Check the <b>Root Mean Square Error (RMSE)</b> in the Georeferencer window
+                                                                                <ul>
+                                                                                    <li><b>A lower RMSE indicates better accuracy</b>.</li>
+                                                                                    <li><b>If RMSE is high, adjust GCPs and re-run the process</b></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Final output" src="../img/ModuleImgs/Geo_ref/openFinal_OP.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Final output" />
+                                                            </div>
+                                                        </div>                                                     
                                                     </div>
                                                 </div>                                      
                                             </aside>
                                         </div>
                                         <div class="carousel-item h-100">
                                             <aside  class="d-block w-100 pe-3" alt="Slide 1_3">
-                                                <h4>2.3. Software in GIS: The Tools Behind the Map</h4>
-                                                <p>
-                                                    If we think of a <b>car</b> as a machine, it’s the <b>driver</b> who makes it move and function. Similarly, in a computer, the <b>software</b> acts as the driver that runs the <b>hardware</b>. It serves as a <b>bridge</b> between the <b>user</b> and the <b>machine</b>, enabling all necessary tasks to be performed.</p>
-                                                <p>
-                                                    In the context of GIS, <b>GIS software</b> is the tool that lets users <b>input, store, analyze, and visualize spatial data</b>—converting raw information into <b>meaningful maps, patterns, and decisions.</b></p>
-                                                <p>
-                                                    Generally the computer softwares are of two types:<br/>
-                                                    <ul>
-                                                        <li>
-                                                            <span class="text-info">System Softwares</span>: This is the foundation software that manages the hardware and provides a platform for other software to run.<br/>
-                                                            <ul>
-                                                                <li><b class="text-info">Purpose</b>: Controls and coordinates hardware components and creates a user interface.</li>
-                                                                <li><b class="text-info">Examples</b>:
-                                                                    <ul>
-                                                                        <li><b class="text-logoGreen">Operating Systems (Windows, Linux)</b></li>
-                                                                        <li><b class="text-logoGreen">Device Drivers (for printers, webcams, GPS receivers)</b></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <span class="text-info">Application Softwares</span>: These are programs designed to perform specific user-oriented tasks.<br/>
-                                                            <ul>
-                                                                <li><b class="text-info">Purpose</b>: Helps users carry out several tasks like writing, drawing, designing, mapping, or calculating.</li>
-                                                                <li><b class="text-info">Examples</b>:
-                                                                    <ul>
-                                                                        <li><b class="text-logoGreen">Microsoft Word (word processing or document creations)</b></li>
-                                                                        <li><b class="text-logoGreen">Microsoft Excel (spreadsheets or accounting)</b></li>
-                                                                        <li><b class="text-logoGreen">AutoCAD (engineering designs)</b></li>
-                                                                        <li><b class="text-logoGreen">GIS Software like QGIS, ArcGIS, etc. (mapping and spatial analysis)</b></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>                                                                                                        
-                                                </p>
-                                                <p>
-                                                    So, in GIS, software is not just a tool—it is the engine that <b>powers spatial thinking</b> and <b>enables real-world decisions</b> through maps and data.
-                                                </p>
-                                                <div class="row pt-2">                                                    
-                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
-                                                        <div class="row align-items-center">
-                                                            <div class="col col-md-6 col-lg-6 textJustify">                                                     
-                                                                <b class="text-logoGreen">GIS Softwares :</b> These GIS application softwares provide necessary tools for the users to perform any needed geospatial related tasks such as:
-                                                                <div class="row">
-                                                                    <div col="col col-md-6 col-lg-6">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <b class="text-info">Data Visualization</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Attribute Management</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Spatial Analysis</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Measurement & Geometry</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Map Production</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Georeferencing</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Coordinate Transformation</b>
-                                                                            </li>
-                                                                            <li>
-                                                                                <b class="text-info">Real-Time Monitoring (Advanced)</b>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <div class="row">
-                                                                    <img title="Geospatial Tasks" src="../img/ModuleImgs/Basics_GIS/Common_GeospatialTasks.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="Geospatial Tasks" />
-                                                                </div>
-                                                            </div>
-                                                        </div>                                                                                              
-                                                        <div class="row align-items-center pt-3">
-                                                            <div class="col col-md-6 col-lg-6 text-center">
-                                                                <img title="GIS Softwares" src="../img/ModuleImgs/Basics_GIS/GIS_Softwares.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="GIS Softwares" />
-                                                            </div>
-                                                            <div class="col col-md-6 col-lg-6 textJustify">                                                     
-                                                                <h5>GIS Softwares Examples</h5>
-                                                                <div class="row">
-                                                                    <div col="col col-md-6 col-lg-6">
-                                                                        <p class="">As the general usage permissions for the application software, the GIS software are also of 2 types in terms of access permissions, i.e, <span class="text-info">Open Source or Free Software</span> and <span class="text-info">Proprietary or paid License softwares.</span><br/><br/>
-                                                                        Some of the most commonly used GIS Softwares are as follows:
-                                                                        </p>
-                                                                        <p>
-                                                                            <ul>
-                                                                                <li><b class="text-logoGreen">QGIS</b> &lpar;Free and Opensource&rpar;</li>
-                                                                                <li><b class="text-logoGreen">ArcGIS</b> &lpar;Professional and Proprietry paid Licensed software&rpar;</li>
-                                                                                <li><b class="text-logoGreen">Google Earth Pro</b> &lpar;Free&rpar;</li>
-                                                                                <li><b class="text-logoGreen">PCI Geomatica</b> &lpar;Professional and Proprietry paid Licensed software - Mostly used for Raster based Geospatial analysis&rpar;</li>
-                                                                                <li><b class="text-logoGreen">ERDAS Imagine</b> &lpar;Professional and Proprietry paid Licensed software - Mostly used for Raster based Geospatial analysis&rpar;, etc.</li>
-                                                                            </ul>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>                                                        
+                                                <h4>2.3. Georeferencing using GCPs explained in a concise tabular steps</h4>
+                                                <p>Here is a concise table format of the steps in the GCPs based georeferencing process using the "Georeferencer" tool on the QGIS software</p>
+                                                <div class="row align-items-center pb-2">
+                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                        <img title="GCPs based georeferencing concise points" src="../img/ModuleImgs/Geo_ref/geoRef_GCPs_ConcisePoints.png"
+                                                            class="w-90 p-1 object-fit-cover border rounded" alt="GCPs based georeferencing concise points" />
                                                     </div>
-                                                </div>                                      
+                                                </div>
                                             </aside>
-                                        </div>                                 
+                                        </div>                                
                                     </div>
                                 </div>
                                 <!-- Separate Next and Previous Links -->
@@ -638,8 +652,8 @@
                             <h4>Topics :</h4>
                             <ul class="list-group courseContentTopicListGroup list-group-flush ">
                                 <li id="1_1" class="list-group-link list-group-item active list-group-item-ch2">2.1. Introduction</li>
-                                <li id="1_2" class="list-group-link list-group-item list-group-item-ch2">2.2. GIS Data Types and its components</li>
-                                <li id="1_3" class="list-group-link list-group-item list-group-item-ch2">2.3. Software in GIS: The Tools Behind the Map</li>
+                                <li id="1_2" class="list-group-link list-group-item list-group-item-ch2">2.2. Steps for Georeferencing with GCPs in QGIS</li>
+                                <li id="1_3" class="list-group-link list-group-item list-group-item-ch2">2.3. Georeferencing using GCPs explained in a concise tabular steps</li>
                                 <!--<li id="1_4" class="list-group-link list-group-item list-group-item-ch2">CORS Station Distribution Map for all CoE StatesS</li> -->
                             </ul>
                         </div>
@@ -650,7 +664,7 @@
                 <div class="row w-100">
                     <div class="col col-lg-10 col-md-8 col-sm-8">
                         <div class="dropBottomShadowGrey p-2">
-                            <h2>Welcome to Chapter 3 : What is GIS Made Of?</h2>                            
+                            <h2>Welcome to Chapter 3 :  Geo-referencing Using Image-to-Image</h2>                            
                         </div>
                         <div class="container-fluid p-2">
                             <article class="chapterContentArticle">
@@ -658,179 +672,214 @@
                                     <div class="carousel-inner h-100">
                                         <div class="carousel-item h-100 active">
                                             <aside  class="d-block w-100" alt="Slide 3_1">
-                                                <h3>3.1. Introduction</h3> 
+                                                <h3>3.1. Introduction</h3>
                                                 <div class="row pt-2">
-                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                        <div class="row">
-                                                            <div class="col col-md-4 col-lg-4 text-center">
-                                                                    <img title="GIS Layers" src="../img/ModuleImgs/Basics_GIS/GIS_How_it_Works.png"
-                                                                        class="w-100 p-1 object-fit-cover border rounded" alt="GIS Layers" />
-                                                            </div>
-                                                            <div class="col col-md-8 col-lg-8 textJustify">  
-                                                                <p class="pe-2">
-                                                                    <b class="text-info">Have you ever wondered what makes a Geographic Information System (GIS) work?</b><br/>
-                                                                    At its core, GIS is much more than just a digital map. It's a powerful tool that helps us collect, analyze, and understand spatial information. But behind the scenes, a GIS relies on several key components working together—each playing a specific role in turning raw data into useful insights.</p>
-                                                                <p class="pe-2">Geographic Information Systems (GIS) play a vital role in modern governance, helping departments plan, manage, and monitor resources more effectively. From land records and infrastructure planning to disaster management and service delivery, GIS provides the tools needed to make data-driven decisions. But to use it effectively, it is important to understand what GIS is made of.
-                                                                <p class="pe-2">This chapter introduces the fundamental components that make up a GIS. These include the hardware
-                                                                    and software used to process data, the spatial and attribute data itself, the people who operate and apply the system, and the methods that ensure accuracy and consistency. A clear understanding of these elements will help government functionaries
-                                                                    apply GIS more efficiently in their respective domains.</p>
-                                                                <p class="pe-2"><b class="text-info">GIS is like a recipe</b>. Just like baking a cake needs ingredients like flour, sugar, eggs, and heat, GIS needs five key elements working together.</p>
-                                                            </div>
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">                                                        
+                                                        <div lass="row">                                                            
+                                                            <p class="textJustify">
+                                                                Image-to-Image geo-referencing is the process of aligning <b>one image (such as a scanned map or satellite image) with another image that already has real-world coordinates.</b> Instead of using ground control points from the field, <b>you pick matching points on both images (like road intersections, rivers, or landmarks) and link them together.</b>
+                                                            </p>
+                                                            <p>
+                                                                This way, the <b>“unknown” image inherits the geographic reference from the “known” image</b>, making it location-ready and usable for measurement, analysis, or overlay with other GIS datasets.
+                                                            </p>
+                                                            <p class="ps-2 textJustify">Things to keep ready before starting the step-by-step process:
+                                                                <ul>
+                                                                    <li><b>QGIS Software installed and opened on the computer system.</b></li>
+                                                                    <li><b>Open the installed QGIS Application.</b></li>
+                                                                    <li><b>Target Image or Raster data:</b> On which the Geo-Referencing has to be done.</li>
+                                                                    <li><b>Reference image using which the georeferencing is to be done.</b></li>
+                                                                </ul>
+                                                            </p>
                                                         </div>
-                                                    </div>                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                        <img title="Image to Image Georeference" src="../img/ModuleImgs/Geo_ref/image_to_image_reference_infographic.png"
+                                                            class="w-90 p-1 object-fit-cover border rounded" alt="Image to Image Georeference" />
+                                                    </div>
                                                 </div>
                                             </aside>
                                         </div>
                                         <div class="carousel-item h-100">
                                             <aside class="d-block w-100" alt="Slide 3_2">
-                                                <h3>3.2. Maps & Data</h3> 
-                                                <div class="row">
-                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                <h3>3.2. Steps for Georeferencing with Image-to-image in QGIS</h3>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
                                                         <div class="row">
-                                                            <div class="col col-md-4 col-lg-4 text-center">
-                                                                <img title="Maps" src="../img/ModuleImgs/Basics_GIS/Maps_Info.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="Maps" />
-                                                            </div>
-                                                            <div class="col col-md-8 col-lg-8 textJustify pe-4">
-                                                                <h5>3.2.1 Maps - The Visual Core of GIS: </h5>
-                                                                <p>
-                                                                    Maps are how GIS presents information visually. They serve as the interface for users to explore, interpret, and communicate spatial patterns. </p>
-                                                                <p>Maps are the most visible and intuitive part of a Geographic Information System (GIS). They act as the <b>interface between complex data and the user, offering a spatial representation of real-world phenomena.</b> While traditional paper maps are static and limited to displaying fixed information, GIS-based digital maps are dynamic, interactive, and capable of revealing relationships and patterns across multiple layers of data.</p>
-                                                                <p>At its core, a GIS map is not just a picture. It's a <b>smart, data-driven visual</b> where each point, line, or area (polygon) carries detailed information behind it. For example, clicking on a school icon in a GIS map might reveal its name, number of students, contact details, and proximity to nearby health centers or flood zones.</p>
-                                                                <p>In short, maps in GIS are not just visual aids—they are <b>living documents</b> that evolve with data, interact with queries, and offer a platform for analysis, communication, and decision-making.</p>
+                                                            <div class="col col-md-12 col-lg-12 textJustify">                                                     
+                                                                <h5>1. Open QGIS and Load Reference Data</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Open QGIS and add the georeferenced raster image (reference image) by navigating to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Raster Layer...</b> on the Menu Bar as shown in the below images</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Raster Layer" src="../img/ModuleImgs/Geo_ref/openRasterLayer.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Raster Layer" />
                                                             </div>
                                                         </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center pt-2">
+                                                                <div class="row">
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12"><ul><li><p>Set <b class="text-primary">Projection Co-ordinate Reference System (CRS) as per the requirement</b></p></li></ul></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                        <img title="Set Project CRS" src="../img/ModuleImgs/Geo_ref/setCRS.png" class="w-90 p-1 object-fit-cover border rounded" alt="Set Project CRS" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>2. Open the Georeferencer Tool</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Navigate to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Georeferencer...&nbsp;</b> on the Menu Bar as shown in the below image.</li>
+                                                                            <li>Click on the <b>Georeferencer...</b> link to open the tool to be used for georeferencing of the image </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Navigate to Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/geoReferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Navigate to Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>3. Load Source Raster (Unreferenced Image)</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>On the opened Georeferencer tool, click <b class="text-primary">Open Raster...</b> and select the scanned map or aerial image, etc., which is to be georeferenced, as shown in the below image</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Raster option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/openRaster_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Raster option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>4. Add Control Points</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Add Point</b> and select recognizable locations on the unreferenced image</li>
+                                                                            <li>In the <b class="text-primary">Enter Map Coordinates</b> window, click <b>"From Map Canvas"</b>.</li>
+                                                                            <li>Select the same location in the <b>reference image</b>.</li>
+                                                                            <li>Repeat this for multiple control points (at least 4 for better accuracy).</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                                                                                
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>5. Choose the Transformation Method</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Transformation Settings...</b> by navigating to <b>Settings&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Transformation Settings...&nbsp;</b> on the Menu Bar of the <b>Georeferencer</b> window as shown in the below image to open the <b>"Transformation Settings" window</b></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/Transformation_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">
+                                                                <ul>
+                                                                    <li>In the opened <b>Transformation Settings</b> window, select a transformation type:
+                                                                        <ul>
+                                                                            <li><b>Affine Transformation</b> (Minimum 3 GCPs; for basic scaling, rotation, translation).</li>
+                                                                            <li><b>Polynomial (1st or 2nd Order)</b> (For slight distortions; requires 6+ GCPs).</li>
+                                                                            <li><b>Thin Plate Spline (Rubber Sheeting)</b> (For flexible warping; good for historical maps).</li>
+                                                                            <li><b>Projective Transformation </b> (For perspective distortions; requires 4+ GCPs).</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>6. Set Output Parameters</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Choose:
+                                                                                <ul>
+                                                                                    <li><b>Output format:</b> GeoTIFF (recommended).</li>
+                                                                                    <li><b>Coordinate Reference System (CRS):</b> Choose a CRS based on the project requirements</li>
+                                                                                    <li>Enable Load in QGIS when done.</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation final option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/TransformationFinal_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation final option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>7. Start Georeferencing</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b>"Start Georeferencing"</b> on the Tool Bar Menu of the <b>"Georeferencer"</b> window to start the georeferencing process.</li>
+                                                                            <li>QGIS will generate a georeferenced raster.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Start Georeferencing in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/startGeoreferncing_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Start Georeferencing in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>8. Verify Alignment</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Overlay the newly <b>georeferenced raster with the reference layer</b>.</li>
+                                                                            <li>If misaligned, adjust control points and re-run.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                    
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                        <div class="row">                                                        
-                                                            <div class="col col-md-8 col-lg-8 textJustify pt-3">
-                                                                <h5>3.2.2 Data – The Heart of GIS: </h5>
-                                                                <p>Data is the lifeblood of any Geographic Information System (GIS). While maps provide the visual canvas, <b>it’s the data that brings those maps to life.</b> Every point, line, or polygon you see on a GIS map represents real-world features, and behind each of those features is a wealth of descriptive information.</p>
-                                                                <p>Good GIS analysis depends on <b>accurate, complete, and up-to-date data.</b> Data can come from a variety of sources such as satellite imagery, GPS surveys, drones, government databases, or field observations. For instance, data collected by field teams about property boundaries, building types, or land use can be directly linked to a GIS layer to enable spatial analysis.</p>
-                                                                <p>GIS allows users to <b>query, analyze, and manipulate data</b> in powerful ways. Want to find all schools within 3 km of a health center? Or identify forest areas where rainfall has been declining over the years? GIS data makes such analyses possible.</p>
-                                                                <p>Ultimately, without reliable data, GIS becomes just a shell. <b>It’s the quality of the data that determines the depth, accuracy, and usefulness of any GIS-based decision-making.</b></p>
-                                                            </div>
-                                                            <div class="col col-md-4 col-lg-4 text-center pe-4">
-                                                                <img title="Map & Data" src="../img/ModuleImgs/Basics_GIS/Data_GIS_Elements.png"
-                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="Map & Data" />
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                
-                                                </div>
                                             </aside>
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <aside  class="d-block w-100" alt="Slide 3_3">
-                                                <div class="row pt-2">                                                    
-                                                    <div class="col col-lg-12">
-                                                        <h4>3.3. Software & Hardware</h4>
-                                                        <div class="row">
-                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                                <div class="row">
-                                                                    <div class="col col-md-4 col-lg-4 text-center">
-                                                                        <img title="Software" src="../img/ModuleImgs/Basics_GIS/GIS_Software_HowGISWorks.png"
-                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Software" />
-                                                                    </div>
-                                                                    <div class="col col-md-8 col-lg-8 textJustify pe-4">
-                                                                        <h5>3.3.1 Software - The Tools Behind the Map: </h5>
-                                                                        <p>
-                                                                            Software is the <b>engine that drives GIS.</b> While maps show the data and hardware collects or processes it, GIS software is where everything comes together — it allows users to interact with spatial data, perform complex analyses, and generate meaningful outputs like layered maps, reports, and models. Without software, GIS would be a disconnected collection of files, coordinates, and numbers.</p>
-                                                                        <p>GIS software provides the user interface that makes geographic data manageable and useful. These GIS software are the tools which helps to perform all needed geospatial based operations to get the desired results.</p>
-                                                                        <p>One of the most powerful features of GIS software is the ability to <b>analyze spatial relationships</b> — whether it's proximity, overlap, connectivity, or patterns over time. These tools are vital for urban planning, disaster management, infrastructure design, and environmental monitoring.</p>
-                                                                        <p>GIS software also enables <b>automation and customization</b> through scripting (e.g., Python in QGIS or ArcPy in ArcGIS), allowing users to process large volumes of data quickly and tailor tools to specific needs.</p>
-                                                                        <p>Ultimately, software is what transforms GIS from a static map-viewing platform into an <b>interactive, decision-support system (DSS).</b></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                                <div class="row">
-                                                                    <div class="col col-md-8 col-lg-8 textJustify pt-3">
-                                                                        <h5>3.3.2 Hardware – The Physical Backbone of GIS: </h5>
-                                                                        <p>Hardware forms the <b>physical infrastructure</b> that supports the entire GIS ecosystem. It includes all the equipment needed to collect, store, process, and display spatial data. While software does the thinking, and data gives meaning, hardware is the <b>platform that powers it all</b> — from the field to the desktop and beyond.</p>
-                                                                        <p>At the most basic level, GIS hardware includes <b>computers and servers</b> where GIS software runs. These systems need to be powerful enough to handle large spatial datasets, render complex visualizations, and perform resource-intensive geoprocessing tasks. High-performance graphics cards, ample RAM, and fast processors are essential components for smooth GIS operations.</p>
-                                                                        <p>Back in the office, <b>plotters, printers, and monitors</b> help visualize and share results, while <b>servers and network infrastructure</b> ensure data can be stored securely and accessed collaboratively.</p>
-                                                                        <p>The reliability and capability of hardware directly influence the <b>speed, accuracy, and efficiency</b> of GIS work. As the demand for real-time data, 3D mapping, and AI integration grows, hardware continues to evolve as a critical enabler of modern, data-driven geospatial solutions.</b></p>
-                                                                    </div>
-                                                                    <div class="col col-md-4 col-lg-4 text-center pe-4">
-                                                                        <img title="Hardware" src="../img/ModuleImgs/Basics_GIS/GIS_Hardware_HowGISWorks.png"
-                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Hardware" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                       
-                                            </aside>
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <aside  class="d-block w-100" alt="Slide 3_4">
-                                                <div class="row pt-2">                                                    
-                                                    <div class="col col-lg-12">
-                                                        <h4>3.4. People & Method </h4>
-                                                        <div class="row">
-                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                                <div class="row">
-                                                                    <div class="col col-md-4 col-lg-4 text-center">
-                                                                        <img title="People" src="../img/ModuleImgs/Basics_GIS/People_HowGISWorks.png"
-                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="People" />
-                                                                    </div>
-                                                                    <div class="col col-md-8 col-lg-8 textJustify pe-4">
-                                                                        <h5>3.4.1 People – The Brain Force Behind GIS: </h5>
-                                                                        <p>While hardware, software, data, and maps form the technical backbone of a GIS system, it's ultimately people who bring GIS to life. They ask the right questions, interpret the results, apply the insights, and drive meaningful change. Without human intellect, creativity, and decision-making, GIS would remain just a sophisticated toolkit.</p>
-                                                                        <p>GIS professionals come from diverse backgrounds — geography, urban planning, environmental science, civil engineering, IT, data science, public policy, and more. Their <b>interdisciplinary knowledge</b> allows them to apply GIS in solving real-world problems, whether it’s urban development, environmental protection, disaster response, or infrastructure planning.</p>
-                                                                        <p>There are different kinds of users in the GIS ecosystem:
-                                                                            <ul>
-                                                                                <li><b class="text-logoGreen">Analysts and Technicians</b> who prepare, clean, and manage geospatial data</li>
-                                                                                <li><b class="text-logoGreen">Planners and Administrators</b> who use GIS outputs to make policy decisions</li>
-                                                                                <li><b class="text-logoGreen">Surveyors and Field Officers</b> who collect real-time data</li>
-                                                                                <li><b class="text-logoGreen">Developers</b> who build custom GIS tools and automate tasks</li>
-                                                                                <li><b class="text-logoGreen">Trainers and Educators</b> who build capacity in new users</li>
-                                                                            </ul></p>
-                                                                        <p>What makes people so important in GIS is their ability to ask spatial questions, such as:
-                                                                            <ul>
-                                                                                <li><i class="text-info">“Where is the problem?”</i></li>
-                                                                                <li><i class="text-info">“What are the factors influencing it?”</i></li>
-                                                                                <li><i class="text-info">“What if we change this?”</i></li>
-                                                                            </ul></p>
-                                                                        <p>Moreover, GIS is increasingly becoming participatory — with citizens contributing data through mobile apps, drones, or open-source platforms. This democratization of geospatial data empowers local communities to be part of decision-making processes.</b></p>
-                                                                        <p>In essence, people are not just users of GIS — they are its <b>visionaries, innovators, and changemakers.</b></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
-                                                                <div class="row">
-                                                                    <div class="col col-md-8 col-lg-8 textJustify pt-3">
-                                                                        <h5>3.4.2  Methods – The Strategy Behind GIS Workflows: </h5>
-                                                                        <p>While data, software, hardware, and people form the building blocks of a GIS, it’s the methods that define how everything comes together. Methods refer to the <b>strategies, procedures, and analytical techniques</b> used to apply GIS effectively. They ensure consistency, accuracy, and relevance in how geospatial data is handled and interpreted.</p>
-                                                                        <p>In simpler terms, methods are the <b><i>"recipe"</i></b> that tell users how to combine ingredients (data) using tools (software) on a platform (hardware) guided by people to produce meaningful results.</p>
-                                                                        <p>GIS methods include:
-                                                                            <ul>
-                                                                                <li><b class="text-logoGreen">Data collection procedures:</b>How is data gathered? Through satellite imagery, field surveys, or digitization of paper maps?</li>
-                                                                                <li><b class="text-logoGreen">Data management techniques: </b>How is data cleaned, stored, and maintained in spatial databases?</li>
-                                                                                <li><b class="text-logoGreen">Spatial analysis techniques:</b> Which algorithms or tools are used to detect patterns, measure distances, or model impacts?</li>
-                                                                                <li><b class="text-logoGreen">Map design standards:</b> How should information be visualized for maximum clarity and usability?</li>
-                                                                                <li><b class="text-logoGreen">Workflows and automation:</b> Can routine processes be scripted or standardized for faster outcomes?</li>
-                                                                            </ul></p>
-                                                                        <p>For example, urban planners might follow a set method to determine where to place a new hospital: first collect population density data, overlay it with existing facility locations, and then use spatial queries to find under served areas. Each of these steps follows a methodical approach that ensures reproducibility and reliability.</b></p>
-                                                                        <p>In essence, <b>methods are what make GIS scientific, structured, and scalable</b> — transforming it from a mapping tool into a comprehensive analytical framework.</b></p>
-                                                                    </div>
-                                                                    <div class="col col-md-4 col-lg-4 text-center pe-4">
-                                                                        <img title="Methods" src="../img/ModuleImgs/Basics_GIS/Methods_howGISWorks.png"
-                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Methods" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                        
-                                            </aside>
-                                        </div>                                        
+                                        </div>                                                                               
                                     </div>
                                 </div>
                                 <!-- Separate Next and Previous Links -->
@@ -848,9 +897,7 @@
                             <h4>Topics :</h4>
                             <ul class="list-group courseContentTopicListGroup list-group-flush">
                                 <li id="3_1" class="list-group-link list-group-item active list-group-item-ch3">3.1. Introduction</li>
-                                <li id="3_2" class="list-group-link list-group-item list-group-item-ch3">3.2. Maps & Data</li>                        
-                                <li id="3_3" class="list-group-link list-group-item list-group-item-ch3">3.3. Software & Hardware</li>                      
-                                <li id="3_4" class="list-group-link list-group-item list-group-item-ch3">3.4. People & Method</li>                      
+                                <li id="3_2" class="list-group-link list-group-item list-group-item-ch3">3.2. Steps for Georeferencing with Image-to-image in QGIS</li>
                             </ul>
                         </div>
                     </div>

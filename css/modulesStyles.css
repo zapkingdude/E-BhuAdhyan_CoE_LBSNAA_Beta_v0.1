@@ -103,6 +103,10 @@ i.customIcon{
     background-image: url('../img/ModuleImgs/Basics_GIS/superheroLight.png');
 }.diyLight{
     background-image: url('../img/ModuleImgs/Basics_GIS/DIYLight.png');
+}.geoRefGCP{
+    background-image: url('../img/ModuleImgs/Geo_ref/GCP_Icon.png');
+}.geoRefImg2Img{
+    background-image: url('../img/ModuleImgs/Geo_ref/image_to_image.png');
 }
 @media screen and (min-width:501px) and (max-width:999px) {
     /* Tablet styles */

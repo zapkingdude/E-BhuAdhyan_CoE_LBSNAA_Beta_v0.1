@@ -504,7 +504,12 @@ body{
 .page-header-BasicsGIS{
     background-image: url("../img/basics_GIS_Banner.jpg");
 }
-
+.page-header-geoRef{
+    background-image: url("../img/geoRef_Banner.png");
+}
+.page-header-BasicsQGIS{
+    background-image: url("../img/qgis.png");
+}
 .page-header-inner {
     background: rgba(15, 23, 43, .7);
 }
