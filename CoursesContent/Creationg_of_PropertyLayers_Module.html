@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>eLEARNING - Land Survey and Management</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/modulesStyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    
+    <div class="container-fluid bg-white headerTopBar dropBottomShadowGrey p-0">
+        <div class="row dropBottomShadowGrey">
+            <div class="col col-lg-8 col-md-4 col-sm-4 pt-3 ps-4">
+                <a href="https://www.lbsnaa.gov.in" aria-label="Logo of Lal Bahadur Shastri National Academy of Administration" class="navbar-brand align-items-center">
+                    <h2 class="m-0 text-primary">
+                        <img src="../img/logo.png" alt="Logo of Lal Bahadur Shastri National Academy of Administration" width="225">
+                    </h2>
+                </a>
+            </div>
+            <div class="col col-lg-4 col-md-8 col-sm-8 pt-4 pe-4">
+                <div class="float-xl-end" style="font-size: 0.8rem;">
+                    <img class="img-fluid p-2 " src="../img/ashok.jpg" alt="Logo of Ashok Stambh" aria-label="Logo of Ashoka Stambh" style="height: 50px;margin-right:5px;">
+                    भारत सरकार | Government of India
+                </div>
+            </div>
+        </div>
+        <div class="row">            
+            <!-- <div class="col-lg-8 col-md-8 col-sm-8 pt-3 pe-4">
+                <div class="float-xl-end">
+                    <h3 class="text-dark"><a href="https://www.lbsnaa.gov.in/lbsnaa-sub/center-of-excellence" target="_blank" class="text-dark">Centre of Excellence</a><br><span class="text-center" style="font-size:14px;">
+                        <a href="https://www.lbsnaa.gov.in/lbsnaa-sub/bn-yugandhar-center-for-rural-studies" target="_blank" class="text-dark"> B.N. Yugandhar Center for Rural Studies</a><br/>( The center dedicated to Research, Training and Policies Suggestions. )
+                    </span></h3>
+                </div>
+            </div> -->
+        </div>       
+    </div>
+    <nav class="navbar navbar-ribbon navbar-expand-lg bg-white navbar-light dropBottomShadowGrey px-2 pt-2 sticky-top" style="top: -100px;">
+        <div class="w-100">
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-6">
+                    <div class="row ">
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
+                            <div class="row">
+                                <div class="col col-lg-3 col-md-4 col-sm-4">
+                                    <img src="../img/eBhuAdhyan_Logo_WhiteLogo.png" class="logo clearPadding" alt="CoE, BNYCRS, e-BhuAdhyan LOGO" title="CoE, BNYCRS, e-BhuAdhyan"/>
+                                </div>
+                                <div class="col col-lg-9 col-sm-7 col-md-7 portalHeader">                          
+                                    <h3 class="text-right poppins-bold pt-3"><span style="color: var(--logoPrimary)">eBhu</span><span style="color: var(--logoGreen)">Adhyan</span></h3>
+                                    <h5 class="text-right poppins-bold"><span style="color: var(--logoPrimary)">E-LEARNING FOR LAND LEADERS</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
+                            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse pt-2" id="navbarCollapse">
+                                <div class="navbar-nav ms-auto pt-4 p-lg-0">                  
+                                    <a href="https://zapkingdude.github.io/E-BhuAdhyan_CoE_LBSNAA_Beta_v0.1/" class="nav-item nav-link">Home</a>
+                                    <a href="../about.html" class="nav-item nav-link">About</a>
+                                    <!-- <a href="../courses.html" class="nav-item nav-link">Courses</a> -->
+                                    <!-- <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                        <div class="dropdown-menu fade-down m-0">
+                                            <a href="../team.html" class="dropdown-item">Our Team</a>
+                                            <a href="../testimonial.html" class="dropdown-item">Testimonial</a>                                    
+                                        </div>
+                                    </div> -->
+                                    <a href="../contact.html" class="nav-item nav-link">Contact</a>
+                                    <!-- <div class="row float-xl-end">
+                                        <div class="col col-lg-4 col-md-4 col-sm-3 ">
+                                            <img src="img/E-Learning_portal_Logo1_WhiteBG.png" class="logo" alt="CoE, BNYCRS, E-LEARNING LOGO" Title="CoE, BNYCRS, E-Learning"/>
+                                        </div>
+                                        <div class="col col-lg-8 col-sm-9 col-md-8 float-xl-start pt-5">
+                                            <h4 class="text-right poppins-bold">E-LEARNING</h4>
+                                        </div>
+                                    </div> -->                            
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-6">
+                    <!-- <div id="CentreTitle" class="p-2 float-xl-start visually-hidden">
+                        <h3 class="text-dark">Centre of Excellence<br><span class="text-center" style="font-size:14px;">
+                            <a href="#" class="text-dark"> B.N. Yugandhar Center for Rural Studies ( The center dedicated to Research, Training and Policies Suggestions. )</a>
+                        </span></h3>
+                    </div> -->
+                    <div id="CentreTitle" class="p-2 float-xl-end lh-sm">
+                        <div class="row">
+                            <div class="col col-lg-12 CentreTitleText">
+                                <h3 class="text-dark"><a href="https://www.lbsnaa.gov.in/lbsnaa-sub/center-of-excellence" target="_blank" class="text-dark">Centre of Excellence</a></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-12">
+                                <span class="text-center" style="font-size:14px;">
+                                    <a href="#" class="text-dark"> B.N. Yugandhar Center for Rural Studies<br>( The center dedicated to Research, Training and Policies Suggestions. )</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Content Start -->
+    <div class="container-fluid">
+        <div class="d-flex h-100">
+            <nav class="sidebar d-flex flex-column flex-shrink-0 position-fixed">
+                <button class="toggle-btn" onclick="toggleSidebar()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>        
+                <div class="p-4">
+                    <h4 class="logo-text fw-bold mb-0">Creation of Property Layers Using QGIS</h4>
+                    <p class="text-muted small hide-on-collapse">Chapters List</p>
+                </div>        
+                <div class="nav flex-column pb-2">
+                    <a href="#" id="GoToChapter_1" class="sidebar-link chaptersListLink active text-decoration-none p-3">
+                        <i class="fas fa-book me-3 fs-4"></i>1:
+                        <span class="hide-on-collapse">Introduction</span>
+                    </a>
+                    <a href="#" id="GoToChapter_2" class="sidebar-link chaptersListLink text-decoration-none p-3">
+                        <i class="customIcon geoRefGCP me-3"></i>2:
+                        <span class="hide-on-collapse">Creation of Property Layer Using QGIS</span>                        
+                    </a>                   
+                </div>
+            </nav>        
+            <main id="chapter_1" class="main-content chapter-content w-100 chapter1 activeChapter">            
+                <div class="row w-100 ">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-1">
+                            <h2>Welcome to Chapter 1 : Introduction</h2>
+                            <p class="text-muted">Understanding the concept</p>
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle ">                                
+                                <div id="chapterContentSlide" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100  active">
+                                            <aside  class="d-block w-100" alt="Slide 1">
+                                                <h3>1. Introduction</h3> 
+                                                <div class="row">
+                                                    <div class="col col-lg-12 p-4">
+                                                        <p class="textJustify">                                               
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i>The creation of property layers from ground truthing points is a critical step in modern geospatial analysis and land management.
+                                                        </p>                
+                                                        <p class="textJustify">
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i>This E-Module focuses on leveraging data collected from GNSS NRTK Rovers—advanced Global Navigation Satellite System devices that provide real-time kinematic positioning with high accuracy. By gathering precise ground truthing points directly from the field, these rovers enable the accurate delineation of property boundaries and features.
+                                                        </p>
+                                                        <p class="textJustify">
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i>The module guides users through the process of transforming raw GNSS NRTK data into comprehensive digital property layers, which can be integrated into Geographic Information Systems (GIS) for enhanced decision-making, planning, and resource management.
+                                                        </p>
+                                                        <p class="textJustify">
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i>Understanding this process is essential for professionals in surveying, urban planning, environmental monitoring, and related fields who aim to improve spatial data quality and reliability through ground-based verification.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100 ">
+                                            <aside  class="d-block w-100" alt="Slide 2">
+                                                <div class="row pt-2">
+                                                    <h4>1.2 Brief About GNSS NRTK Surveying</h4>        
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12">
+                                                        <p class="textJustify">
+                                                            When surveyors go to the field to mark property boundaries, accuracy is very important. Even small errors can cause disputes in land ownership and records. This is where GNSS NRTK Rovers play a vital role.
+                                                        </p>
+                                                        <p class="textJustify">
+                                                            <b>GNSS (Global Navigation Satellite System)</b> is the technology behind GPS. It uses signals from satellites to identify a location on the Earth’s surface. Normally, GPS on a mobile phone is accurate only up to a few meters, which is not enough for property surveys. But <b>NRTK (Network Real-Time Kinematic)</b> technology improves this accuracy to the centimeter level by using correction signals from a reference network.
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Fetches precise ground points from the field in real time</b>                                                    
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Marks corners and edges of plots with very high accuracy.</b>                                                    
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="textJustify">
+                                                                        <b class="text-info">Saves data digitally, which can later be processed in GIS software to create property layers.</b>                                                    
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </p>
+                                                        <p class="textJustify">
+                                                            This process of using rovers to collect exact coordinates is called ground truthing—it confirms the real position of features on the ground. Once collected, these points are joined together to form polygons, representing the true shape and size of properties on a digital map.
+                                                        </p>
+                                                        <p class="textJustify">
+                                                            In short, GNSS NRTK Rovers help surveyors turn field observations into accurate digital property maps, making land administration faster, reliable, and transparent.
+                                                        </p>
+                                                        <i><b>Note: For More information about the various methodologies and understanding of GNSS Survey techniques, please look into our available on E-Module and the same can be accessed through the following link - <a href="https://zapkingdude.github.io/E-BhuAdhyan_CoE_LBSNAA_Beta_v0.1/CoursesContent/LandSurveyAndManagmentModule.html" target="_blank" alt="Georeferencing E-Module Link">"Land Survey Basics"</a></b></i>                                                            
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>                                                                  
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush ">
+                                <li id="0" class="list-group-link list-group-item list-group-item-ch1 active">1.1 Introduction</li>                                
+                                <li id="1" class="list-group-link list-group-item list-group-item-ch1">1.2 Brief About GNSS NRTK Surveying</li>                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <main id="chapter_2" class="main-content chapter-content w-100 chapter2">            
+                <div class="row w-100">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-1">
+                            <h2>Welcome to Chapter 2 : Steps for Propery Layer Creation using QGIS</h2>
+                            <p class="text-muted textJustify">Step by Step process explained for the creation of property layers - Utilizing the tool available in QGIS Software</p>
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle">                                
+                                <div id="chapterContentSlide1" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <aside  class="d-block w-100" alt="Slide 1_1">
+                                                <h3>2.1. Introduction</h3>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12">                                                     
+                                                                <p class="textJustify">QGIS (Quantum GIS) provides powerful tools for georeferencing raster images (e.g., scanned maps, aerial photos) to align them with real-world coordinates. The Georeferencer tool in QGIS allows for multiple techniques, each suitable for different types of spatial distortions.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div lass="row">
+                                                            <p class="ps-2 textJustify">Things to keep ready before starting the step-by-step process:
+                                                                <ul>
+                                                                    <li><b>QGIS Software installed and opened on the computer system. - Software may download QGIS from the link - <a href = "https://qgis.org/download/" target="_blank" alt="Download QGIS Link">QGIS - Download</a></b></li>
+                                                                    <li><b>Open the installed QGIS Application.</b></li>
+                                                                    <li><b>CSV / Exported data from GNSS NRTK Rovers : </b> The data collected in the field using the GNSS NRTK Rovers are to exported in either in CSV or any other supported vector formats.</li>
+                                                                    <li><b>Ortho Rectified Image (ORI) : </b> A good quality ORI basemap which helps in better understanding on clearer property layers generation</li>
+                                                                </ul>
+                                                            </p>
+                                                        </div>
+                                                        <div lass="row">
+                                                            <p class="ps-2 textJustify"><b>Process Flow:</b>
+                                                                <div class="row align-items-center">
+                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                        <img title="Process Flow" src="../img/ModuleImgs/PropertyLayers/ProcessFlow.png"
+                                                                            class="w-50 p-1 object-fit-cover border rounded" alt="Process Flow" />
+                                                                    </div>
+                                                                </div>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside  class="d-block w-100" alt="Slide 1_2">
+                                                <h4>2.2. Steps for Propery Layer Creation using QGIS</h4>
+                                                <p>
+                                                    Following are the steps involved in the process of creating the propery layers using the tools in the QGIS software.
+                                                </p>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify">                                                     
+                                                                <h5>1. Open QGIS and start a new project</h5>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Project Start" src="../img/ModuleImgs/PropertyLayers/ProjectStart.jpg"
+                                                                    class="w-50 p-1 object-fit-cover border rounded" alt="Project Start" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div col="col col-md-12 col-lg-12">
+                                                                <b>Save a Project File in QGIS</b>
+                                                                <ul>
+                                                                    <li>Go to <b>View&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Project&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Save As.</b></li>
+                                                                    <li>Enter the project name and then click "Save"" to save the project with the extension <b>*.qgz</b></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Project Start" src="../img/ModuleImgs/PropertyLayers/projectSave.jpg"
+                                                                    class="w-75 p-1 object-fit-cover border rounded" alt="Project Start" />
+                                                            </div>
+                                                        </div>                                          
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>2. Importing CSV to QGIS and creating Property Boundary Point. (CSV)</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        Ensure your CSV/Excel file contains spatial data (latitude and longitude or X, Y coordinates). Open the file in Microsoft Excel and check for:
+                                                                        <ul>
+                                                                            <li>Proper column names (e.g., Latitude, Longitude or Easting, Northing). Consistent data format (numbers should not have text values).</li>
+                                                                            <li>No empty or null values in coordinate columns.</li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="Check CSV" src="../img/ModuleImgs/PropertyLayers/csvCheck.jpg"
+                                                                                    class="w-50 p-1 object-fit-cover border rounded" alt="Check CSV" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li class="pt-2">To Import CSV File:
+                                                                                <ul>
+                                                                                    <li>Click on <b>Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Delinited Text Layer.</b></li>
+                                                                                </ul>
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                                        <img title="Import CSV" src="../img/ModuleImgs/PropertyLayers/importCSV.jpg"
+                                                                                            class="w-50 p-1 object-fit-cover border rounded" alt="Import CSV" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="pt-2">
+                                                                                The Data Source Manager Delimited text window will pop up
+                                                                            </li>
+                                                                            <li class="pt-2">
+                                                                                In the Data Source Manager window:
+                                                                                <ul>
+                                                                                    <li>Click on <b>Browse &nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Select your CSV File</b></li>
+                                                                                    <li>Browse your path and select the CSV file</li>
+                                                                                </ul>
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                                        <img title="CSV File Name" src="../img/ModuleImgs/PropertyLayers/selCSVFile.jpg"
+                                                                                            class="w-75 p-1 object-fit-cover border rounded" alt="CSV File Name" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="pt-2">
+                                                                                Choose Point coordinates as Geometry Definition.
+                                                                            </li>
+                                                                            <li class="pt-2">
+                                                                                Assign the X Field (Longitude/Easting) and Y Field (Latitude/Northing). Set the correct Coordinate System (e.g., EPSG:32644 ).
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                                        <img title="CSV Values" src="../img/ModuleImgs/PropertyLayers/csvValues.jpg"
+                                                                                            class="w-75 p-1 object-fit-cover border rounded" alt="CSV Values" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="pt-2">
+                                                                                Click Add and then Close – the points will now appear on the map, and the CSV layer will be added to the Layers panel.
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                                        <img title="CSV Opened" src="../img/ModuleImgs/PropertyLayers/csvOpened.jpg"
+                                                                                            class="w-75 p-1 object-fit-cover border rounded" alt="CSV Opened" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>3. Exporting the Property Boundary Points (csv) to shape file</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li class="pt-2">Right-click on the imported <b>CSV layer</b> in the <b>Layers panel</b>.
+                                                                                <ul>
+                                                                                    <li>Navigate to <b>Export&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Save Feature As</b> on the Menu Bar as shown in the below images</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="Save Shape" src="../img/ModuleImgs/PropertyLayers/saveVectorLayer.jpg"
+                                                                                    class="w-75 p-1 object-fit-cover border rounded" alt="Save Shape" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">In the <b>Save Vector Layer As</b> window:
+                                                                                <ul>
+                                                                                    <li>Set <b>Format</b> to <b>ESRI Shape</b> file</li>
+                                                                                    <li>Click Browse and select a folder to save the shape file. Eg: Propery_Boundary_points</li>
+                                                                                    <li>Choose an appropriate <b>Coordinate Reference System (CRS)</b>.</li>
+                                                                                    <li>Click <b>OK</b> to create the shape file.</li>
+                                                                                    <li>The shape file will be automatically added to the <b>Layers panel</b>.</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="Export Shape" src="../img/ModuleImgs/PropertyLayers/exportShape.jpg"
+                                                                                    class="w-75 p-1 object-fit-cover border rounded" alt="Export Shape" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>4. Creation of Property Parcel polygon Shape file.</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        To create polygons, you need to create a <b>Shape file Polygon Layer</b>
+                                                                        <ul>
+                                                                            <li>Navigate to <b>Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Create Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;New Shape file Layer</b></li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="New Shapefile" src="../img/ModuleImgs/PropertyLayers/newShapeFile.jpg"
+                                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="New Shapefile" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">Enter a <b>File Name.</b>(Eg: Propety_Parcel) -> Choose <b>Polygon</b> as the <b>Geometry Type</b>. </li>
+                                                                            <li>Set the <b>Coordinate Reference System (CRS)</b>, EPSG: 32644. -> click ok.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>5. Digitization of Property Parcel Polygon</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Now, we need to create polygons using the collected survey points, which were gathered from the field and exported as a shape file.</li>
+                                                                            <li>Now we need to add the fields to the Property_parcel.shp file</li>
+                                                                            <li>For adding field, we have Enable the <b>Snapping Tool</b></li>
+                                                                            <li>Click <b>Toggle Editing Mode</b> (pencil icon) on the <b>Digitizing Toolbar</b>.</li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="Create Shapefile" src="../img/ModuleImgs/PropertyLayers/createPolygon.jpg"
+                                                                                    class="w-75 p-1 object-fit-cover border rounded" alt="Create Shapefile" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">Double-click on Propery_Parcel.shp</li>
+                                                                            <li>Go to Symbology > Select Simple Line > Choose the Color of your choice</li>
+                                                                            <li>Ensure the Simple Line option is selected.</li>
+                                                                        </ul>
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                                <img title="Create Symbol" src="../img/ModuleImgs/PropertyLayers/shapeSymbol.jpg"
+                                                                                    class="w-75 p-1 object-fit-cover border rounded" alt="Create Symbol" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li>Click on <b>Toggle Editing</b> to enable the editing options.</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Toggle Editing Symbol" src="../img/ModuleImgs/PropertyLayers/toggleEditing.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Toggle Editing Symbol" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">Then, use the <b>Add Polygon Feature</b> tool to draw the polygon by manually adding vertices at the desired points</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Add Polygon" src="../img/ModuleImgs/PropertyLayers/addPolygon.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Add Polygon" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">You have to add vertices for different points.</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Add Vertices" src="../img/ModuleImgs/PropertyLayers/addVertices.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Add Vertices" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">After completing the polygon, right-click to finish it.</li>
+                                                                            <li>Enter an ID in the attribute table and click OK.</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Add Properties" src="../img/ModuleImgs/PropertyLayers/addProperty.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Add Properties" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">Click on <b>Save Layer Edits</b>, then click on <b>Toggle Editing</b> again to stop editing.</li>
+                                                                            <li>In this way, you can add all the polygons.</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Save Edits" src="../img/ModuleImgs/PropertyLayers/saveEdits.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Save Edits" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                      
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>6. Adding and editing the field and its attribute.</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li><b>Enable Editing Mode :</b> Right-click on the Propety_Parcel.shp in the Layers Panel.</li>
+                                                                            <li>Select Toggle Editing to enable editing mode.</li>
+                                                                            <li><b>Open Attribute Table :</b> 
+                                                                                Right-click on the layer again and select <b>Open Attribute Table</b> and click on the <b>newfield</b>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Attribute Edits" src="../img/ModuleImgs/PropertyLayers/attributeAdd.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Attribute Edits" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2"><b>In the Add Field window:</b>
+                                                                                <ul>
+                                                                                    <li>Enter Name: ULPIN</li>
+                                                                                    <li>Type: Integer (Short 32)</li>
+                                                                                    <li>Click OK.</li>
+                                                                                    <li>Now, the new field ULPIN will appear in the attribute table.</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Attribute Enter" src="../img/ModuleImgs/PropertyLayers/enterAttribute.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Attribute Enter" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2"><b>Edit Attribute Values:</b>
+                                                                                <ul>
+                                                                                    <li>Click on the <b>Pencil icon</b> at the top of the attribute table to enable editing.</li>
+                                                                                    <li>Click on any cell to edit its value directly.</li>
+                                                                                    <li>After editing the attribute, the following window will appear.</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Edit Attributes" src="../img/ModuleImgs/PropertyLayers/pencilIcon.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Edit Attributes" />
+                                                                        </div>
+                                                                        <ul>
+                                                                            <li class="pt-2">Click on <b>Save Edits</b> to save the changes made to the attribute table.</li>
+                                                                        </ul>
+                                                                        <div class="col col-md-12 col-lg-12 text-center">
+                                                                            <img title="Save Edit Attributes" src="../img/ModuleImgs/PropertyLayers/attrSaveEdits.jpg"
+                                                                                class="w-75 p-1 object-fit-cover border rounded" alt="Save Edit Attributes" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>7. Conclusion</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        The property parcel layer created from the imported from property boundary points(CSV) files will be integrated with the Land Parcel data. This integration enables linking property tax and RoR (Record of Rights) details with the corresponding land parcels. This approach enhances data accuracy and supports efficient land administration.
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                              
+                                                    </div>
+                                                </div>                                      
+                                            </aside>
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide1">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide1">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide1">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide1">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush ">
+                                <li id="1_1" class="list-group-link list-group-item active list-group-item-ch2">2.1. Introduction</li>
+                                <li id="1_2" class="list-group-link list-group-item list-group-item-ch2">2.2. Steps for Propery Layer Creation using QGIS</li>
+                                <!--<li id="1_4" class="list-group-link list-group-item list-group-item-ch2">CORS Station Distribution Map for all CoE StatesS</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <main id="chapter_3" class="main-content chapter-content w-100 chapter3">            
+                <div class="row w-100">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-2">
+                            <h2>Welcome to Chapter 3 :  Geo-referencing Using Image-to-Image</h2>                            
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle">
+                                <div id="chapterContentSlide2" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <aside  class="d-block w-100" alt="Slide 3_1">
+                                                <h3>3.1. Introduction</h3>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">                                                        
+                                                        <div lass="row">                                                            
+                                                            <p class="textJustify">
+                                                                Image-to-Image geo-referencing is the process of aligning <b>one image (such as a scanned map or satellite image) with another image that already has real-world coordinates.</b> Instead of using ground control points from the field, <b>you pick matching points on both images (like road intersections, rivers, or landmarks) and link them together.</b>
+                                                            </p>
+                                                            <p>
+                                                                This way, the <b>“unknown” image inherits the geographic reference from the “known” image</b>, making it location-ready and usable for measurement, analysis, or overlay with other GIS datasets.
+                                                            </p>
+                                                            <p class="ps-2 textJustify">Things to keep ready before starting the step-by-step process:
+                                                                <ul>
+                                                                    <li><b>QGIS Software installed and opened on the computer system.</b></li>
+                                                                    <li><b>Open the installed QGIS Application.</b></li>
+                                                                    <li><b>Target Image or Raster data:</b> On which the Geo-Referencing has to be done.</li>
+                                                                    <li><b>Reference image using which the georeferencing is to be done.</b></li>
+                                                                </ul>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                        <img title="Image to Image Georeference" src="../img/ModuleImgs/Geo_ref/image_to_image_reference_infographic.png"
+                                                            class="w-90 p-1 object-fit-cover border rounded" alt="Image to Image Georeference" />
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside class="d-block w-100" alt="Slide 3_2">
+                                                <h3>3.2. Steps for Georeferencing with Image-to-image in QGIS</h3>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify">                                                     
+                                                                <h5>1. Open QGIS and Load Reference Data</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Open QGIS and add the georeferenced raster image (reference image) by navigating to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Add Raster Layer...</b> on the Menu Bar as shown in the below images</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Raster Layer" src="../img/ModuleImgs/Geo_ref/openRasterLayer.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Raster Layer" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center pt-2">
+                                                                <div class="row">
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12"><ul><li><p>Set <b class="text-primary">Projection Co-ordinate Reference System (CRS) as per the requirement</b></p></li></ul></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                        <img title="Set Project CRS" src="../img/ModuleImgs/Geo_ref/setCRS.png" class="w-90 p-1 object-fit-cover border rounded" alt="Set Project CRS" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>2. Open the Georeferencer Tool</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Navigate to <b>QGIS&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Layer&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Georeferencer...&nbsp;</b> on the Menu Bar as shown in the below image.</li>
+                                                                            <li>Click on the <b>Georeferencer...</b> link to open the tool to be used for georeferencing of the image </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Navigate to Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/geoReferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Navigate to Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>3. Load Source Raster (Unreferenced Image)</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>On the opened Georeferencer tool, click <b class="text-primary">Open Raster...</b> and select the scanned map or aerial image, etc., which is to be georeferenced, as shown in the below image</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Raster option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/openRaster_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Raster option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>4. Add Control Points</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Add Point</b> and select recognizable locations on the unreferenced image</li>
+                                                                            <li>In the <b class="text-primary">Enter Map Coordinates</b> window, click <b>"From Map Canvas"</b>.</li>
+                                                                            <li>Select the same location in the <b>reference image</b>.</li>
+                                                                            <li>Repeat this for multiple control points (at least 4 for better accuracy).</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                                                                                
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>5. Choose the Transformation Method</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b class="text-primary">Transformation Settings...</b> by navigating to <b>Settings&nbsp;&nbsp;<i class="fa fa-arrow-right text-primary me-2"></i>&nbsp;&nbsp;Transformation Settings...&nbsp;</b> on the Menu Bar of the <b>Georeferencer</b> window as shown in the below image to open the <b>"Transformation Settings" window</b></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/Transformation_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">
+                                                                <ul>
+                                                                    <li>In the opened <b>Transformation Settings</b> window, select a transformation type:
+                                                                        <ul>
+                                                                            <li><b>Affine Transformation</b> (Minimum 3 GCPs; for basic scaling, rotation, translation).</li>
+                                                                            <li><b>Polynomial (1st or 2nd Order)</b> (For slight distortions; requires 6+ GCPs).</li>
+                                                                            <li><b>Thin Plate Spline (Rubber Sheeting)</b> (For flexible warping; good for historical maps).</li>
+                                                                            <li><b>Projective Transformation </b> (For perspective distortions; requires 4+ GCPs).</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>6. Set Output Parameters</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Choose:
+                                                                                <ul>
+                                                                                    <li><b>Output format:</b> GeoTIFF (recommended).</li>
+                                                                                    <li><b>Coordinate Reference System (CRS):</b> Choose a CRS based on the project requirements</li>
+                                                                                    <li>Enable Load in QGIS when done.</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Open Transformation final option in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/TransformationFinal_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Open Transformation final option in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>7. Start Georeferencing</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Click <b>"Start Georeferencing"</b> on the Tool Bar Menu of the <b>"Georeferencer"</b> window to start the georeferencing process.</li>
+                                                                            <li>QGIS will generate a georeferenced raster.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col col-md-12 col-lg-12 text-center">
+                                                                <img title="Start Georeferencing in Georeferencer Tool" src="../img/ModuleImgs/Geo_ref/startGeoreferncing_in_georeferencerTool.png"
+                                                                    class="w-90 p-1 object-fit-cover border rounded" alt="Start Georeferencing in Georeferencer Tool" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-md-12 col-lg-12 textJustify pt-2">  
+                                                                <h5>8. Verify Alignment</h5>
+                                                                <div class="row">
+                                                                    <div col="col col-md-12 col-lg-12">
+                                                                        <ul>
+                                                                            <li>Overlay the newly <b>georeferenced raster with the reference layer</b>.</li>
+                                                                            <li>If misaligned, adjust control points and re-run.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>                                                                               
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide3">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide3">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide3">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide3">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush">
+                                <li id="3_1" class="list-group-link list-group-item active list-group-item-ch3">3.1. Introduction</li>
+                                <li id="3_2" class="list-group-link list-group-item list-group-item-ch3">3.2. Steps for Georeferencing with Image-to-image in QGIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <main id="chapter_4" class="main-content chapter-content w-100 chapter4">            
+                <div class="row w-100">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-2">
+                            <h2>Welcome to Chapter 4 : Cool Things You Can Do With GIS</h2>
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle">
+                                <div id="chapterContentSlide3" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <aside  class="d-block w-100" alt="Slide 4_1">
+                                                <h3>4.1. Introduction</h3>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12 textJustify pe-3">
+                                                        <p>
+                                                            Once you understand how GIS works, you’ll realize that its possibilities are endless. GIS is not just for geographers — it’s for everyone who wants to make smarter decisions using location information.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                        <p>Some cool applications:
+                                                            <ul>
+                                                                <li><b class="text-info">Shortest Route Calculation:</b> Delivery apps like Zomato, Uber, and Amazon use GIS to find
+                                                                    the best routes. They calculate distances, traffic conditions, and even weather to optimize deliveries.</li>
+                                                                <li><b class="text-info">Urban Planning:</b> Cities use GIS to decide where to build new schools, parks, and
+                                                                    hospitals. They analyze population densities, land prices, road networks, and existing facilities to make
+                                                                    smarter plans.</li>
+                                                                <li><b class="text-info">Wildlife Protection:</b> Conservationists map forest cover, track animal movements, and identify areas under threat. GIS helps in designing wildlife corridors and protecting endangered species.</li>
+                                                                <li><b class="text-info">Disaster Management:</b> During floods, earthquakes, or fires, GIS provides real-time maps showing affected areas, shelters, and safe evacuation routes. It helps save lives by giving quick, accurate information.</li>
+                                                                <li><b class="text-info">Climate Change Studies:</b> Scientists use GIS to study how glaciers are melting, how rainfall patterns are changing, and how sea levels are rising. GIS helps visualize slow changes over decades.</li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>                                                 
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside class="d-block w-100" alt="Slide 4_2">
+                                                <h3>4.2. Create Smart Maps & Analyze Spatial Data</h3> 
+                                                <div class="row">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col col-md-4 col-lg-4 text-center">
+                                                                <img title="Create Smart Maps" src="../img/ModuleImgs/Basics_GIS/Create_Smart_maps.png"
+                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="Create Smart Maps" />
+                                                            </div>
+                                                            <div class="col col-md-8 col-lg-8 textJustify pe-4">
+                                                                <h5>4.2.1. Create Smart Maps: </h5>
+                                                                <p>
+                                                                    GIS enables the layering of various kinds of geographic information into a single, unified visual display. These smart maps are dynamic, they don't just show roads or rivers but can also include <b>population density, crime rates, or soil types depending on the purpose.</b> This <b>layered approach</b> makes it easier to see relationships, patterns, and trends that might otherwise go unnoticed.</p>
+                                                                <p><b class="text-logoGreen">For example,</b> during urban development, a smart map can show where population is growing, how close areas are to public utilities, or which regions have environmental restrictions. These insights help decision-makers take smarter, more sustainable actions.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="row">                                                        
+                                                            <div class="col col-md-8 col-lg-8 textJustify pt-3">
+                                                                <h5>4.2.2. Analyze Spatial Data: </h5>
+                                                                <p>One of the strongest features of GIS is its ability to answer spatial questions—such as <b class="text-logoGreen">“What is near this point?”, “How far is location A from location B?”, or “What lies within this boundary?”</b> These questions are critical in fields ranging from emergency response to retail planning.</p>
+                                                                <p>By running spatial analyses, such as <b>buffer zones or proximity checks,</b> users can evaluate how different geographic elements relate to each other. For instance, GIS can determine the area within a 5 km radius of a fire station or highlight all schools located within a pollution-prone zone.</p>
+                                                            </div>
+                                                            <div class="col col-md-4 col-lg-4 text-center pe-4">
+                                                                <img title="Geospatial Analysis" src="../img/ModuleImgs/Basics_GIS/analysis.png"
+                                                                    class="w-100 p-1 object-fit-cover border rounded" alt="Geospatial Analysis" />
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside  class="d-block w-100" alt="Slide 4_3">
+                                                <div class="row pt-2">                                                    
+                                                    <div class="col col-lg-12">
+                                                        <h4>4.3. Urban Planning, Land Use & Disaster Management</h4>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-5 col-lg-5 text-center pt-5">
+                                                                        <img title="Urban Planning & Land Use" src="../img/ModuleImgs/Basics_GIS/urbanPlanning.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Urban Planning & Land Use" />
+                                                                    </div>
+                                                                    <div class="col col-md-7 col-lg-7 textJustify pe-4">
+                                                                        <h5>4.3.1. Urban Planning & Land Use: </h5>
+                                                                        <p>
+                                                                            Geographic Information Systems (GIS) are transformative tools in the realm of urban planning and land use management. They enable city planners to analyze, visualize, and predict how land is used, thereby facilitating more informed and sustainable development decisions.</p>
+                                                                        <p>How City Planners Use GIS
+                                                                            <ol>
+                                                                                <li><b class="text-info">Visualizing Existing Land Use Patterns : </b>
+                                                                                    <ul>
+                                                                                        <li><b>Mapping Current Use:</b> Planners can overlay land parcels with current zoning, infrastructure, residential areas, commercial zones, and green spaces.</li>
+                                                                                        <li><b>Spatial Analysis:</b> Identifying trends, such as clustering of commercial activities or gaps in public services.</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><b class="text-info">Simulating and Predicting Urban Growth : </b>
+                                                                                    <ul>
+                                                                                        <li><b>Growth Models:</b> GIS supports simulations that project how cities may expand based on population trends, economic factors, and policy changes.</li>
+                                                                                        <li><b>Scenarios Testing:</b> Planners can visualize the effects of proposed developments or zoning changes before implementation, helping to avoid traffic congestion and overbuilt areas.</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><b class="text-info">Infrastructure Planning : </b>
+                                                                                    <ul>
+                                                                                        <li><b>Site Selection:</b> GIS aids in determining optimal sites for new schools, hospitals, parks, or transit corridors by considering:
+                                                                                            <ul>
+                                                                                                <li>Population density</li>
+                                                                                                <li>Proximity to existing services</li>
+                                                                                                <li>Transportation networks</li>
+                                                                                                <li>Environmental constraints (wetlands, floodplains, conservation areas)</li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li><b>Connectivity Assessment:</b> Ensures new facilities are accessible and integrated within the broader city framework.</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col col-lg-6 col-md-6 text-center">
+                                                                        <img title="GIS Benefits in Urban Planning" src="../img/ModuleImgs/Basics_GIS/Benifits_Of_GIS_In_UrbanPlanning.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS Benefits in Urban Planning" />
+                                                                    </div>
+                                                                    <div class="col col-lg-6 col-md-6 text-center pe-4 pt-5">
+                                                                        <img title="Key GIS Data Types in Urban Planning" src="../img/ModuleImgs/Basics_GIS/GIS_DataTypes_in_UrbanPlanning.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Key GIS Data Types in Urban Planning" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-6 col-lg-6 textJustify pt-3">
+                                                                        <h5>4.3.2 Disaster Management: </h5>
+                                                                        <p>GIS is invaluable during natural disasters—it helps <b>forecast risks, coordinate emergency response, and assess damage afterward.</b> Layers such as <b>elevation, rainfall, and river flow</b> help predict flood-prone zones, while satellite data can track wildfires or landslides in real time.</p>
+                                                                        <p>Rescue teams use GIS to plan <b>evacuation routes, identify shelters, and track resource distribution.</b> After disasters, GIS maps assist in calculating affected areas, helping government and relief agencies respond more effectively and rebuild smarter.</p>
+                                                                    </div>
+                                                                    <div class="col col-md-6 col-lg-6 text-center pe-4 pt-3">
+                                                                        <img title="GIS in Natural Disaster" src="../img/ModuleImgs/Basics_GIS/GIS_NaturalDisaster.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS in Natural Disaster" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                       
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside  class="d-block w-100" alt="Slide 4_4">
+                                                <div class="row pt-2">                                                    
+                                                    <div class="col col-lg-12">
+                                                        <h4>4.4. Agriculture & Crop Monitoring</h4>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-4 col-lg-4 text-center">
+                                                                        <img title="GIS In Agriculture" src="../img/ModuleImgs/Basics_GIS/GIS_In_Agriculture.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS In Agriculture" />
+                                                                    </div>
+                                                                    <div class="col col-md-8 col-lg-8 textJustify pe-4">
+                                                                        <p>Modern agriculture uses GIS for what's called <b>precision farming</b>, which means tailoring farming techniques to specific areas of land based on conditions like soil type, moisture levels, and historical yield data.</p>
+                                                                        <p>GIS can help farmers identify <b>which parts of their fields need more water, where pests are concentrated, or where to apply fertilizer.</b> This saves resources, boosts productivity, and makes farming more environmentally friendly.</p>
+                                                                        <p>This approach enables farmers to::
+                                                                            <ul>
+                                                                                <li><b class="text-logoGreen">Map field conditions:</b> GIS helps create detailed soil and vegetation maps, revealing variability in crop health, soil fertility, and moisture levels across the field</li>
+                                                                                <li><b class="text-logoGreen">Target resource application: </b> Using these maps, farmers can apply water, fertilizers, and pesticides only where needed instead of blanket-treating the whole area, optimizing inputs, saving costs, and reducing environmental impact</li>
+                                                                                <li><b class="text-logoGreen">Boost productivity and sustainability: </b>By precisely targeting interventions, farmers can increase crop yields—sometimes by up to 30%—while minimizing waste and environmental harm</li>
+                                                                                <li><b class="text-logoGreen">Identify problem areas: </b> GIS can highlight spots with poor plant growth, pest hotspots, or nutrient deficiencies, allowing quick and specific remedial action</li>
+                                                                                <li><b class="text-logoGreen">Monitor and plan efficiently: </b> With features like time-series comparison and integration with satellite imagery, farmers can continuously monitor fields and adjust strategies as conditions change</li>
+                                                                            </ul></p>
+                                                                        <p>Overall, <b>GIS</b> empowers farmers to use <b>data-driven insights</b> for more <b>efficient, profitable, and environmentally friendly agriculture</b></b></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--<div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-8 col-lg-8 textJustify pt-3">
+                                                                        <h5>3.4.2  Methods – The Strategy Behind GIS Workflows: </h5>
+                                                                        <p>While data, software, hardware, and people form the building blocks of a GIS, it’s the methods that define how everything comes together. Methods refer to the <b>strategies, procedures, and analytical techniques</b> used to apply GIS effectively. They ensure consistency, accuracy, and relevance in how geospatial data is handled and interpreted.</p>
+                                                                        <p>In simpler terms, methods are the <b><i>"recipe"</i></b> that tell users how to combine ingredients (data) using tools (software) on a platform (hardware) guided by people to produce meaningful results.</p>
+                                                                        <p>GIS methods include:
+                                                                            <ul>
+                                                                                <li><b class="text-logoGreen">Data collection procedures:</b>How is data gathered? Through satellite imagery, field surveys, or digitization of paper maps?</li>
+                                                                                <li><b class="text-logoGreen">Data management techniques: </b>How is data cleaned, stored, and maintained in spatial databases?</li>
+                                                                                <li><b class="text-logoGreen">Spatial analysis techniques:</b> Which algorithms or tools are used to detect patterns, measure distances, or model impacts?</li>
+                                                                                <li><b class="text-logoGreen">Map design standards:</b> How should information be visualized for maximum clarity and usability?</li>
+                                                                                <li><b class="text-logoGreen">Workflows and automation:</b> Can routine processes be scripted or standardized for faster outcomes?</li>
+                                                                            </ul></p>
+                                                                        <p>For example, urban planners might follow a set method to determine where to place a new hospital: first collect population density data, overlay it with existing facility locations, and then use spatial queries to find under served areas. Each of these steps follows a methodical approach that ensures reproducibility and reliability.</b></p>
+                                                                        <p>In essence, <b>methods are what make GIS scientific, structured, and scalable</b> — transforming it from a mapping tool into a comprehensive analytical framework.</b></p>
+                                                                    </div>
+                                                                    <div class="col col-md-4 col-lg-4 text-center pe-4">
+                                                                        <img title="Methods" src="../img/ModuleImgs/Basics_GIS/Methods_howGISWorks.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Methods" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </div>                                        
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside  class="d-block w-100" alt="Slide 4_5">
+                                                <div class="row pt-2">                                                    
+                                                    <div class="col col-lg-12">
+                                                        <h4>4.5. Navigation & Routing</h4>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-4 col-lg-4 text-center">
+                                                                        <img title="GIS In Navigation & Routing" src="../img/ModuleImgs/Basics_GIS/GIS_Routing.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS In Navigation & Routing" />
+                                                                    </div>
+                                                                    <div class="col col-md-8 col-lg-8 textJustify pe-4">                                                                        
+                                                                        <p>GIS powers nearly all navigation apps, from Google Maps to ride-sharing services. It constantly processes live <b>traffic updates, road closures, and user feedback</b> to recommend the fastest or most fuel-efficient routes.</p>
+                                                                        <p>Logistics and delivery services rely heavily on GIS to optimize routing, reduce travel time, and improve fuel efficiency. Even public transportation planning uses GIS to create better schedules and routes based on commuter demand.</p>
+                                                                        <p>GIS is the backbone of modern navigation and routing, powering everything from everyday apps to complex logistics operations.
+                                                                            <ul>
+                                                                                <li><b class="text-logoGreen">Navigation Apps: </b> Leading services like Google Maps rely on GIS to provide real-time, turn-by-turn navigation. They process live traffic conditions, road closures, and user-reported incidents to suggest the fastest or most fuel-efficient routes. Users benefit from up-to-date information such as traffic jams or detours and can plan journeys efficiently with tools for walking, driving, cycling, or public transit</li>
+                                                                                <li><b class="text-logoGreen">Logistics & Delivery Optimization: </b> Companies use GIS to optimize routes for delivery vehicles and service fleets, reducing travel time and maximizing fuel efficiency. GIS tools analyze road networks and dynamic conditions (like traffic or weather), enabling intelligent planning for multi-stop routes and efficient response to changing events on the road</li>
+                                                                                <li><b class="text-logoGreen">Public Transportation Planning: </b> City transit agencies utilize GIS to design schedules and routes that match commuter demand, analyzing data on population density, travel patterns, and service usage to improve coverage and efficiency. This results in smarter, more reliable public transport systems.</li>                                                                                
+                                                                            </ul></p>                                                                        
+                                                                        <p>GIS enables <b>real-time, data-driven decisions for routing and navigation</b> in consumer apps, logistics, and public transportation, making travel <b>faster, more efficient, and responsive to changing conditions.</b></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                        
+                                            </aside>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide4">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide4">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide4">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide4">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush">
+                                <li id="4_1" class="list-group-link list-group-item active list-group-item-ch4">4.1. Introduction</li>
+                                <li id="4_2" class="list-group-link list-group-item list-group-item-ch4">4.2. Create Smart Maps & Analyze Spatial Data</li>                        
+                                <li id="4_3" class="list-group-link list-group-item list-group-item-ch4">4.3. Urban Planning, Land Use & Disaster Management</li>                      
+                                <li id="4_4" class="list-group-link list-group-item list-group-item-ch4">4.4. Agriculture & Crop Monitoring</li>                      
+                                <li id="4_5" class="list-group-link list-group-item list-group-item-ch4">4.5. Navigation & Routing</li>      
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <main id="chapter_5" class="main-content chapter-content w-100 chapter4">            
+                <div class="row w-100">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-2">
+                            <h2>Welcome to Chapter 5 : How to Start with GIS ? (Even if You’re a Total Beginner)</h2>                            
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle">
+                                <div id="chapterContentSlide5" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <aside  class="d-block w-100" alt="Slide 5_1">
+                                                <div class="row pt-2">                                                   
+                                                    <div class="col col-lg-12">
+                                                        <h3>5.1. Introduction</h3> 
+                                                        <div class="row pt-2">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-6 col-lg-6 text-center">
+                                                                            <img title="How to start with GIS?" src="../img/ModuleImgs/Basics_GIS/HowToStartGIS.png"
+                                                                                class="w-100 p-1 object-fit-cover border rounded" alt="How to start with GIS?" />
+                                                                    </div>
+                                                                    <div class="col col-md-6 col-lg-6 textJustify">  
+                                                                        <p class="pe-2">
+                                                                            <b class="text-info">Feeling overwhelmed?</b> Don't be! Starting with GIS can be fun, free, and simple.</p>
+                                                                        <p class="pe-2">Getting started with GIS might seem overwhelming at first, but it’s easier than you think—especially with today’s beginner-friendly tools and open resources. At its core, GIS is just a way to analyze and visualize geographic data to answer real-world questions. Whether you're interested in mapping your hometown, tracking environmental changes, or planning better cities, GIS gives you the tools to see patterns and make better decisions.</p>
+                                                                        <p class="pe-2">As we have already started by understanding the basic building blocks—Maps, Data, Software, and Spatial Thinking in our previous chapters. Learning what kinds of data go into GIS (like shapefiles or satellite images), what questions GIS can help answer (like "Where should a new school go?"), etc. on our previous chapter, will help in great deal for anyone to confidently enter into this GIS world..</p>
+                                                                        <p class="pe-2">Simple tools like QGIS or Google Earth Engine to get a feel for how GIS works will be explored in this chapter. With free courses, tutorials, and practice datasets available online, you can begin your GIS journey at your own pace—without needing a technical background</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside class="d-block w-100" alt="Slide 5_2">
+                                                <div class="row pt-2">                                                   
+                                                    <div class="col col-lg-12">
+                                                        <h3>5.2. Exploring Free GIS Tools</h3>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-8 col-lg-8 text-center">
+                                                                        <img title="Google Earth Steps" src="../img/ModuleImgs/Basics_GIS/GoogleEarthSteps.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="Google Earth Steps" />
+                                                                    </div>                                                        
+                                                                    <div class="col col-md-4 col-lg-4 textJustify pe-4">
+                                                                        <h5>5.2.1 Google Earth - The Visual Core of GIS: </h5>
+                                                                        <p>
+                                                                        Go to <a href="https://earth.google.com/" target="_blank">earth.google.com</a> in your browser or download the Google Earth Pro desktop app for more features.</p>
+                                                                        <p>Google Earth is a free, user-friendly tool that lets you explore the world from your computer or phone. With just a few clicks, you can zoom into your hometown, check out famous landmarks in 3D, or even explore the ocean floor. It’s perfect for beginners who want to get a visual feel of geography, plan trips, or simply enjoy virtual travel. Whether you're curious about a new place or want to view your house from space, Google Earth makes it easy and fun to get started.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row pt-2">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">                                                        
+                                                                    <div class="col col-md-4 col-lg-4 textJustify pt-3">
+                                                                        <h5>5.2.2 QGIS: </h5>
+                                                                        <div class="row">
+                                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                                <p><b class="text-info">What is QGIS?</b> A free, open-source mapping tool (like Google Maps, but way more powerful!) used for land records, planning, environment, and more. It can be freely downloaded from their official website - <a href="https://qgis.org" target="_blank">qgis.org</a>.</p>
+                                                                                <p><b class="text-info">I. Why Beginners Love It?</b>
+                                                                                <ul>
+                                                                                    <li>Easy to install</li>
+                                                                                    <li>Clean, simple interface</li>
+                                                                                    <li>Huge support community + tutorials</li>
+                                                                                    <li>Works on most computers</li>
+                                                                                </ul>
+                                                                                </p>
+                                                                                <p><b class="text-info">II. First Steps Inside QGIS</b>
+                                                                                <ul>
+                                                                                    <li>Start by adding layers – shapefiles, satellite images, or OpenStreetMap.</li>
+                                                                                    <li>Explore your data using the layer panel and map canvas.</li>
+                                                                                    <li>Use the attribute table to see the data behind the map.</li>
+                                                                                </ul>
+                                                                                </p>
+                                                                                <p><b class="text-info">III. What You Can Do Quickly</b>
+                                                                                <ul>
+                                                                                    <li>Style maps with different colors or symbols (e.g. population zones).</li>
+                                                                                    <li><b>Label</b> features like roads or districts.</li>
+                                                                                    <li>Measure distances or areas in just a few clicks.</li>
+                                                                                </ul>
+                                                                                </p>
+                                                                                <p><b class="text-info">IV. Big Plus</b>
+                                                                                <ul>
+                                                                                    <li>You can fully <b>customize</b> your maps and even run basic <b>spatial analysis</b>—without needing to code!</li>
+                                                                                </ul>
+                                                                                </p>
+                                                                                <p><b class="text-info">V. Need Help?</b>
+                                                                                <ul>
+                                                                                    <li>Tons of videos and tutorials online</li>
+                                                                                    <li>QGIS docs and forums</li>
+                                                                                    <li><b class="text-logoGreen">Bonus: Our <i class="text-info">E-BhuAdhyan</i> Portal has a full beginner-friendly E-Module on QGIS to guide you step-by-step</b></li>
+                                                                                </ul>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col col-md-8 col-lg-8 text-center pe-4">
+                                                                        <img title="QGIS Steps" src="../img/ModuleImgs/Basics_GIS/QGIS_Steps.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="QGIS Steps" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <aside  class="d-block w-100" alt="Slide 5_3">
+                                                <div class="row pt-2">                                                   
+                                                    <div class="col col-lg-12">
+                                                        <h4>5.3. Other Methods</h4>
+                                                        <div class="row">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-4 col-lg-4 text-center">
+                                                                        <img title="GIS Other Steps" src="../img/ModuleImgs/Basics_GIS/OtherSteps.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS Other Steps" />
+                                                                    </div>
+                                                                    <div class="col col-md-8 col-lg-8 textJustify pe-4">
+                                                                        <h5>Take a Free Online GIS Course – No Experience Needed!</h5>
+                                                                        <p><b class="text-info">I. Why take a course?</b>
+                                                                        <ul>
+                                                                            <li>Learn at your own pace</li>
+                                                                            <li>Build confidence with real examples</li>
+                                                                            <li>Get a strong foundation—even if you’re totally new to GIS</li>
+                                                                        </ul>
+                                                                        </p>
+                                                                        <p><b class="text-info">II. Where to start?</b>
+                                                                        <ul>
+                                                                            <li>Look for beginner-friendly courses on YouTube, Coursera, Udemy, or Esri Academy</li>
+                                                                            <li>Many are completely free and offer hands-on demos</li>
+                                                                        </ul>
+                                                                        </p>
+                                                                        <p><b class="text-info">III. Topics you’ll typically cover:</b>
+                                                                        <ul>
+                                                                            <li>What is GIS?</li>
+                                                                            <li>How to use mapping tools like QGIS or Google Earth</li>
+                                                                            <li>Basic map making, layers, and styling</li>
+                                                                            <li>Real-world use cases (land, disaster, planning, etc.)</li>
+                                                                        </ul>
+                                                                        </p>
+                                                                        <p><b class="text-info">IV. Don’t Miss This</b>
+                                                                        <ul>
+                                                                            <li>Our <b class="text-logoGreen">E-BhuAdhyan</b> Portal has a dedicated E-Module on <b>GIS and QGIS</b></li>
+                                                                            <li>Designed specially for beginners in land governance</li>
+                                                                            <li>Includes step-by-step instructions, visuals & practice material</li>
+                                                                            <li>Available for free to all trainees, officers & stakeholders</li>
+                                                                        </ul>
+                                                                        </p>
+                                                                        <p><b class="text-info">V. Pro Tip</b>
+                                                                        <ul>
+                                                                            <li>Schedule just 20–30 mins a day</li>
+                                                                            <li>Practice along with the lessons</li>
+                                                                            <li>Don’t rush—just explore and enjoy!</li>
+                                                                        </ul>
+                                                                        </p>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>                                       
+                                            </aside>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide5">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide5">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide5">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide5">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush">
+                                <li id="5_1" class="list-group-link list-group-item active list-group-item-ch5">5.1. Introduction</li>
+                                <li id="5_2" class="list-group-link list-group-item list-group-item-ch5">5.2. Exploring Free GIS Tools</li>
+                                <li id="5_3" class="list-group-link list-group-item list-group-item-ch5">5.3. Other Methods</li>                     
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <main id="chapter_6" class="main-content chapter-content w-100 chapter4">            
+                <div class="row w-100">
+                    <div class="col col-lg-10 col-md-8 col-sm-8">
+                        <div class="dropBottomShadowGrey p-2">
+                            <h2>Welcome to Chapter 6 : Conclusion: GIS = Real World Superpower</h2>                            
+                        </div>
+                        <div class="container-fluid p-2">
+                            <article class="chapterContentArticle">
+                                <div id="chapterContentSlide6" class="carousel slide chapterConentSlide" data-bs-ride="false">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <aside  class="d-block w-100" alt="Slide 6_1">
+                                                <div class="row pt-2">                                                   
+                                                    <div class="col col-lg-12">
+                                                        <h3>Map = Clark Kent & GIS = SuperMan!</h3> 
+                                                        <div class="row pt-2">
+                                                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="row">
+                                                                    <div class="col col-md-12 col-lg-12 text-center">
+                                                                        <img title="Map vs GIS" src="../img/ModuleImgs/Basics_GIS/MapVsGIS3.png" class="w-80 p-1 object-fit-cover border rounded" alt="Map vs GIS" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row pt-4">
+                                                                    <div class="col col-lg-5 col-md-5">
+                                                                        <img title="GIS - More Than Maps" src="../img/ModuleImgs/Basics_GIS/GIS_MoreThanMaps.png"
+                                                                            class="w-100 p-1 object-fit-cover border rounded" alt="GIS - More Than Maps" />
+                                                                    </div>
+                                                                    <div class="col col-md-7 col-lg-7 textJustify pe-4">
+                                                                        <p class="pe-4">
+                                                                            <b class="text-info">GIS is not just about making maps prettier. It's about thinking spatially,
+                                                                                analyzing deeply, and making informed decisions.</b>
+                                                                        </p>
+                                                                        <p class="pe-4 textJustify">
+                                                                        <ul>
+                                                                            <li>Maps answers <b>"Where?"</b>.</li>
+                                                                            <li>
+                                                                                GIS goes deeper—it helps answer:
+                                                                                <ul>
+                                                                                    <li><i class="text-logoGreen">"Where?"</i> – Location of things (X,Y coordinates to pinpoint
+                                                                                        one's precise location on the Earth's surface.)</li>
+                                                                                    <li><i class="text-logoGreen">"How?"</i> - How far, how connected, how dense how is it (point or
+                                                                                        polygon or line, etc)?</li>
+                                                                                    <li><i class="text-logoGreen">"What?"</i> - What attributes data for these, What features or
+                                                                                        data exist there?</li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <p class="pe-4 textJustify"> But it doesn’t stop there: Once we know <b>where, how, and what</b>, GIS helps
+                                                                            us ask the biggest question of all: <i class="text-logoGreen">“Why?” – Why do patterns exist? Why are
+                                                                                problems happening there? </i>. It helps to understand about the <b>root cause</b> of the problem and also gives a greater platform to plan for mitigating the problems spatially.</p>
+                                                                        <p class="pe-4 textJustify text-logoGreen">
+                                                                        <h3><b><i>That’s the power of spatial thinking.</i></b></h3>
+                                                                        </p>
+                                                                        <p class="pe-4 textJustify">In a world filled with complex problems — <b>from urban sprawl to global warming</b> —
+                                                                            GIS gives us a <b class="text-info">smarter, faster, and better way to understand and improve our surroundings.</b></p>
+                                                                        <p class="pe-4 textJustify">It’s like giving yourself X-ray vision — but instead of bones, you see the
+                                                                            invisible layers of geography, society, and nature interacting!</p>
+                                                                        <p class="pe-4 textJustify">Hence in the evolving technological advancements and dawn of the age of
+                                                                            Artificial Intelligence helps to improve the GIS to manifold and help to generate greater insights to
+                                                                            help variety of agencies with their results. This makes the understanding and working on GIS domain a
+                                                                            mandatory for many people in order generate greater results in their field.</p>
+                                                                        <p class="pe-4 textJustify text-logoGreen">So next time you open a map app, remember: You are already
+                                                                            stepping into the world of GIS!</p>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>                                                                
+                                                            </div>                                              
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>                                                                          
+                                    </div>
+                                </div>
+                                <!-- Separate Next and Previous Links -->
+                                <div class="text-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2" id="firstSlide6">First</a>
+                                    <a href="#" class="btn btn-primary me-2" id="prevSlide6">Previous</a>
+                                    <a href="#" class="btn btn-primary" id="nextSlide6">Next</a>
+                                    <a href="#" class="btn btn-primary" id="lastSlide6">Last</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-4 h-100 d-inline-block">
+                        <div>
+                            <h4>Topics :</h4>
+                            <ul class="list-group courseContentTopicListGroup list-group-flush">
+                                <li id="6_1" class="list-group-link list-group-item active list-group-item-ch6">6.1. Map = Clark Kent & GIS = SuperMan!</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Content Ends -->
+
+    <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">        
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="https://www.lbsnaa.gov.in/lbsnaa-sub_org/organizations/bn-yugandhar-center-for-rural-studies">CoE, BN Yughandar Centre for Rural Studies, LBSNAA</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="https://zapkingdude.github.io/E-BhuAdhyan_CoE_LBSNAA_Beta_v0.1/">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-12 col-lg-12 disclaimer pt-2">
+                        Disclaimer
+                        <p>This e-module has been developed for educational and informational purposes using secondary data, open-source materials, and illustrative examples. The content is designed to aid in foundational understanding and is intended for general learning use only.
+
+                            While efforts have been made to ensure the accuracy, relevance, and clarity of the content, the materials provided do not constitute official advice or certified technical guidance. Users are encouraged to consult appropriate authorities, experts, or verified sources for decisions that require precision or policy adherence.
+                            
+                            All content in this module is subject to change, always room for improvement, or updating as new information becomes available or based on feedback from users and domain experts. Adaptation and contextual customization are encouraged, provided proper acknowledgment is maintained.
+                            <a href="https://www.flaticon.com" title="vector icons" target="_blank">Few icons created by Freepik - Flaticon</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {            
+            
+            const sideBarLink = document.getElementsByClassName('chaptersListLink');
+            const mainChapterContent = document.getElementsByTagName('main');
+                
+            
+            
+            //Chapter 1 carousel ctrls
+            const carousel = new bootstrap.Carousel(document.getElementById('chapterContentSlide'), { interval: false });
+            console.log(carousel);
+            console.log(carousel._element.children[0].children.length);
+            const firstButton = document.getElementById('firstSlide');
+            const prevButton = document.getElementById('prevSlide');
+            const nextButton = document.getElementById('nextSlide');
+            const lastButton = document.getElementById('lastSlide');
+            const topicsListElem = document.getElementsByClassName('list-group-item-ch1');
+
+            firstButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel.to(0);
+                let indexOfSpace = carousel._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace);
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch1").removeClass("active");
+                document.getElementById(activeSlideID-1).classList.add("active");
+            });
+
+            lastButton.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel.to(carousel._element.children[0].children.length-1);
+                let indexOfSpace = carousel._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace);
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch1").removeClass("active");
+                document.getElementById(activeSlideID-1).classList.add("active");
+            });
+
+            prevButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel.prev();
+                let indexOfSpace = carousel._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace);
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch1").removeClass("active");
+                document.getElementById(activeSlideID-1).classList.add("active");          
+            });
+
+            nextButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel.next();    
+                console.log(carousel);
+                let indexOfSpace = carousel._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace);
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch1").removeClass("active");
+                document.getElementById(activeSlideID-1).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem.length; i++) {
+                topicsListElem[i].addEventListener("click", (e)=>{
+                    let currActiveID = topicsListElem[i].id;
+                    console.log("currActiveID in Chap 1 : ", currActiveID);
+                    carousel.to(currActiveID);
+                    $("li.list-group-item-ch1").removeClass("active");
+                    document.getElementById(currActiveID).classList.add("active");
+                });        
+            }
+
+            //Chapter 2 carousel ctrls
+            const carousel1 = new bootstrap.Carousel(document.getElementById('chapterContentSlide1'), { interval: false });   
+            console.log(carousel1);
+            console.log(carousel1._element.children[0].children.length);
+         
+            const firstButton1 = document.getElementById('firstSlide1');
+            const prevButton1 = document.getElementById('prevSlide1');
+            const nextButton1 = document.getElementById('nextSlide1');
+            const lastButton1 = document.getElementById('lastSlide1');
+
+            const topicsListElem1 = document.getElementsByClassName('list-group-item-ch2');
+            firstButton1.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel1.to(0);
+                let indexOfSpace = carousel1._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel1._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch2").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            lastButton1.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel1.to(carousel1._element.children[0].children.length-1);
+                let indexOfSpace = carousel1._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel1._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch2").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            prevButton1.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel1.prev();
+                let indexOfSpace = carousel1._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel1._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch2").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");          
+            });
+
+            nextButton1.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel1.next();    
+                console.log(carousel1);
+                let indexOfSpace = carousel1._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel1._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch2").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem1.length; i++) {
+                topicsListElem1[i].addEventListener("click", (e)=>{                
+                    let currActiveID = topicsListElem1[i].id;
+                    console.log("Curr Side topics sel id : ", currActiveID);
+                    let indexOfUnderScore = topicsListElem1[i].id.indexOf("_");
+                    console.log("Underscore index : ", indexOfUnderScore);
+                    let toActivateSlideID = topicsListElem1[i].id.substring(indexOfUnderScore+1, 3);
+                    console.log("currActiveID in Chap 2  : ", toActivateSlideID);
+                    carousel1.to(toActivateSlideID-1);
+                    $("li.list-group-item-ch2").removeClass("active");                    
+                    console.log("To add active to id : "+currActiveID);
+                    document.getElementById(currActiveID).classList.add("active");
+                });
+            }
+
+            //Chapter 3 carousel ctrls
+            const carousel2 = new bootstrap.Carousel(document.getElementById('chapterContentSlide2'), { interval: false });   
+            console.log(carousel2);
+            console.log(carousel2._element.children[0].children.length);
+         
+            const firstButton2 = document.getElementById('firstSlide3');
+            const prevButton2 = document.getElementById('prevSlide3');
+            const nextButton2 = document.getElementById('nextSlide3');
+            const lastButton2 = document.getElementById('lastSlide3');
+
+            const topicsListElem2 = document.getElementsByClassName('list-group-item-ch3');
+            firstButton2.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel2.to(0);
+                let indexOfSpace = carousel2._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel2._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch3").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            lastButton2.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel2.to(carousel2._element.children[0].children.length-1);
+                let indexOfSpace = carousel2._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel2._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch3").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            prevButton2.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel2.prev();
+                let indexOfSpace = carousel2._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel2._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch3").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");          
+            });
+
+            nextButton2.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel2.next();    
+                console.log(carousel2);
+                let indexOfSpace = carousel2._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel2._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch3").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem2.length; i++) {
+                topicsListElem2[i].addEventListener("click", (e)=>{                
+                    let currActiveID = topicsListElem2[i].id;
+                    console.log("Curr Side topics sel id : ", currActiveID);
+                    let indexOfUnderScore = topicsListElem2[i].id.indexOf("_");
+                    console.log("Underscore index : ", indexOfUnderScore);
+                    let toActivateSlideID = topicsListElem2[i].id.substring(indexOfUnderScore+1, 3);
+                    console.log("currActiveID in Chap 3  : ", toActivateSlideID);
+                    carousel2.to(toActivateSlideID-1);
+                    $("li.list-group-item-ch3").removeClass("active");                    
+                    console.log("To add active to id : "+currActiveID);
+                    document.getElementById(currActiveID).classList.add("active");
+                });
+            }
+
+            //Chapter 4 carousel ctrls
+            const carousel3 = new bootstrap.Carousel(document.getElementById('chapterContentSlide3'), { interval: false });   
+            console.log(carousel3);
+            console.log(carousel3._element.children[0].children.length);
+         
+            const firstButton4 = document.getElementById('firstSlide4');
+            const prevButton4 = document.getElementById('prevSlide4');
+            const nextButton4 = document.getElementById('nextSlide4');
+            const lastButton4 = document.getElementById('lastSlide4');
+
+            const topicsListElem4 = document.getElementsByClassName('list-group-item-ch4');
+            firstButton4.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel3.to(0);
+                let indexOfSpace = carousel3._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel3._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch4").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            lastButton4.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel3.to(carousel3._element.children[0].children.length-1);
+                let indexOfSpace = carousel3._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel3._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch4").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            prevButton4.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel3.prev();
+                let indexOfSpace = carousel3._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel3._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch4").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");          
+            });
+
+            nextButton4.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel3.next();    
+                console.log(carousel3);
+                let indexOfSpace = carousel3._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel3._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch4").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem4.length; i++) {
+                topicsListElem4[i].addEventListener("click", (e)=>{                
+                    let currActiveID = topicsListElem4[i].id;
+                    console.log("Curr Side topics sel id : ", currActiveID);
+                    let indexOfUnderScore = topicsListElem4[i].id.indexOf("_");
+                    console.log("Underscore index : ", indexOfUnderScore);
+                    let toActivateSlideID = topicsListElem4[i].id.substring(indexOfUnderScore+1, 3);
+                    console.log("currActiveID in Chap 4  : ", toActivateSlideID);
+                    carousel3.to(toActivateSlideID-1);
+                    $("li.list-group-item-ch4").removeClass("active");                    
+                    console.log("To add active to id : "+currActiveID);
+                    document.getElementById(currActiveID).classList.add("active");
+                });
+            }
+
+            //Chapter 5 carousel ctrls
+            const carousel4 = new bootstrap.Carousel(document.getElementById('chapterContentSlide5'), { interval: false });   
+            console.log(carousel4);
+            console.log(carousel4._element.children[0].children.length);
+         
+            const firstButton5 = document.getElementById('firstSlide5');
+            const prevButton5 = document.getElementById('prevSlide5');
+            const nextButton5 = document.getElementById('nextSlide5');
+            const lastButton5 = document.getElementById('lastSlide5');
+
+            const topicsListElem5 = document.getElementsByClassName('list-group-item-ch5');
+            firstButton5.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel4.to(0);
+                let indexOfSpace = carousel4._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel4._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch5").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            lastButton5.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel4.to(carousel4._element.children[0].children.length-1);
+                let indexOfSpace = carousel4._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel4._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch5").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            prevButton5.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel4.prev();
+                let indexOfSpace = carousel4._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel4._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch5").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");          
+            });
+
+            nextButton5.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel4.next();    
+                console.log(carousel4);
+                let indexOfSpace = carousel4._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel4._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch5").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem5.length; i++) {
+                topicsListElem5[i].addEventListener("click", (e)=>{                
+                    let currActiveID = topicsListElem5[i].id;
+                    console.log("Curr Side topics sel id : ", currActiveID);
+                    let indexOfUnderScore = topicsListElem5[i].id.indexOf("_");
+                    console.log("Underscore index : ", indexOfUnderScore);
+                    let toActivateSlideID = topicsListElem5[i].id.substring(indexOfUnderScore+1, 3);
+                    console.log("currActiveID in Chap 5 : ", toActivateSlideID);
+                    carousel4.to(toActivateSlideID-1);
+                    $("li.list-group-item-ch5").removeClass("active");                    
+                    console.log("To add active to id : "+currActiveID);
+                    document.getElementById(currActiveID).classList.add("active");
+                });
+            }
+
+            //Chapter 6 carousel ctrls
+            const carousel5 = new bootstrap.Carousel(document.getElementById('chapterContentSlide6'), { interval: false });   
+            console.log(carousel5);
+            console.log(carousel5._element.children[0].children.length);
+         
+            const firstButton6 = document.getElementById('firstSlide6');
+            const prevButton6 = document.getElementById('prevSlide6');
+            const nextButton6 = document.getElementById('nextSlide6');
+            const lastButton6 = document.getElementById('lastSlide6');
+
+            const topicsListElem6 = document.getElementsByClassName('list-group-item-ch6');
+            firstButton6.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel5.to(0);
+                let indexOfSpace = carousel5._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel5._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch6").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            lastButton6.addEventListener('click', function (e) {
+                e.preventDefault();            
+                carousel5.to(carousel5._element.children[0].children.length-1);
+                let indexOfSpace = carousel5._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel5._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch6").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+
+            prevButton6.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel5.prev();
+                let indexOfSpace = carousel5._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel5._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch6").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");          
+            });
+
+            nextButton6.addEventListener('click', function (e) {
+                e.preventDefault();
+                carousel5.next();    
+                console.log(carousel5);
+                let indexOfSpace = carousel5._activeElement.firstElementChild.attributes.alt.value.indexOf(" ");
+                let activeSlideID = carousel5._activeElement.firstElementChild.attributes.alt.value.substring(indexOfSpace).trim();
+                console.log("activeSlideID : " + activeSlideID + "  indexOfSpace : " + indexOfSpace);
+                $("li.list-group-item-ch6").removeClass("active");
+                document.getElementById(activeSlideID).classList.add("active");
+            });
+            for (let i = 0; i < topicsListElem6.length; i++) {
+                topicsListElem6[i].addEventListener("click", (e)=>{                
+                    let currActiveID = topicsListElem6[i].id;
+                    console.log("Curr Side topics sel id : ", currActiveID);
+                    let indexOfUnderScore = topicsListElem6[i].id.indexOf("_");
+                    console.log("Underscore index : ", indexOfUnderScore);
+                    let toActivateSlideID = topicsListElem6[i].id.substring(indexOfUnderScore+1, 3);
+                    console.log("currActiveID in Chap 5 : ", toActivateSlideID);
+                    carousel5.to(toActivateSlideID-1);
+                    $("li.list-group-item-ch6").removeClass("active");                    
+                    console.log("To add active to id : "+currActiveID);
+                    document.getElementById(currActiveID).classList.add("active");
+                });
+            }
+
+
+            //Controls for side bar chapters changing menu
+            let currentChapterActive = '';
+            for (let i = 0; i < sideBarLink.length; i++) {
+                sideBarLink[i].addEventListener("click", (e)=>{
+                    currentChapterActive = sideBarLink[i].id;                    
+                    console.log("currActiveChapterID : ", currentChapterActive);                    
+                    let indexOfUnderScore = currentChapterActive.indexOf("_");
+                    $("a.chaptersListLink").removeClass("active");
+                    document.getElementById(currentChapterActive).classList.add("active");
+                    let selChapterIDFromSideBarLink = currentChapterActive.substring(indexOfUnderScore);
+                    let targetChapterContentID = "chapter"+selChapterIDFromSideBarLink;
+                    console.log("Current target chapter content id : "+targetChapterContentID);
+                    $("main.main-content").removeClass("activeChapter");
+                    document.getElementById(targetChapterContentID).classList.add("activeChapter");
+                    /* let activeChapterID = () => {
+                        for (let j = 0; j < mainChapterContent.length; j++){
+                            if()
+                        }
+                    } */
+                    /* document.getElementById(currActiveID).classList.add("active"); */
+                });        
+            }
+            
+        });
+    </script>
+</body>
+
+</html>
