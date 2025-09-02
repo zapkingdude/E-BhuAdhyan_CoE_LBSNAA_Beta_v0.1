@@ -507,6 +507,9 @@ body{
 .page-header-geoRef{
     background-image: url("../img/geoRef_Banner.png");
 }
+.page-header-digitization{
+    background-image: url("../img/digitization_banner1.png");
+}
 .page-header-BasicsQGIS{
     background-image: url("../img/qgis.png");
 }
