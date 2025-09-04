@@ -497,6 +497,8 @@ body{
 }
 .page-header-landSurvey{
     background-image: url("../img/carousel-2.jpg");    
+}.page-header-corsUrbanSurvey{
+    background-image: url("../img/cors_UrbanSurvey.png");    
 }
 .page-header-NAKSHA{
     background-image: url("../CoursesContent/res/img/NAKSHA/page_1_img_1.png");    
