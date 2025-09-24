@@ -1,0 +1,143 @@
+.search-bar {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 65%;
+    padding: 10px 14px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    margin-right: 8px;
+    transition: border 0.2s;
+}
+
+.search-bar button {
+    padding: 10px 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(48, 60, 95, 0.09);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(48, 60, 95, 0.15);
+}
+
+.video-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: #e5e7eb;
+}
+
+.video-content {
+    padding: 18px;
+    position: relative;
+    height: 260px;
+    max-height: 270px;
+    min-height: 255px;
+}
+
+.video-title {
+    margin: 0;
+    font-size: 1.1em;
+    color: #1e293b;
+}
+
+.video-mod-launch{
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+}
+
+.video-desc {
+    margin: 12px 0 0 0;    
+    color: #64748b;
+    font-size: 0.98em;
+}
+
+@media (max-width: 600px) {
+    .video-thumb {
+        aspect-ratio: 16/10;
+    }
+}
+
+.videoListContainer{
+    padding: 0 !important;
+    list-style-type: none;
+    margin: 0 auto;
+    position: relative;
+    width: 450px;
+    max-width: 450px;
+    min-width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.videoListContainer > li{
+    list-style-type: none;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.videosListItemsLink{
+    display: block;
+    height: 120px;
+    width: 100%;
+    border-bottom: solid 1px #64748b;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.1rem;
+}
+
+.videosListItemsLink:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.videoListContainer:active{
+    background-color: var(--primary);
+    color: var(--white);
+    
+}
+
+img.videosListThumbnailImg{
+    width: 100%;
+    height: 100px;
+    background-color: #cbd5e1;
+    border: solid 1px #64748b;
+}
+.playButtonLink:hover{
+    color:var(--white);
+}
+
+body:has(.videosListItemsLink:hover) .playButtonLink {
+    color: var(--white);
+}
+
+.videoFrameContainer{
+    height: 100vh;
+}

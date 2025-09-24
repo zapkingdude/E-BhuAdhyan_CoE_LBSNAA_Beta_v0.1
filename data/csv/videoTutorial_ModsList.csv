@@ -1,0 +1,4 @@
+sno,module_id,module_name,module_description,module_thumbnail_src
+1,md1,NAKSHA - A Comprehensive Collection of Tutorial Sessions,A collection of videos where several resource persons from various departments coming together to explain all needed topics for the benefit of NAKSHA Programme - From Overview of NAKHSA to the Technical Explanation of topics,../img/NAKSHA_thumbnail.png
+2,md2,NAKSHA - Extensive Tutorial,A well curated course where every technological tools used and utilzied for the NAKSHA programme is explained for the benefits for people who look to understand about these concepts in detail,../img/basics_GIS_Banner.jpg
+3,md3,Basics of QGIS,"A basic understanding of QGIS, how to install it,  its components and tools",../img/Basics_QGIS.png
