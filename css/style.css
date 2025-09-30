@@ -495,16 +495,22 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.clickable{
+    cursor: pointer;
+}
 .page-header-landSurvey{
     background-image: url("../img/carousel-2.jpg");    
 }.page-header-corsUrbanSurvey{
     background-image: url("../img/cors_UrbanSurvey.png");    
 }
+.page-header-BasicsGIS{
+    background-image: url("../img/basics_GIS_Banner.jpg");
+}
 .page-header-NAKSHA{
     background-image: url("../CoursesContent/res/img/NAKSHA/page_1_img_1.png");    
 }
-.page-header-BasicsGIS{
-    background-image: url("../img/basics_GIS_Banner.jpg");
+.page-header-videoTutorial{
+    background-image: url("../img/videTut3.png");
 }
 .page-header-geoRef{
     background-image: url("../img/geoRef_Banner.png");
@@ -575,6 +581,12 @@ body{
 .service-item:hover {
     margin-top: -10px;
     background: var(--primary);
+}
+
+.activeServiceItem{
+    margin-top: -10px;
+    background: var(--primary);
+    color: var(--light) !important;
 }
 
 .service-item * {
