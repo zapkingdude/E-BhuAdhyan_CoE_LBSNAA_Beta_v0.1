@@ -779,3 +779,15 @@ body{
     padding-right: 0;
     border-right: none;
 }
+
+
+/** Generic Styles **/
+.smallText-1{
+    font-size: 0.8rem !important;
+}
+.smallText-2{
+    font-size: 0.5rem !important;
+}
+.txtRightAlign{
+    text-align: right;
+}

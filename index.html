@@ -717,6 +717,12 @@
                     </div>
                 </div>
             </div>
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    Unique visitors count:  <a href='http://www.freevisitorcounters.com'>Free Counters</a><script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=d2f2e684e9befe1294d94626a420d5afb666258d'></script>
+    <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/1399203/t/13"></script>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="copyright">
@@ -763,10 +769,30 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        let count = localStorage.getItem('page_view');
+
+            if (count) {
+
+                count = Number(count) + 1;
+
+                localStorage.setItem('page_view', count);
+
+            } else {
+
+                count = 1;
+
+                localStorage.setItem('page_view', 1);
+
+            }
+
+            document.getElementById('count').innerText = count;
+    </script>
 </body>
 
 </html>

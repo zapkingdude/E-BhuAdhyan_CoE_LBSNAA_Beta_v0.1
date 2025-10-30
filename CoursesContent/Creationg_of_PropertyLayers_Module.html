@@ -177,15 +177,14 @@
                                 <div id="chapterContentSlide" class="carousel slide chapterConentSlide" data-bs-ride="false">
                                     <div class="carousel-inner h-100">
                                         <div class="carousel-item h-100  active">
-                                            <aside  class="d-block w-100" alt="Slide 1">
-                                                <h3>1. Introduction</h3> 
+                                            <aside  class="d-block w-100" alt="Slide 1">                                                 
                                                 <div class="row">
                                                     <div class="col col-lg-12 p-4">
                                                         <p class="textJustify">                                               
                                                             <i class="fa fa-arrow-right text-primary me-2"></i>The creation of property layers from ground truthing points is a critical step in modern geospatial analysis and land management.
                                                         </p>                
                                                         <p class="textJustify">
-                                                            <i class="fa fa-arrow-right text-primary me-2"></i>This E-Module focuses on leveraging data collected from GNSS NRTK Rovers—advanced Global Navigation Satellite System devices that provide real-time kinematic positioning with high accuracy. By gathering precise ground truthing points directly from the field, these rovers enable the accurate delineation of property boundaries and features.
+                                                            <i class="fa fa-arrow-right text-primary me-2"></i>This E-Module focuses on leveraging data collected from GNSS NRTK Rovers — that provide real-time kinematic positioning with high accuracy. By gathering precise ground truthing points directly from the field, these rovers enable the accurate delineation of property boundaries and features.
                                                         </p>
                                                         <p class="textJustify">
                                                             <i class="fa fa-arrow-right text-primary me-2"></i>The module guides users through the process of transforming raw GNSS NRTK data into comprehensive digital property layers, which can be integrated into Geographic Information Systems (GIS) for enhanced decision-making, planning, and resource management.
@@ -208,7 +207,7 @@
                                                             When surveyors go to the field to mark property boundaries, accuracy is very important. Even small errors can cause disputes in land ownership and records. This is where GNSS NRTK Rovers play a vital role.
                                                         </p>
                                                         <p class="textJustify">
-                                                            <b>GNSS (Global Navigation Satellite System)</b> is the technology behind GPS. It uses signals from satellites to identify a location on the Earth’s surface. Normally, GPS on a mobile phone is accurate only up to a few meters, which is not enough for property surveys. But <b>NRTK (Network Real-Time Kinematic)</b> technology improves this accuracy to the centimeter level by using correction signals from a reference network.
+                                                            <b>GNSS (Global Navigation Satellite System)</b> is the technology normally, on a mobile phone is accurate only up to a few meters, which is not enough for property surveys. But <b>NRTK (Network Real-Time Kinematic)</b> technology improves this accuracy to the centimeter level by using correction signals from a reference network.
                                                             <ul>
                                                                 <li>
                                                                     <p class="textJustify">
@@ -279,7 +278,7 @@
                                                     <div class="col col-lg-12 col-md-12 col-sm-12 pe-4">
                                                         <div class="row">
                                                             <div class="col col-md-12 col-lg-12">                                                     
-                                                                <p class="textJustify">QGIS (Quantum GIS) provides powerful tools for georeferencing raster images (e.g., scanned maps, aerial photos) to align them with real-world coordinates. The Georeferencer tool in QGIS allows for multiple techniques, each suitable for different types of spatial distortions.</p>
+                                                                <p class="textJustify">Creating property layers in QGIS allows users to digitally represent land parcels, buildings, and other property-related features on a map. By following a step-by-step process using QGIS tools, these layers can be accurately drawn, attributed, and integrated into a GIS database for analysis and planning</p>
                                                             </div>
                                                         </div>
                                                         <div lass="row">
@@ -483,6 +482,7 @@
                                                                     <div col="col col-md-12 col-lg-12">
                                                                         <ul>
                                                                             <li>Now, we need to create polygons using the collected survey points, which were gathered from the field and exported as a shape file.</li>
+                                                                            <li>Labels of property boundary points can be turned on for easy digitization.</li>
                                                                             <li>Now we need to add the fields to the Property_parcel.shp file</li>
                                                                             <li>For adding field, we have Enable the <b>Snapping Tool</b></li>
                                                                             <li>Click <b>Toggle Editing Mode</b> (pencil icon) on the <b>Digitizing Toolbar</b>.</li>
@@ -494,7 +494,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <ul>
-                                                                            <li class="pt-2">Double-click on Propery_Parcel.shp</li>
+                                                                            <li class="pt-2">Double-click on Property_Parcel.shp</li>
                                                                             <li>Go to Symbology > Select Simple Line > Choose the Color of your choice</li>
                                                                             <li>Ensure the Simple Line option is selected.</li>
                                                                         </ul>
@@ -551,7 +551,7 @@
                                                                 <div class="row">
                                                                     <div col="col col-md-12 col-lg-12">
                                                                         <ul>
-                                                                            <li><b>Enable Editing Mode :</b> Right-click on the Propety_Parcel.shp in the Layers Panel.</li>
+                                                                            <li><b>Enable Editing Mode :</b> Right-click on the Property_Parcel.shp in the Layers Panel.</li>
                                                                             <li>Select Toggle Editing to enable editing mode.</li>
                                                                             <li><b>Open Attribute Table :</b> 
                                                                                 Right-click on the layer again and select <b>Open Attribute Table</b> and click on the <b>newfield</b>
@@ -601,7 +601,7 @@
                                                         </div>                                                        
                                                         <div class="row">
                                                             <div class="col col-md-12 col-lg-12 textJustify pt-2">  
-                                                                <h5>7. Conclusion</h5>
+                                                                <h5>Conclusion</h5>
                                                                 <div class="row">
                                                                     <div col="col col-md-12 col-lg-12">
                                                                         The property parcel layer created from imported property boundary points(CSV) file will be integrated with the Land Parcel data. This integration enables linking property tax and RoR (Record of Rights) details with the corresponding land parcels. This approach enhances data accuracy and supports efficient land administration.
